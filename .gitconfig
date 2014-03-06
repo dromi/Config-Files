@@ -1,0 +1,5 @@
+[user]
+	email = dromi@diku.dk\n
+	name = Dromi
+[push]
+	default = simple

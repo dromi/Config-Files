@@ -1,0 +1,19 @@
+current files in repo and locations on my old Arch configuration.
+
+emacs:
+
+.emacs - ~/
+color-themes - ~/.emacs.d/color-themes
+
+i3:
+
+.config - ~/.i3/
+i3status.conf - ~/.i3/
+win.png - ~/.i3/
+
+other:
+
+.gitconfig - ~/
+.xinitrc - ~/
+.Xdefaults - ~/
+.zshrc - ~/
