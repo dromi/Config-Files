@@ -15,7 +15,7 @@ ZSH_THEME="fishy"
 # CASE_SENSITIVE="true"
 
 # Comment this out to disable bi-weekly auto-update checks
- DISABLE_AUTO_UPDATE="true"
+# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -32,7 +32,7 @@ ZSH_THEME="fishy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git colored-man debian)
+plugins=(git archlinux nyan)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -42,10 +42,7 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bi
 # Added by Dromi
 export EDITOR='/usr/bin/emacs -nw'
 
-#used for Arch
-#alias update='sudo pacman -Syuq --noconfirm;sudo pacman -Rns $(pacman -Qqtd) --noconfirm'
-
-alias update='sudo apt-get update; sudo apt-get upgrade -y; upgrade_oh_my_zsh'
+alias update='sudo pacman -Syuq --noconfirm;sudo pacman -Rns $(pacman -Qqtd) --noconfirm'
 
 alias ls='ls --color=auto'
 
@@ -54,21 +51,20 @@ alias temacs='emacs -nw'
 alias ffs='sudo'
 
 # Define aliases for launching config-files
-alias config-emacs='emacs -nw ~/.emacs'
-alias config-zsh='emacs -nw ~/.zshrc'
-#alias config-Xdefaults='emacs -nw ~/.Xdefaults'
-alias config-i3='emacs -nw ~/.i3/config'
-alias config-i3status='emacs -nw ~/.i3/i3status.conf'
+alias .emacs='emacs -nw ~/.emacs'
+alias .zshrc='emacs -nw ~/.zshrc'
+alias .Xdefaults='emacs -nw ~/.Xdefaults'
+alias .i3='emacs -nw ~/.i3/config'
+alias .i3status='emacs -nw ~/.i3/i3status.conf'
 
 alias maple='echo "drop det"'
 
 alias dikussh='ssh -XY dromi@ask.diku.dk'
 alias dikussh_noX='ssh dromi@ask.diku.dk'
 
-alias nautilus='nautilus --no-desktop'
+alias mm6='cd /home/dromi/.wine/drive_c/Program\ Files\ \(x86\)/Might\ and\ Magic\ VI; wine mm6.exe; cd'
 
-#redefine binding for la
-alias la='ls -A'
+alias connect_home='xrandr --output VGA1 --mode 1920x1080 --right-of LVDS1; feh --bg-scale /home/dromi/wallpapers/duck.jpg'
 
 # Define aliases for filetypes
 alias -s tex=emacs
