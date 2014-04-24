@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="fishy"
+ZSH_THEME="amuse"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -32,7 +32,7 @@ ZSH_THEME="fishy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git colored-man debian)
+plugins=(git colored-man themes cp svn)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -45,7 +45,7 @@ export EDITOR='/usr/bin/emacs -nw'
 #used for Arch
 #alias update='sudo pacman -Syuq --noconfirm;sudo pacman -Rns $(pacman -Qqtd) --noconfirm'
 
-alias update='sudo apt-get update; sudo apt-get upgrade -y; upgrade_oh_my_zsh'
+alias update='sudo aptitude update; sudo aptitude safe-upgrade; upgrade_oh_my_zsh'
 
 alias ls='ls --color=auto'
 
@@ -66,6 +66,15 @@ alias dikussh='ssh -XY dromi@ask.diku.dk'
 alias dikussh_noX='ssh dromi@ask.diku.dk'
 
 alias nautilus='nautilus --no-desktop'
+
+alias python='python3'
+
+# aliases for aptitude
+alias ai='sudo aptitude install'
+alias ar='sudo aptitude remove'
+alias ap='sudo aptitude purge'
+alias as='aptitude search'
+alias aw='aptitude show'
 
 #redefine binding for la
 alias la='ls -A'

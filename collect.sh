@@ -3,9 +3,6 @@
 a="$(pwd)"
 b=$HOME"/Config-Files"
 
-echo $a
-echo $b
-
 if [ $a != $b ]
 then 
 echo "Launch script from ~/Config-Files folder"

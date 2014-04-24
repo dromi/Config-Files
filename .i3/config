@@ -41,15 +41,16 @@ bindsym $mod+Shift+Return exec nautilus --no-desktop
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# bindings for volume changes
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
-bindsym XF86AudioMute exec amixer -q set Master toggle
+# bindings for volume changes (not needed in ubuntu)
+#bindsym XF86AudioRaiseVolume exec amixer -q set Master 2dB+ unmute
+#bindsym XF86AudioLowerVolume exec amixer -q set Master 2dB- unmute
+#bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # bind network manager to thinkvantage button
-bindsym XF86Launch1 exec "urxvt -e wicd-curses"
+#bindsym XF86Launch1 exec "urxvt -e wicd-curses"
+bindsym XF86Launch1 exec gnome-control-center
 
-bindsym $mod+Shift+a exec "gnome-terminal -e alsamixer"
+bindsym $mod+Shift+a exec "gnome-terminal -x alsamixer"
 
 bindsym $mod+c exec "emacs"
 bindsym $mod+b exec "chromium-browser"
@@ -63,11 +64,15 @@ bindsym $mod+r exec dmenu_run
 # installed.
 #bindsym $mod+r exec --no-startup-id i3-dmenu-desktop
 
+# extra navigation using good ol' sir. tabbie
+bindsym $mod+Tab focus right
+bindsym $mod+Shift+Tab focus left
+
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -76,10 +81,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -88,7 +93,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -145,7 +150,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # lock screen
-bindsym $mod+Shift+w exec "xscreensaver-command -lock"
+bindsym $mod+Shift+w exec python3 ~/starwars-scn/wikigrapper.py & xscreensaver-command -lock
 #bindsym $mod+Shift+w exec "i3lock -dui /home/john/.i3/win.png -p win"
 
 # resize window (you can also use the mouse for that)
@@ -156,10 +161,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym ae resize grow width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -186,7 +191,11 @@ bar {
 # Assign programs to workspaces
 assign [class="Pidgin"] 1
 assign [class="Chromium"] 2
+assign [class="Steam"] 8
+assign [class="Skype"] 9
 assign [class="Spotify"] 10
+
+
 
 # enable floating  as default 
 for_window [class="feh"] floating enable
@@ -194,14 +203,17 @@ for_window [class="eog"] floating enable
 for_window [class="MPlayer"] floating enable
 for_window [class="Gnome-control-center"] floating enable
 for_window [class="Software-center"] floating enable
+for_window [class="Skype"] floating enable
+
 for_window [class="Steam" title="Friends"] floating enable
+for_window [class="Steam" title="Chat"] floating enable
 
 
 # set browser to toggled layout
 for_window [class="Chromium"] layout tabbed
 
 # Set wallpaper
-exec feh --bg-scale /home/john/Downloads/igvYl4i.jpg 
+exec feh --bg-scale ~/.i3/wallpapers/dragoncat.jpg
 
 # Set beybinding of capslock to ctrl (might not be the best way to do this though)
 #exec xmodmap ~/.Xmodmap
@@ -214,7 +226,6 @@ exec redshift -l 55.7:12.6 -t 5700:3600 -g 0.8 -m vidmode
 exec nm-applet
 exec xscreensaver -no-splash
 exec gnome-sound-applet
-exec pidgin
 exec emacs --daemon
 exec tlp start
 
@@ -222,3 +233,5 @@ exec tlp start
 #for_window [Class="Pidgin" title="Buddy List"] floating enable
 #for_window [Class="Pidgin" title="Buddy List"] set width 1000 px or 1000 ppt
 #for_window [Class="Pidgin" window_role="conversation"] floating enable
+
+
