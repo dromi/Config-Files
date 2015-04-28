@@ -1,0 +1,32 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables (list 
+   (semanticdb-table "myScript.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("path" variable nil nil [48 57])
+            ("onMouseDown" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [80 85]))              ) nil [59 219])
+            ("onMouseDrag" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [242 247]))              ) nil [221 532]))          
+    :file "myScript.js"
+    :pointmax 533
+    :fsize 532
+    :lastmodtime '(21741 701 608114 920000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "paper-full.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "paper-full.js"
+    :pointmax 352133
+    :fsize 352133
+    :lastmodtime '(21737 60316 960056 860000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!paper!projects!first!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,31 @@
+;; Object OpenTissue/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "OpenTissue/"
+  :tables (list 
+   (semanticdb-table "configuration.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("OPENTISSUE_CONFIGURATIOM_H" variable (:constant-flag t) nil [44 70])
+            ("OPENTISSUE_VERSION" variable (:constant-flag t) nil [696 714])
+            ("OPENTISSUE_VERSION_MAJOR" variable (:constant-flag t) nil [736 760])
+            ("OPENTISSUE_VERSION_MINOR" variable (:constant-flag t) nil [772 796])
+            ("string" include (:system-flag t) nil [803 820])
+            ("opentissue_version" variable (:type ("std::string" type (:type "class") nil nil)) nil [1154 1201]))          
+    :file "configuration.h"
+    :pointmax 1240
+    :fsize 1239
+    :lastmodtime '(21425 17937 862871 728000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OPENTISSUE_VERSION_MINOR" . ((number "994" 798 . 801)))
+          ("OPENTISSUE_VERSION" . ((number "0.994" 722 . 727)))
+          ("OPENTISSUE_CONFIGURATIOM_H")
+          ("OPENTISSUE_VERSION_MAJOR" . ((number "0" 762 . 763)))
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!3RDPARTY!OpenTissue!OpenTissue!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

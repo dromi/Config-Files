@@ -1,0 +1,51 @@
+;; Object Unix/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Unix/"
+  :tables (list 
+   (semanticdb-table "Mutex.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_MUTEXUNIX_HPP" variable (:constant-flag t) nil [1138 1156])
+            ("SFML/System/NonCopyable.hpp" include (:system-flag t) nil [1291 1329])
+            ("pthread.h" include (:system-flag t) nil [1330 1350])
+            ("sf" type
+               (:members 
+                  ( ("NonCopyable" variable (:type "int") (reparse-symbol namespacesubparts) [1721 2685]))                  
+                :type "namespace")
+                nil [1353 2688]))          
+    :file "Mutex.hpp"
+    :pointmax 2736
+    :fsize 2817
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((punctuation 1719 . 1720) (symbol 1713 . 1718) (symbol 1704 . 1712) (CLASS 1698 . 1703))
+    :lexical-table 
+        '(("SFML_MUTEXUNIX_HPP")
+          )
+
+    )
+   (semanticdb-table "Thread.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_THREADUNIX_HPP" variable (:constant-flag t) nil [1139 1158])
+            ("SFML/System/NonCopyable.hpp" include (:system-flag t) nil [1293 1331])
+            ("pthread.h" include (:system-flag t) nil [1332 1352])
+            ("sf" type
+               (:members 
+                  ( ("NonCopyable" variable (:type "int") (reparse-symbol namespacesubparts) [1724 4260]))                  
+                :type "namespace")
+                nil [1355 4263]))          
+    :file "Thread.hpp"
+    :pointmax 4312
+    :fsize 4435
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((punctuation 1722 . 1723) (symbol 1715 . 1721) (symbol 1706 . 1714) (CLASS 1700 . 1705))
+    :lexical-table 
+        '(("SFML_THREADUNIX_HPP")
+          )
+
+    )
+   )
+  :file "!usr!include!SFML!System!Unix!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

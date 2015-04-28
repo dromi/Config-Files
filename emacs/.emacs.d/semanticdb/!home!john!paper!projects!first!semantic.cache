@@ -1,0 +1,26 @@
+;; Object first/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "first/"
+  :tables (list 
+   (semanticdb-table "main.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("First project bros!" section nil nil [58 132])
+            ("Define inlined PaperScript associate it with myCanvas -->
+  <script type=\"text/paperscript\" src=\"js/myScript.js\" canvas=\"myCanvas1\">" section nil nil [132 267])
+            ("First Canvas" section nil nil [267 353])
+            ("First Canvas" section nil nil [353 446])
+            ("First Canvas" section (:members 
+              ( ("First Canvas" section nil nil [503 644])
+                ("Second Canvas" section nil nil [644 811]))              ) nil [446 811]))          
+    :file "main.html"
+    :pointmax 811
+    :fsize 810
+    :lastmodtime '(21752 51772 525797 351000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!paper!projects!first!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

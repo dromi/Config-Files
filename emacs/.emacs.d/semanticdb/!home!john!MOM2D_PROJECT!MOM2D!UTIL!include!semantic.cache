@@ -1,0 +1,1399 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "util.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_H" variable (:constant-flag t) nil [24 30])
+            ("util_log.h" include (:system-flag t) nil [398 419])
+            ("util_tensor2.h" include (:system-flag t) nil [420 445])
+            ("util_config_file.h" include (:system-flag t) nil [446 475])
+            ("util_matlab_write_matrix.h" include (:system-flag t) nil [476 513])
+            ("util_timer.h" include (:system-flag t) nil [514 537])
+            ("util_distance_fields.h" include (:system-flag t) nil [538 571])
+            ("util_matlab_write_vector.h" include (:system-flag t) nil [572 609])
+            ("util_timestamp.h" include (:system-flag t) nil [610 637])
+            ("util_generate_filename.h" include (:system-flag t) nil [638 673])
+            ("util_profiling.h" include (:system-flag t) nil [674 701])
+            ("util_index_helper.h" include (:system-flag t) nil [702 732])
+            ("util_string_helper.h" include (:system-flag t) nil [733 764])
+            ("util_sort.h" include (:system-flag t) nil [765 787])
+            ("util_same_sign.h" include (:system-flag t) nil [788 815])
+            ("util_is_ccw.h" include (:system-flag t) nil [816 840])
+            ("util_determinant.h" include (:system-flag t) nil [841 870])
+            ("util_boolean.h" include (:system-flag t) nil [871 896])
+            ("util_integer.h" include (:system-flag t) nil [897 922])
+            ("util_il_wrap.h" include (:system-flag t) nil [923 948])
+            ("util_image.h" include (:system-flag t) nil [949 972])
+            ("util_image_read.h" include (:system-flag t) nil [973 1001])
+            ("util_image_write.h" include (:system-flag t) nil [1002 1031]))          
+    :file "util.h"
+    :pointmax 1050
+    :fsize 1049
+    :lastmodtime '(21475 26624 169656 181000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_H")
+          )
+
+    )
+   (semanticdb-table "util_log.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_LOG_H" variable (:constant-flag t) nil [28 38])
+            ("string" include (:system-flag t) nil [40 57])
+            ("iostream" include (:system-flag t) nil [58 77])
+            ("fstream" include (:system-flag t) nil [78 96])
+            ("util" type
+               (:members 
+                  ( ("LogInfo" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [138 145])
+                            ("console" function
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [151 238])
+                            ("on" function
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [244 326])
+                            ("stream" function
+                               (:typemodifiers ("static")
+                                :type ("std::ofstream" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [332 429])
+                            ("filename" function
+                               (:typemodifiers ("static")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [435 542])
+                            ("first_time" function
+                               (:typemodifiers ("static")
+                                :type "bool")
+                                (reparse-symbol classsubparts) [548 638]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [118 644])
+                    ("Log" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [665 672])
+                            ("tab" function
+                               (:typemodifiers ("static")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [678 723])
+                            ("newline" function
+                               (:typemodifiers ("static")
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [729 774]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [649 781])
+                    ("<<" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Log" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("log" variable
+                               (:reference 1
+                                :type ("Log" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [832 842])
+                            ("data" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [843 858]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [785 1441]))                  
+                :type "namespace")
+                nil [98 1446]))          
+    :file "util_log.h"
+    :pointmax 1486
+    :fsize 1485
+    :lastmodtime '(21454 33460 169232 252000)
+    :unmatched-syntax '((punctuation 774 . 775) (punctuation 723 . 724))
+    :lexical-table 
+        '(("UTIL_LOG_H")
+          )
+
+    )
+   (semanticdb-table "util_config_file.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_CONFIG_FILE_H" variable (:constant-flag t) nil [36 54])
+            ("util_string_helper.h" include (:system-flag t) nil [56 87])
+            ("util_log.h" include (:system-flag t) nil [88 109])
+            ("string" include (:system-flag t) nil [111 128])
+            ("vector" include (:system-flag t) nil [129 146])
+            ("map" include (:system-flag t) nil [147 161])
+            ("iostream" include (:system-flag t) nil [162 181])
+            ("sstream" include (:system-flag t) nil [182 200])
+            ("fstream" include (:system-flag t) nil [201 219])
+            ("util" type
+               (:members 
+                  ( ("ConfigFile" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [850 860])
+                            ("m_values" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("std::string" type nil nil nil)
+                                      ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [866 925])
+                            ("public" label nil (reparse-symbol classsubparts) [929 936])
+                            ("get_values" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [978 1003]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("std::string" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [942 1047])
+                            ("get_value" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1075 1100]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1053 1147])
+                            ("exist" function
+                               (:arguments 
+                                  ( ("name" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1164 1189]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1153 1256])
+                            ("public" label nil (reparse-symbol classsubparts) [1260 1267])
+                            ("ConfigFile" function
+                               (:constructor-flag t
+                                :type ("ConfigFile" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1273 1297])
+                            ("ConfigFile" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1303 1326])
+                            ("public" label nil (reparse-symbol classsubparts) [1330 1337])
+                            ("load" function
+                               (:arguments 
+                                  ( ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1353 1383]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [1343 3346]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [827 3352]))                  
+                :type "namespace")
+                nil [221 3357]))          
+    :file "util_config_file.h"
+    :pointmax 3404
+    :fsize 3702
+    :lastmodtime '(21549 23555 255392 949000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_CONFIG_FILE_H")
+          )
+
+    )
+   (semanticdb-table "util_matlab_write_matrix.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_MATLAB_WRITE_MATRIX_H" variable (:constant-flag t) nil [44 70])
+            ("util_matlab_write_vector.h" include (:system-flag t) nil [72 109])
+            ("iostream" include (:system-flag t) nil [111 130])
+            ("sstream" include (:system-flag t) nil [131 149])
+            ("string" include (:system-flag t) nil [150 167])
+            ("vector" include (:system-flag t) nil [168 185])
+            ("util" type
+               (:members 
+                  ( ("matlab_write_matrix" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("I" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("rows" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("I" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [323 393])
+                            ("columns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("I" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [394 467])
+                            ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [468 540])
+                            ("nzeros" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [541 610])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [611 675])
+                            ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [676 740]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [207 1191])
+                    ("matlab_write_matrix" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil)
+                            ("I" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1313 1380])
+                            ("rows" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("I" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1381 1451])
+                            ("columns" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("I" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1452 1525])
+                            ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1526 1598])
+                            ("nzeros" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1599 1668])
+                            ("m" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1669 1733])
+                            ("n" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1734 1798]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1195 1979]))                  
+                :type "namespace")
+                nil [187 1984]))          
+    :file "util_matlab_write_matrix.h"
+    :pointmax 2022
+    :fsize 2021
+    :lastmodtime '(21465 10404 965406 348000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_MATLAB_WRITE_MATRIX_H")
+          )
+
+    )
+   (semanticdb-table "util_timer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_TIMER_H" variable (:constant-flag t) nil [30 42])
+            ("time.h" include (:system-flag t) nil [160 179])
+            ("util" type
+               (:members 
+                  ( ("Timer" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [971 981])
+                            ("m_start" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [987 1011])
+                            ("m_end" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1071 1093])
+                            ("public" label nil (reparse-symbol classsubparts) [1154 1161])
+                            ("start" function (:type "void") (reparse-symbol classsubparts) [1167 1224])
+                            ("stop" function (:type "void") (reparse-symbol classsubparts) [1230 1276])
+                            ("duration" function (:type "float") (reparse-symbol classsubparts) [1427 1758])
+                            ("()" function
+                               (:operator-flag t
+                                :type "float")
+                                (reparse-symbol classsubparts) [1872 2359]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [953 2369]))                  
+                :type "namespace")
+                nil [188 2380]))          
+    :file "util_timer.h"
+    :pointmax 2432
+    :fsize 2431
+    :lastmodtime '(21537 39950 298557 950000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_TIMER_H")
+          )
+
+    )
+   (semanticdb-table "util_distance_fields.h"
+    :file "util_distance_fields.h"
+    :fsize 5732
+    :lastmodtime '(21454 33460 141232 253000)
+    )
+   (semanticdb-table "util_matlab_write_vector.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_MATLAB_WRITE_VECTOR_H" variable (:constant-flag t) nil [44 70])
+            ("iostream" include (:system-flag t) nil [72 91])
+            ("sstream" include (:system-flag t) nil [92 110])
+            ("string" include (:system-flag t) nil [111 128])
+            ("vector" include (:system-flag t) nil [129 146])
+            ("util" type
+               (:members 
+                  ( ("matlab_write_vector" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [565 595])
+                            ("size" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [596 616])
+                            ("add_one" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [617 639])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [640 646]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [503 1012])
+                    ("matlab_write_vector" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1078 1109]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1016 1179])
+                    ("matlab_write_vector" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1245 1312])
+                            ("values" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1313 1343]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1183 1580]))                  
+                :type "namespace")
+                nil [148 1585]))          
+    :file "util_matlab_write_vector.h"
+    :pointmax 1640
+    :fsize 1639
+    :lastmodtime '(21454 33460 141232 253000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_MATLAB_WRITE_VECTOR_H")
+          )
+
+    )
+   (semanticdb-table "util_timestamp.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_TIMESTAMP_H" variable (:constant-flag t) nil [34 50])
+            ("string" include (:system-flag t) nil [52 69])
+            ("sstream" include (:system-flag t) nil [70 88])
+            ("iomanip" include (:system-flag t) nil [89 107])
+            ("ctime" include (:system-flag t) nil [108 124])
+            ("util" type
+               (:members 
+                  ( ("timestamp" function
+                       (:typemodifiers ("inline")
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [146 750]))                  
+                :type "namespace")
+                nil [126 753]))          
+    :file "util_timestamp.h"
+    :pointmax 799
+    :fsize 798
+    :lastmodtime '(21454 33460 169232 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_TIMESTAMP_H")
+          )
+
+    )
+   (semanticdb-table "util_generate_filename.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UTIL_GENERATE_FILENAME_H" variable (:constant-flag t) nil [42 66])
+            ("sstream" include (:system-flag t) nil [68 86])
+            ("fstream" include (:system-flag t) nil [87 105])
+            ("iostream" include (:system-flag t) nil [106 125])
+            ("string" include (:system-flag t) nil [126 143])
+            ("iomanip" include (:system-flag t) nil [144 162])
+            ("util" type
+               (:members 
+                  ( ("generate_filename" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("prefix" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [309 336])
+                            ("frame" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [337 364])
+                            ("extension" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [365 395]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [271 640]))                  
+                :type "namespace")
+                nil [164 646]))          
+    :file "util_generate_filename.h"
+    :pointmax 701
+    :fsize 700
+    :lastmodtime '(21454 33460 185232 251000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_GENERATE_FILENAME_H")
+          )
+
+    )
+   (semanticdb-table "util_profiling.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_PROFILING_H" variable (:constant-flag t) nil [34 50])
+            ("util_timer.h" include (:system-flag t) nil [52 75])
+            ("map" include (:system-flag t) nil [77 91])
+            ("vector" include (:system-flag t) nil [92 109])
+            ("cmath" include (:system-flag t) nil [110 126])
+            ("sstream" include (:system-flag t) nil [127 145])
+            ("cassert" include (:system-flag t) nil [146 164])
+            ("START_TIMER" variable (:constant-flag t) nil [174 185])
+            ("STOP_TIMER" variable (:constant-flag t) nil [244 254])
+            ("RECORD" variable (:constant-flag t) nil [312 318])
+            ("NEW_UNIQUE_NAME" variable (:constant-flag t) nil [383 398])
+            ("RECORD_VECTOR" variable (:constant-flag t) nil [451 464])
+            ("Profiling" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [685 692])
+                    ("Monitor" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [716 726])
+                            ("m_total" variable (:type "float") (reparse-symbol classsubparts) [732 752])
+                            ("m_min" variable (:type "float") (reparse-symbol classsubparts) [757 775])
+                            ("m_max" variable (:type "float") (reparse-symbol classsubparts) [780 798])
+                            ("m_avg" variable (:type "float") (reparse-symbol classsubparts) [803 821])
+                            ("m_N" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [826 842])
+                            ("m_values" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [847 875])
+                            ("public" label nil (reparse-symbol classsubparts) [879 886])
+                            ("get_avg" function (:type "float") (reparse-symbol classsubparts) [892 937])
+                            ("get_min" function (:type "float") (reparse-symbol classsubparts) [942 987])
+                            ("get_max" function (:type "float") (reparse-symbol classsubparts) [992 1037])
+                            ("get_total" function (:type "float") (reparse-symbol classsubparts) [1042 1087])
+                            ("get_values" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1092 1158])
+                            ("get_number_of_entries" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1163 1217])
+                            ("public" label nil (reparse-symbol classsubparts) [1221 1228])
+                            ("Monitor" function
+                               (:constructor-flag t
+                                :type ("Monitor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1234 1345])
+                            ("public" label nil (reparse-symbol classsubparts) [1349 1356])
+                            ("record" function
+                               (:arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "float")
+                                        (reparse-symbol arg-sub-list) [1375 1396]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1362 1667])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [1672 1873]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [696 1878])
+                    ("TimerMonitor" type
+                       (:superclasses 
+                          ( ("Monitor" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1926 1936])
+                            ("m_timer" variable (:type ("util::Timer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1942 1962])
+                            ("public" label nil (reparse-symbol classsubparts) [1966 1973])
+                            ("TimerMonitor" function
+                               (:constructor-flag t
+                                :type ("TimerMonitor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1979 2032])
+                            ("public" label nil (reparse-symbol classsubparts) [2036 2043])
+                            ("start" function (:type "void") (reparse-symbol classsubparts) [2049 2096])
+                            ("stop" function (:type "void") (reparse-symbol classsubparts) [2102 2210]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [1882 2216])
+                    ("VectorMonitor" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [2246 2256])
+                            ("m_values" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::vector" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2262 2306])
+                            ("public" label nil (reparse-symbol classsubparts) [2310 2317])
+                            ("get_values" function
+                               (:arguments 
+                                  ( ("idx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("size_t" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2361 2380]))                                  
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("float" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2323 2412])
+                            ("get_number_of_entries" function (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2417 2483])
+                            ("public" label nil (reparse-symbol classsubparts) [2487 2494])
+                            ("VectorMonitor" function
+                               (:constructor-flag t
+                                :type ("VectorMonitor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2500 2539])
+                            ("public" label nil (reparse-symbol classsubparts) [2543 2550])
+                            ("record" function
+                               (:arguments 
+                                  ( ("value" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("float" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2569 2597]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [2556 2644])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [2650 2743]))                          
+                        :type "class")
+                        (reparse-symbol classsubparts) [2220 2748])
+                    ("monitors_container" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("Monitor" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2752 2818])
+                    ("timer_monitors_container" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("TimerMonitor" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2821 2893])
+                    ("vector_monitors_container" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("VectorMonitor" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2896 2969])
+                    ("counter_container" type
+                       (:typedef ("std::map" type
+                             (:template-specifier 
+                                ( ("std::string" type nil nil nil)
+                                  ("size_t" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "std::map"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [2972 3037])
+                    ("private" label nil (reparse-symbol classsubparts) [3039 3047])
+                    ("counters" function
+                       (:typemodifiers ("static")
+                        :type ("counter_container" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3051 3149])
+                    ("public" label nil (reparse-symbol classsubparts) [3151 3158])
+                    ("generate_unique_name" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3202 3227]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3162 3360])
+                    ("get_monitors_instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("monitors_container" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3364 3486])
+                    ("get_timer_monitors_instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("timer_monitors_container" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3490 3630])
+                    ("get_vector_monitors_instance" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :type ("vector_monitors_container" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3634 3777])
+                    ("get_monitor" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3810 3835]))                          
+                        :type ("Monitor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3781 3900])
+                    ("get_timer_monitor" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3944 3969]))                          
+                        :type ("TimerMonitor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3904 4040])
+                    ("get_vector_monitor" function
+                       (:pointer 1
+                        :typemodifiers ("static")
+                        :arguments 
+                          ( ("name" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4086 4111]))                          
+                        :type ("VectorMonitor" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4044 4183]))                  
+                :type "class")
+                nil [667 4187]))          
+    :file "util_profiling.h"
+    :pointmax 4216
+    :fsize 4215
+    :lastmodtime '(21454 33460 185232 251000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("STOP_TIMER" (spp-arg-list ("NAME") 254 . 260) . 
+              ((symbol "Profiling" 261 . 270) (punctuation ":" 270 . 271) (punctuation ":" 271 . 272) (symbol "get_timer_monitor" 272 . 289) (semantic-list "(NAME)" 289 . 295) (punctuation "-" 295 . 296) (punctuation ">" 296 . 297) (symbol "stop" 297 . 301) (semantic-list "()" 301 . 303)))
+          ("START_TIMER" (spp-arg-list ("NAME") 185 . 191) . 
+              ((symbol "Profiling" 192 . 201) (punctuation ":" 201 . 202) (punctuation ":" 202 . 203) (symbol "get_timer_monitor" 203 . 220) (semantic-list "(NAME)" 220 . 226) (punctuation "-" 226 . 227) (punctuation ">" 227 . 228) (symbol "start" 228 . 233) (semantic-list "()" 233 . 235)))
+          ("NEW_UNIQUE_NAME" (spp-arg-list ("NAME") 398 . 404) . 
+              ((symbol "Profiling" 405 . 414) (punctuation ":" 414 . 415) (punctuation ":" 415 . 416) (symbol "generate_unique_name" 416 . 436) (semantic-list "(NAME)" 436 . 442)))
+          ("UTIL_PROFILING_H")
+          ("RECORD" (spp-arg-list ("NAME" "VALUE") 318 . 330) . 
+              ((symbol "Profiling" 331 . 340) (punctuation ":" 340 . 341) (punctuation ":" 341 . 342) (symbol "get_monitor" 342 . 353) (semantic-list "(NAME)" 353 . 359) (punctuation "-" 359 . 360) (punctuation ">" 360 . 361) (symbol "record" 361 . 367) (semantic-list "(VALUE)" 367 . 374)))
+          ("RECORD_VECTOR" (spp-arg-list ("NAME" "VALUE") 464 . 476) . 
+              ((symbol "Profiling" 477 . 486) (punctuation ":" 486 . 487) (punctuation ":" 487 . 488) (symbol "get_vector_monitor" 488 . 506) (semantic-list "(NAME)" 506 . 512) (punctuation "-" 512 . 513) (punctuation ">" 513 . 514) (symbol "record" 514 . 520) (semantic-list "(VALUE)" 520 . 527)))
+          )
+
+    )
+   (semanticdb-table "util_index_helper.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("UTIL_INDEX_HELPER_H" variable (:constant-flag t) nil [37 56])
+            ("util" type
+               (:members 
+                  ( ("to_one_based" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("index" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [111 138]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [78 162])
+                    ("to_zero_based" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("index" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [200 227]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [166 251]))                  
+                :type "namespace")
+                nil [58 257]))          
+    :file "util_index_helper.h"
+    :pointmax 307
+    :fsize 306
+    :lastmodtime '(21454 33460 173232 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_INDEX_HELPER_H")
+          )
+
+    )
+   (semanticdb-table "util_string_helper.h"
+    :file "util_string_helper.h"
+    :fsize 314
+    :lastmodtime '(21512 22447 170153 362000)
+    )
+   (semanticdb-table "util_sort.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_SORT_H" variable (:constant-flag t) nil [29 40])
+            ("vector" include (:system-flag t) nil [42 59])
+            ("util" type
+               (:members 
+                  ( ("sort" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("l1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [144 177])
+                            ("l2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [178 211])
+                            ("l3" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [212 245])
+                            ("lmin" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [246 275])
+                            ("lmed" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [276 305])
+                            ("lmax" variable
+                               (:reference 1
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [306 335]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [81 1083])
+                    ("sort" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1149 1182])
+                            ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1183 1216])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1217 1250])
+                            ("v3" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1251 1284])
+                            ("pi" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("unsigned int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1285 1336]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1088 2465]))                  
+                :type "namespace")
+                nil [61 2468]))          
+    :file "util_sort.h"
+    :pointmax 2515
+    :fsize 2462
+    :lastmodtime '(21512 22447 170153 362000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_SORT_H")
+          )
+
+    )
+   (semanticdb-table "util_same_sign.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_SAME_SIGN_H" variable (:constant-flag t) nil [34 50])
+            ("util" type
+               (:members 
+                  ( ("same_sign" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("t1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [145 183])
+                            ("t2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [184 222]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [72 498]))                  
+                :type "namespace")
+                nil [52 501]))          
+    :file "util_same_sign.h"
+    :pointmax 553
+    :fsize 552
+    :lastmodtime '(21465 10404 965406 348000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_SAME_SIGN_H")
+          )
+
+    )
+   (semanticdb-table "util_is_ccw.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_IS_CCW_H" variable (:constant-flag t) nil [31 44])
+            ("util" type
+               (:members 
+                  ( ("is_ccw" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("v0" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [133 168])
+                            ("v1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [169 204])
+                            ("v2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("V" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [205 240]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [66 873]))                  
+                :type "namespace")
+                nil [46 876]))          
+    :file "util_is_ccw.h"
+    :pointmax 925
+    :fsize 924
+    :lastmodtime '(21465 10404 965406 348000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_IS_CCW_H")
+          )
+
+    )
+   (semanticdb-table "util_determinant.h"
+    :file "util_determinant.h"
+    :fsize 828
+    :lastmodtime '(21465 10404 965406 348000)
+    )
+   (semanticdb-table "util_boolean.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_BOOLEAN_H" variable (:constant-flag t) nil [32 46])
+            ("util" type
+               (:members 
+                  ( ("Boolean" type
+                       (:members 
+                          ( ("value" variable (:type "bool") (reparse-symbol classsubparts) [278 289])
+                            ("Boolean" function
+                               (:constructor-flag t
+                                :type ("Boolean" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [295 331]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [255 337]))                  
+                :type "namespace")
+                nil [48 340]))          
+    :file "util_boolean.h"
+    :pointmax 390
+    :fsize 389
+    :lastmodtime '(21465 10404 965406 348000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_BOOLEAN_H")
+          )
+
+    )
+   (semanticdb-table "util_integer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_INTEGER_H" variable (:constant-flag t) nil [32 46])
+            ("util" type
+               (:members 
+                  ( ("Integer" type
+                       (:members 
+                          ( ("value" variable (:type "int") (reparse-symbol classsubparts) [281 291])
+                            ("Integer" function
+                               (:constructor-flag t
+                                :type ("Integer" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [297 330]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [258 336]))                  
+                :type "namespace")
+                nil [48 339]))          
+    :file "util_integer.h"
+    :pointmax 389
+    :fsize 388
+    :lastmodtime '(21465 10404 961404 349000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_INTEGER_H")
+          )
+
+    )
+   (semanticdb-table "util_il_wrap.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_IL_WRAP_H" variable (:constant-flag t) nil [32 46])
+            ("IL/ilut.h" include (:system-flag t) nil [48 68])
+            ("devil_cpp_wrapper.hpp" include (:system-flag t) nil [114 146])
+            ("util" type
+               (:members 
+                  ( ("check_IL_errors" function (:type "void") (reparse-symbol namespacesubparts) [168 400])
+                    ("get_IL_string" function
+                       (:arguments 
+                          ( ("code" variable (:type ("ILenum" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [431 443]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [405 3382]))                  
+                :type "namespace")
+                nil [148 3385]))          
+    :file "util_il_wrap.h"
+    :pointmax 3430
+    :fsize 3429
+    :lastmodtime '(21475 26624 169656 181000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_IL_WRAP_H")
+          )
+
+    )
+   (semanticdb-table "util_image.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_IMAGE_H" variable (:constant-flag t) nil [30 42])
+            ("vector" include (:system-flag t) nil [44 61])
+            ("algorithm" include (:system-flag t) nil [62 82])
+            ("util" type
+               (:members 
+                  ( ("Image" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [193 200])
+                            ("value_type" type
+                               (:typedef ("T" type (:type "class") nil nil)
+                                :superclasses "T"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [206 228])
+                            ("protected" label nil (reparse-symbol classsubparts) [232 242])
+                            ("m_width" variable (:type "unsigned int") (reparse-symbol classsubparts) [248 272])
+                            ("m_height" variable (:type "unsigned int") (reparse-symbol classsubparts) [317 342])
+                            ("m_channels" variable (:type "unsigned int") (reparse-symbol classsubparts) [386 413])
+                            ("m_data" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [453 476])
+                            ("public" label nil (reparse-symbol classsubparts) [513 520])
+                            ("width" function (:type "unsigned int") (reparse-symbol classsubparts) [526 586])
+                            ("height" function (:type "unsigned int") (reparse-symbol classsubparts) [591 651])
+                            ("channels" function (:type "unsigned int") (reparse-symbol classsubparts) [656 716])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [757 800])
+                                    ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [801 844])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [845 894]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [722 965])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("i" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1018 1067])
+                                    ("j" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1068 1117])
+                                    ("channel" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1118 1173]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [971 1250])
+                            ("get_data" function
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [1256 1310])
+                            ("get_data" function
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol classsubparts) [1315 1369])
+                            ("public" label nil (reparse-symbol classsubparts) [1373 1380])
+                            ("Image" function
+                               (:constructor-flag t
+                                :type ("Image" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1386 1477])
+                            ("m_data" function
+                               (:arguments 
+                                  ( ("" variable (:type ("data" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1735 1740])
+                                    ("" variable (:type ("data" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1741 1746]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1727 1778])
+                            ("Image" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("width" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1803 1841])
+                                    ("height" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1842 1881])
+                                    ("channels" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1882 1923])
+                                    ("data" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [1924 1963]))                                  
+                                :type ("Image" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1784 2060])
+                            ("Image" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("width" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [2085 2123])
+                                    ("height" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [2124 2163])
+                                    ("channels" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [2164 2205]))                                  
+                                :type ("Image" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2066 2388]))                          )
+                        (reparse-symbol namespacesubparts) [152 2394])
+                    ("make_image" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Image" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("width" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2469 2515])
+                            ("height" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2516 2563])
+                            ("channels" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2564 2613]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [2398 2668])
+                    ("make_grayscale_image" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("src" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Image" type
+                                     (:template-specifier 
+                                        ( ("unsigned char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2713 2746]))                          
+                        :type ("Image" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [2672 3625])
+                    ("get_image_value_at" function
+                       (:template 
+                          ( ("T1" type (:type "class") nil nil)
+                            ("T2" type (:type "class") nil nil))                          
+                        :type ("T1" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3727 3849])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3850 3972])
+                            ("img" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Image" type
+                                     (:template-specifier 
+                                        ( ("T1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3973 4024])
+                            ("ox" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4025 4134])
+                            ("oy" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4135 4244])
+                            ("dx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4245 4350])
+                            ("dy" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T2" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4351 4454]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3630 5301]))                  
+                :type "namespace")
+                nil [84 5304]))          
+    :file "util_image.h"
+    :pointmax 5347
+    :fsize 5346
+    :lastmodtime '(21546 40077 123766 642000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_IMAGE_H")
+          )
+
+    )
+   (semanticdb-table "util_image_read.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_IMAGE_READ_H" variable (:constant-flag t) nil [35 52])
+            ("util_image.h" include (:system-flag t) nil [54 77])
+            ("util_il_wrap.h" include (:system-flag t) nil [79 104])
+            ("util_log.h" include (:system-flag t) nil [106 127])
+            ("string" include (:system-flag t) nil [129 146])
+            ("util" type
+               (:members 
+                  ( ("read_image" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [217 272])
+                            ("image" variable
+                               (:reference 1
+                                :type ("Image" type
+                                     (:template-specifier 
+                                        ( ("unsigned char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [273 328])
+                            ("show_statistics" variable (:type "bool") (reparse-symbol arg-sub-list) [329 351])
+                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [352 383]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [168 2205]))                  
+                :type "namespace")
+                nil [148 2208]))          
+    :file "util_image_read.h"
+    :pointmax 2255
+    :fsize 2254
+    :lastmodtime '(21475 26624 169656 181000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_IMAGE_READ_H")
+          )
+
+    )
+   (semanticdb-table "util_image_write.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_IMAGE_WRITE_H" variable (:constant-flag t) nil [36 54])
+            ("util_image.h" include (:system-flag t) nil [56 79])
+            ("util_il_wrap.h" include (:system-flag t) nil [81 106])
+            ("iostream" include (:system-flag t) nil [108 127])
+            ("string" include (:system-flag t) nil [128 145])
+            ("util" type
+               (:members 
+                  ( ("write_image" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [218 274])
+                            ("image" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Image" type
+                                     (:template-specifier 
+                                        ( ("unsigned char" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [275 337]))                          
+                        :type "bool")
+                        (reparse-symbol namespacesubparts) [167 926]))                  
+                :type "namespace")
+                nil [147 929]))          
+    :file "util_image_write.h"
+    :pointmax 977
+    :fsize 976
+    :lastmodtime '(21546 45313 71544 781000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_IMAGE_WRITE_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!UTIL!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,20 @@
+;; Object misc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "misc/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML/Graphics.hpp" include (:system-flag t) nil [1 29])
+            ("main" function (:type "int") nil [31 447]))          
+    :file "main.cpp"
+    :pointmax 448
+    :fsize 447
+    :lastmodtime '(21594 40910 720753 485000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!sfml_bits!misc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

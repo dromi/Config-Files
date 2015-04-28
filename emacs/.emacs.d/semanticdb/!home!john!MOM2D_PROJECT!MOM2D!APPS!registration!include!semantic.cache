@@ -1,0 +1,969 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "energy_gradients.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ENERGY_GRADIENTS_H" variable (:constant-flag t) nil [36 54])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [56 91])
+            ("mom2d_simplex.h" include (:system-flag t) nil [92 118])
+            ("imagefunctor.h" include (:system-flag t) nil [120 145])
+            ("image_gradient.h" include (:system-flag t) nil [146 173])
+            ("vector" include (:system-flag t) nil [175 192])
+            ("map" include (:system-flag t) nil [193 207])
+            ("set" include (:system-flag t) nil [208 222])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [224 246])
+            ("reg_gradient" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [343 381])
+                    ("k" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [382 412])
+                    ("I_r" variable
+                       (:reference 1
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [413 449])
+                    ("I_f" variable
+                       (:reference 1
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [450 485])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [486 510])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [510 536])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [545 568])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [569 593])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [593 619])
+                    ("" variable (:type ("coords_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [628 653]))                  
+                :type "int")
+                nil [329 5091]))          
+    :file "energy_gradients.h"
+    :pointmax 5100
+    :fsize 5099
+    :lastmodtime '(21577 21077 182207 717000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ENERGY_GRADIENTS_H")
+          )
+
+    )
+   (semanticdb-table "draw_utils.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("DRAW_UTILS_H" variable (:constant-flag t) nil [30 42])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [44 79])
+            ("mom2d_simplex.h" include (:system-flag t) nil [80 106])
+            ("mom2d_opentissue_math_types.h" include (:system-flag t) nil [107 147])
+            ("mom2d_svg_draw_mom2d.h" include (:system-flag t) nil [148 181])
+            ("imagefunctor.h" include (:system-flag t) nil [183 208])
+            ("vector" include (:system-flag t) nil [210 227])
+            ("map" include (:system-flag t) nil [228 242])
+            ("set" include (:system-flag t) nil [243 257])
+            ("util_image.h" include (:system-flag t) nil [259 282])
+            ("util_image_write.h" include (:system-flag t) nil [283 312])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [314 336])
+            ("draw_velocities" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("set" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [382 405])
+                    ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [413 428])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [436 460])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [460 486])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [487 494])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [502 526])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [526 552])
+                    ("" variable (:type ("velocity_field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [561 576])
+                    ("stereo_mode" variable (:type "bool") (reparse-symbol arg-sub-list) [584 601])
+                    ("magnify" variable (:type "int") (reparse-symbol arg-sub-list) [610 623]))                  )
+                nil [338 2007])
+            ("draw_displacements" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("set" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2056 2079])
+                    ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2083 2098])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2102 2126])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2126 2152])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2153 2160])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2164 2188])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2188 2214])
+                    ("" variable (:type ("coords_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2215 2232]))                  )
+                nil [2009 3209])
+            ("draw_interpolation_zones" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("set" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3265 3288])
+                    ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3298 3313])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3323 3347])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3347 3373])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3374 3381])
+                    ("k" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3391 3415]))                  )
+                nil [3212 3941])
+            ("transform_and_save" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("image_file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4000 4042])
+                    ("trans_file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4043 4085])
+                    ("mesh" variable
+                       (:reference 1
+                        :type ("MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4086 4122])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4123 4147])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4147 4173])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4184 4202])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4203 4227])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4227 4253])
+                    ("" variable (:type ("coords_0" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4264 4284]))                  
+                :typemodifiers ("inline"))
+                nil [3944 5611])
+            ("svg_draw_registration_mom2D" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5686 5722])
+                    ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5723 5745])
+                    ("image_r" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5746 5782])
+                    ("image_f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5783 5819])
+                    ("mesh" variable
+                       (:reference 1
+                        :type ("MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5820 5852])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5853 5877])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5877 5903])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5914 5928]))                  
+                :typemodifiers ("inline"))
+                nil [5616 7855])
+            ("svg_draw_registration2_mom2D" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("filename" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7929 7965])
+                    ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7966 7988])
+                    ("image_r" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7989 8025])
+                    ("image_f" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8026 8062])
+                    ("mesh" variable
+                       (:reference 1
+                        :type ("MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8063 8095])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8096 8120])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8120 8146])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8157 8171]))                  
+                :typemodifiers ("inline"))
+                nil [7858 10014])
+            ("draw_overlay" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :type ("SVGFile" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10042 10057])
+                    ("followup_img" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10058 10091]))                  
+                :type "void")
+                nil [10017 11990]))          
+    :file "draw_utils.h"
+    :pointmax 12000
+    :fsize 11999
+    :lastmodtime '(21578 23475 840419 181000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DRAW_UTILS_H")
+          )
+
+    )
+   (semanticdb-table "remeshing_algorithm.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("REGISTRATION_REMESHING_ALGORITHM_H" variable (:constant-flag t) nil [52 86])
+            ("mom2d_default_algorithm.h" include (:system-flag t) nil [88 124])
+            ("mom2d_compute_interface.h" include (:system-flag t) nil [125 161])
+            ("mom2d_monitor.h" include (:system-flag t) nil [162 188])
+            ("edge_collapse_interface_preserving.h" include (:system-flag t) nil [190 237])
+            ("compute_mesh_boundary.h" include (:system-flag t) nil [238 272])
+            ("registration_quality_measure.h" include (:system-flag t) nil [273 314])
+            ("registration_refine_measure.h" include (:system-flag t) nil [315 355])
+            ("mom2d" type
+               (:members 
+                  ( ("edge_length" function
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type ("MT::real_type" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("a" variable
+                               (:reference 1
+                                :typemodifiers ("typename")
+                                :constant-flag t
+                                :type ("MT::vector3_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [481 552])
+                            ("b" variable
+                               (:reference 1
+                                :typemodifiers ("typename")
+                                :constant-flag t
+                                :type ("MT::vector3_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [553 624]))                          
+                        :typemodifiers ("inline" "typename"))
+                        (reparse-symbol namespacesubparts) [379 662])
+                    ("RemeshingAlgorithm" type
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [757 765])
+                            ("T" type
+                               (:typedef ("MT::real_type" type (:type "class") nil nil)
+                                :superclasses "MT::real_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [771 808])
+                            ("V" type
+                               (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                                :superclasses "MT::vector3_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [813 850])
+                            ("vector3_coord" type
+                               (:typedef ("Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("V" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "Simplex0AttributeVector"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [855 904])
+                            ("public" label nil (reparse-symbol classsubparts) [908 915])
+                            ("m_coarsening_inside_edge_length" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [921 955])
+                            ("m_refinement_inside_length" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [960 989])
+                            ("m_coarsening_qm" variable (:type ("RegistrationQualityMeasure" type
+                                 (:template-specifier 
+                                    ( ("MT" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [995 1042])
+                            ("m_refinement_qm" variable (:type ("RegistrationRefineMeasure" type
+                                 (:template-specifier 
+                                    ( ("MT" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1047 1093])
+                            ("public" label nil (reparse-symbol classsubparts) [1097 1104])
+                            ("DefaultAlgorithm" function
+                               (:template-specifier 
+                                  ( ("MT" type nil nil nil))                                  
+                                :arguments 
+                                  ( ("" variable (:type ("iid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1175 1179]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1154 1457])
+                            ("set_coord" function
+                               (:arguments 
+                                  ( ("coord" variable
+                                       (:pointer 1
+                                        :type ("vector3_coord" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1478 1500]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1463 1541])
+                            ("set_pos" function
+                               (:arguments 
+                                  ( ("pos" variable
+                                       (:pointer 1
+                                        :type ("vector3_coord" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1560 1580]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1547 1617])
+                            ("run" function
+                               (:arguments 
+                                  ( ("mesh" variable
+                                       (:reference 1
+                                        :type ("MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1631 1646]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1623 13279]))                          
+                        :superclasses 
+                          ( ("DefaultAlgorithm" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [666 13289]))                  
+                :type "namespace")
+                nil [358 13292]))          
+    :file "remeshing_algorithm.h"
+    :pointmax 13358
+    :fsize 13357
+    :lastmodtime '(21603 61197 563841 651000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("REGISTRATION_REMESHING_ALGORITHM_H")
+          )
+
+    )
+   (semanticdb-table "edge_collapse_interface_preserving.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("EDGE_COLLAPSE_INTERFACE_PRESERVING_H" variable (:constant-flag t) nil [54 90])
+            ("mom2d_simplex.h" include (:system-flag t) nil [92 118])
+            ("mom2d_compute_midpoint.h" include (:system-flag t) nil [119 154])
+            ("mom2d_mesh_operation.h" include (:system-flag t) nil [155 188])
+            ("cassert" include (:system-flag t) nil [225 243])
+            ("mom2d" type
+               (:members 
+                  ( ("edge_collapse_interface_preserving" function
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Simplex1" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [362 403])
+                            ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [404 428])
+                            ("" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::vector3_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [428 454])
+                            ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [457 486])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [487 524])
+                            ("new_simplices" variable
+                               (:reference 1
+                                :type ("SimplexSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [525 574]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [266 2758])
+                    ("EdgeCollapseInterfacePreservingOperation" type
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2873 2881])
+                            ("V" type
+                               (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                                :superclasses "MT::vector3_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2887 2923])
+                            ("private" label nil (reparse-symbol classsubparts) [2927 2935])
+                            ("m_coords" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2941 2979])
+                            ("public" label nil (reparse-symbol classsubparts) [2983 2990])
+                            ("EdgeCollapseInterfacePreservingOperation" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("coords" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3037 3073]))                                  
+                                :type ("EdgeCollapseInterfacePreservingOperation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2996 3103])
+                            ("do_operation" function
+                               (:arguments 
+                                  ( ("simplex" variable
+                                       (:reference 1
+                                        :type ("Simplex1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3127 3146])
+                                    ("mesh" variable
+                                       (:reference 1
+                                        :type ("MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3147 3162])
+                                    ("new_simplices" variable
+                                       (:reference 1
+                                        :type ("SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3163 3190]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [3109 3295]))                          
+                        :superclasses 
+                          ( ("Simplex1MeshOperation" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2762 3300]))                  
+                :type "namespace")
+                nil [245 3303]))          
+    :file "edge_collapse_interface_preserving.h"
+    :pointmax 3452
+    :fsize 3357
+    :lastmodtime '(21569 25447 817877 905000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EDGE_COLLAPSE_INTERFACE_PRESERVING_H")
+          )
+
+    )
+   (semanticdb-table "imagefunctor.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("IMAGEFUNCTOR_H" variable (:constant-flag t) nil [32 46])
+            ("util_image.h" include (:system-flag t) nil [48 71])
+            ("util_image_read.h" include (:system-flag t) nil [72 100])
+            ("util_image_write.h" include (:system-flag t) nil [101 130])
+            ("mom2d" type
+               (:members 
+                  ( ("ImageFunctor" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [177 187])
+                            ("m_U" variable (:type ("util::Image" type
+                                 (:template-specifier 
+                                    ( ("float" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [193 216])
+                            ("m_dx" variable (:type "double") (reparse-symbol classsubparts) [221 244])
+                            ("m_dy" variable (:type "double") (reparse-symbol classsubparts) [249 272])
+                            ("m_ox" variable (:type "double") (reparse-symbol classsubparts) [277 300])
+                            ("m_oy" variable (:type "double") (reparse-symbol classsubparts) [305 328])
+                            ("public" label nil (reparse-symbol classsubparts) [332 339])
+                            ("m_height" variable (:type "double") (reparse-symbol classsubparts) [349 372])
+                            ("m_width" variable (:type "double") (reparse-symbol classsubparts) [377 400])
+                            ("m_base64" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [405 428])
+                            ("ImageFunctor" function
+                               (:constructor-flag t
+                                :type ("ImageFunctor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [432 582])
+                            ("ImageFunctor" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("filename" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [600 629]))                                  
+                                :type ("ImageFunctor" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [586 1045])
+                            ("public" label nil (reparse-symbol classsubparts) [1049 1056])
+                            ("get" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1073 1090])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1091 1108]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [1062 1608])
+                            ("get" function
+                               (:template 
+                                  ( ("MT" type (:type "class") nil nil))                                  
+                                :type "double"
+                                :arguments 
+                                  ( ("v" variable
+                                       (:reference 1
+                                        :typemodifiers ("typename")
+                                        :constant-flag t
+                                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1653 1689]))                                  )
+                                (reparse-symbol classsubparts) [1615 1736]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [152 1743]))                  
+                :type "namespace")
+                nil [132 1746]))          
+    :file "imagefunctor.h"
+    :pointmax 1794
+    :fsize 1793
+    :lastmodtime '(21577 10779 916795 765000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IMAGEFUNCTOR_H")
+          )
+
+    )
+   (semanticdb-table "image_gradient.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IMAGE_GRADIENT_H" variable (:constant-flag t) nil [34 50])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [52 87])
+            ("mom2d_simplex.h" include (:system-flag t) nil [88 114])
+            ("imagefunctor.h" include (:system-flag t) nil [116 141])
+            ("vector" include (:system-flag t) nil [143 160])
+            ("map" include (:system-flag t) nil [161 175])
+            ("set" include (:system-flag t) nil [176 190])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [192 214])
+            ("image_gradient" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::vector3_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("image" variable
+                       (:reference 1
+                        :type ("ImageFunctor" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [287 308])
+                    ("p" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [309 337])
+                    ("k" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [338 352]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [216 2345])
+            ("k" variable
+               (:suffix ":100"
+                :type "int")
+                nil [520 528])
+            ("k" variable
+               (:suffix ":99"
+                :type "int")
+                nil [606 614])
+            ("X_00" variable (:type ("V" type (:type "class") nil nil)) nil [618 650])
+            ("X_10" variable (:type ("V" type (:type "class") nil nil)) nil [653 685])
+            ("X_01" variable (:type ("V" type (:type "class") nil nil)) nil [688 720])
+            ("X_11" variable (:type ("V" type (:type "class") nil nil)) nil [723 755])
+            ("I_00" variable (:type ("T" type (:type "class") nil nil)) nil [759 802])
+            ("I_01" variable (:type ("T" type (:type "class") nil nil)) nil [805 848])
+            ("I_10" variable (:type ("T" type (:type "class") nil nil)) nil [851 894])
+            ("I_11" variable (:type ("T" type (:type "class") nil nil)) nil [897 940])
+            ("u" variable (:type ("T" type (:type "class") nil nil)) nil [946 991])
+            ("v" variable (:type ("T" type (:type "class") nil nil)) nil [994 1039])
+            ("dIx" variable (:type ("T" type (:type "class") nil nil)) nil [1043 1117])
+            ("dIy" variable (:type ("T" type (:type "class") nil nil)) nil [1120 1194])
+            ("std::endl" variable (:type "int") nil [2239 2249]))          
+    :file "image_gradient.h"
+    :pointmax 2354
+    :fsize 2353
+    :lastmodtime '(21556 21770 853588 233000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IMAGE_GRADIENT_H")
+          )
+
+    )
+   (semanticdb-table "compute_mesh_boundary.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("COMPUTE_MESH_BOUNDARY_H" variable (:constant-flag t) nil [41 64])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [66 88])
+            ("compute_mesh_boundary" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [130 145]))                  
+                :type ("SimplexSet" type (:type "class") nil nil))
+                nil [90 780]))          
+    :file "compute_mesh_boundary.h"
+    :pointmax 789
+    :fsize 788
+    :lastmodtime '(21553 34025 588165 757000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("COMPUTE_MESH_BOUNDARY_H")
+          )
+
+    )
+   (semanticdb-table "smoothe_gradient.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SMOOTHE_GRADIENTS_H" variable (:constant-flag t) nil [37 56])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [58 93])
+            ("mom2d_simplex.h" include (:system-flag t) nil [94 120])
+            ("mom2d_laplacian_smoothing.h" include (:system-flag t) nil [121 159])
+            ("mom2d_do_optimization.h" include (:system-flag t) nil [160 194])
+            ("vector" include (:system-flag t) nil [196 213])
+            ("set" include (:system-flag t) nil [214 228])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [230 252])
+            ("smoothe_gradient" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [306 321])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [331 355])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [355 381])
+                    ("" variable (:type ("gradient_field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [384 399])
+                    ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [408 430]))                  
+                :typemodifiers ("inline"))
+                nil [254 1169]))          
+    :file "smoothe_gradient.h"
+    :pointmax 1178
+    :fsize 1177
+    :lastmodtime '(21560 3937 190296 225000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SMOOTHE_GRADIENTS_H")
+          )
+
+    )
+   (semanticdb-table "energy_terms.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ENERGY_TERMS_H" variable (:constant-flag t) nil [32 46])
+            ("mom2d_default_algorithm.h" include (:system-flag t) nil [48 84])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [85 120])
+            ("mom2d_simplex.h" include (:system-flag t) nil [121 147])
+            ("vector" include (:system-flag t) nil [149 166])
+            ("map" include (:system-flag t) nil [167 181])
+            ("set" include (:system-flag t) nil [182 196])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [198 220])
+            ("triangle_area" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [289 318])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [319 343])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [343 369])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [378 395]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [222 560])
+            ("line_length" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [629 656])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [657 681])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [681 707])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [716 731]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [562 852])
+            ("simpset_area" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [920 951])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [952 976])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [976 1002])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1011 1027]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [854 1257])
+            ("boundary_length" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1330 1364])
+                    ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1365 1389])
+                    ("" variable
+                       (:typemodifiers ("typename")
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1389 1415])
+                    ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1424 1443]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [1259 1667]))          
+    :file "energy_terms.h"
+    :pointmax 1676
+    :fsize 1675
+    :lastmodtime '(21544 5063 746201 158000)
+    :unmatched-syntax '((punctuation 1422 . 1423) (CONST 1416 . 1421) (punctuation 1414 . 1415) (punctuation 1388 . 1389) (punctuation 1009 . 1010) (CONST 1003 . 1008) (punctuation 1001 . 1002) (punctuation 975 . 976) (punctuation 714 . 715) (CONST 708 . 713) (punctuation 706 . 707) (punctuation 680 . 681) (punctuation 376 . 377) (CONST 370 . 375) (punctuation 368 . 369) (punctuation 342 . 343))
+    :lexical-table 
+        '(("ENERGY_TERMS_H")
+          )
+
+    )
+   (semanticdb-table "registration_quality_measure.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("REGISTRATION_QUALITY_MEASURE_H" variable (:constant-flag t) nil [48 78])
+            ("mom2d_quality_measures.h" include (:system-flag t) nil [80 115])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [116 151])
+            ("RegistrationQualityMeasure" type
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [252 259])
+                    ("T" type
+                       (:typedef ("MT::real_type" type (:type "class") nil nil)
+                        :superclasses "MT::real_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [263 299])
+                    ("V" type
+                       (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                        :superclasses "MT::vector3_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [302 338])
+                    ("protected" label nil (reparse-symbol classsubparts) [340 350])
+                    ("m_vel_vector" variable (:type ("mom2d::Simplex0AttributeVector" type
+                         (:template-specifier 
+                            ( ("V" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [354 401])
+                    ("m_coords_0" variable (:type ("mom2d::Simplex0AttributeVector" type
+                         (:template-specifier 
+                            ( ("V" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [404 449])
+                    ("m_coords" variable (:type ("mom2d::Simplex0AttributeVector" type
+                         (:template-specifier 
+                            ( ("V" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [452 495])
+                    ("m_a" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [499 505])
+                    ("m_b" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [508 514])
+                    ("m_c" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [517 523])
+                    ("m_threshold" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [526 540])
+                    ("public" label nil (reparse-symbol classsubparts) [542 549])
+                    ("RegistrationQualityMeasure" function
+                       (:constructor-flag t
+                        :type ("RegistrationQualityMeasure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [552 722])
+                    ("RegistrationQualityMeasure" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("velocity_field" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [754 813])
+                            ("coords_0" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [814 867])
+                            ("coords" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [868 919])
+                            ("a" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [920 942])
+                            ("b" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [943 965])
+                            ("c" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [966 988])
+                            ("t" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [989 1011]))                          
+                        :type ("RegistrationQualityMeasure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [725 1174])
+                    ("public" label nil (reparse-symbol classsubparts) [1176 1183])
+                    ("update" function
+                       (:arguments 
+                          ( ("v" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1199 1235])
+                            ("c0" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1243 1280])
+                            ("c" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1288 1324]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1187 1393])
+                    ("is_bad" function
+                       (:arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex1" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1410 1436]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1398 2726]))                  
+                :superclasses 
+                  ( ("mom2d::Simplex1QualityMeasure" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [153 2730]))          
+    :file "registration_quality_measure.h"
+    :pointmax 2773
+    :fsize 2772
+    :lastmodtime '(21569 35498 633493 443000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("REGISTRATION_QUALITY_MEASURE_H")
+          )
+
+    )
+   (semanticdb-table "registration_refine_measure.h"
+    :file "registration_refine_measure.h"
+    :fsize 2193
+    :lastmodtime '(21578 26418 584316 702000)
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!APPS!registration!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,33 @@
+;; Object gamblify/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gamblify/"
+  :tables (list 
+   (semanticdb-table "test.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("input_data" variable nil nil [1 30])
+            ("T" variable nil nil [32 71])
+            ("N, K" code nil nil [72 120])
+            ("N" variable nil nil [122 132])
+            ("board" variable nil nil [134 144])
+            ("for" code nil nil [146 219])
+            ("print" code nil nil [220 240])
+            ("for" code nil nil [242 271])
+            ("rot_board" variable nil nil [291 305])
+            ("for" code nil nil [307 422])
+            ("print" code nil nil [424 452])
+            ("for" code nil nil [453 491])
+            ("for" code nil nil [493 1352])
+            ("print" code nil nil [1398 1423])
+            ("for" code nil nil [1424 1462]))          
+    :file "test.py"
+    :pointmax 1462
+    :fsize 1461
+    :lastmodtime '(21815 39358 176999 586000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!gamblify!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

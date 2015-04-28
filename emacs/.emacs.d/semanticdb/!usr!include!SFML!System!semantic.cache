@@ -1,0 +1,1044 @@
+;; Object System/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "System/"
+  :tables (list 
+   (semanticdb-table "Resource.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_RESOURCE_HPP" variable (:constant-flag t) nil [1137 1154])
+            ("set" include (:system-flag t) nil [1289 1303])
+            ("cstddef" include (:system-flag t) nil [1304 1322])
+            ("sf" type
+               (:members 
+                  ( ("ResourcePtr" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1705 1723])
+                    ("Resource" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [1985 1996])
+                            ("Resource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2168 2179])
+                            ("Resource" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("Copy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Resource" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2404 2428]))                                  
+                                :type ("Resource" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2395 2429])
+                            ("Resource" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [2592 2604])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("Other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Resource" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [2890 2915]))                                  
+                                :type ("Resource" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [2866 2916])
+                            ("private" label nil (reparse-symbol classsubparts) [2918 2927])
+                            ("ResourcePtr" friend nil (reparse-symbol classsubparts) [2933 2957])
+                            ("Connect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Observer" variable
+                                       (:reference 1
+                                        :type ("ResourcePtr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3215 3240]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3202 3247])
+                            ("Disconnect" function
+                               (:prototype-flag t
+                                :arguments 
+                                  ( ("Observer" variable
+                                       (:reference 1
+                                        :type ("ResourcePtr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3512 3537]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [3496 3544])
+                            ("myObservers" variable
+                               (:typemodifiers ("mutable")
+                                :type ("std::set" type
+                                     (:template-specifier 
+                                        ( ("ResourcePtr" type (:pointer 1) nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3699 3745]))                          )
+                        (reparse-symbol namespacesubparts) [1946 3748])
+                    ("ResourcePtr" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4055 4063])
+                            ("ResourcePtr" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("ResourcePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4235 4249])
+                            ("ResourcePtr" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("Resource" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4495 4513]))                                  
+                                :type ("ResourcePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4483 4514])
+                            ("ResourcePtr" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("Copy" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ResourcePtr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4742 4769]))                                  
+                                :type ("ResourcePtr" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4730 4770])
+                            ("ResourcePtr" function
+                               (:prototype-flag t
+                                :destructor-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [4933 4948])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("Other" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("ResourcePtr" type
+                                             (:template-specifier 
+                                                ( ("T" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [5272 5300]))                                  
+                                :type ("ResourcePtr" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5245 5301])
+                            ("=" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :arguments 
+                                  ( ("Resource" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5615 5633]))                                  
+                                :type ("ResourcePtr" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [5588 5634])
+                            ("" variable
+                               (:functionpointer-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6357 6385])
+                            ("->" function
+                               (:prototype-flag t
+                                :operator-flag t
+                                :pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [6658 6687])
+                            ("OnResourceDestroyed" function
+                               (:prototype-flag t
+                                :type "void")
+                                (reparse-symbol classsubparts) [6915 6942])
+                            ("private" label nil (reparse-symbol classsubparts) [6944 6953])
+                            ("myResource" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [7108 7128]))                          )
+                        (reparse-symbol namespacesubparts) [4013 7166]))                  
+                :type "namespace")
+                nil [1325 7245]))          
+    :file "Resource.hpp"
+    :pointmax 7292
+    :fsize 7508
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((spp-system-include "SFML/System/ResourcePtr.inl" 7204 . 7242) (spp-system-include "SFML/System/Resource.inl" 7168 . 7203) (punctuation 6080 . 6081) (CONST 6075 . 6080) (semantic-list 6072 . 6074) (punctuation 6071 . 6072) (symbol 6070 . 6071) (CONST 6064 . 6069) (OPERATOR 6055 . 6063) (punctuation 2960 . 2961) (punctuation 2959 . 2960) (symbol 2958 . 2959) (punctuation 2957 . 2958) (punctuation 1703 . 1704) (TYPENAME 1695 . 1703) (punctuation 1694 . 1695) (TEMPLATE 1685 . 1693))
+    :lexical-table 
+        '(("SFML_RESOURCE_HPP")
+          )
+
+    )
+   (semanticdb-table "Vector2.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_VECTOR2_HPP" variable (:constant-flag t) nil [1141 1157])
+            ("sf" type
+               (:members 
+                  ( ("Vector2" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1488 1496])
+                            ("Vector2" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Vector2" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1668 1678])
+                            ("Vector2" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1952 1956])
+                                    ("Y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1957 1961]))                                  
+                                :type ("Vector2" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1944 1962])
+                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2117 2121])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2158 2162]))                          )
+                        (reparse-symbol namespacesubparts) [1450 2197])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2483 2503]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2439 2504])
+                    ("+=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2835 2850])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2851 2872]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2789 2873])
+                    ("-=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3209 3224])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3225 3246]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3163 3247])
+                    ("+" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3549 3570])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3571 3592]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3505 3593])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3900 3921])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3922 3943]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3856 3944])
+                    ("" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4210 4280])
+                    ("" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4546 4616])
+                    ("=" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4890 4956])
+                    ("/" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5264 5284])
+                            ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5285 5289]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5220 5290])
+                    ("/=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector2" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5608 5622])
+                            ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5623 5627]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5562 5628])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5964 5985])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5986 6007]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5925 6008])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6352 6373])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector2" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6374 6395]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [6313 6396])
+                    ("Vector2i" type
+                       (:typedef ("Vector2" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Vector2"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6466 6498])
+                    ("Vector2f" type
+                       (:typedef ("Vector2" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Vector2"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6499 6531]))                  
+                :type "namespace")
+                nil [1160 6534]))          
+    :file "Vector2.hpp"
+    :pointmax 6580
+    :fsize 6794
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((spp-system-include "SFML/System/Vector2.inl" 6398 . 6432))
+    :lexical-table 
+        '(("SFML_VECTOR2_HPP")
+          )
+
+    )
+   (semanticdb-table "Unicode.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_UNICODE_HPP" variable (:constant-flag t) nil [1141 1157])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1292 1318])
+            ("iterator" include (:system-flag t) nil [1319 1338])
+            ("locale" include (:system-flag t) nil [1339 1356])
+            ("string" include (:system-flag t) nil [1357 1374])
+            ("stdlib.h" include (:system-flag t) nil [1375 1394])
+            ("sf" type
+               (:members 
+                  ( ("Unicode" variable (:type ("SFML_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1623 13775]))                  
+                :type "namespace")
+                nil [1397 13814]))          
+    :file "Unicode.hpp"
+    :pointmax 13860
+    :fsize 14149
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((spp-system-include "SFML/System/Unicode.inl" 13777 . 13811))
+    :lexical-table 
+        '(("SFML_UNICODE_HPP")
+          )
+
+    )
+   (semanticdb-table "Clock.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_CLOCK_HPP" variable (:constant-flag t) nil [1139 1153])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1288 1314])
+            ("sf" type
+               (:members 
+                  ( ("Clock" variable (:type ("SFML_API" type
+                         (:prototype t
+                          :type "class")
+                          nil nil)) (reparse-symbol namespacesubparts) [1506 2380]))                  
+                :type "namespace")
+                nil [1317 2383]))          
+    :file "Clock.hpp"
+    :pointmax 2427
+    :fsize 2500
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_CLOCK_HPP")
+          )
+
+    )
+   (semanticdb-table "Lock.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_LOCK_HPP" variable (:constant-flag t) nil [1138 1151])
+            ("SFML/System/NonCopyable.hpp" include (:system-flag t) nil [1286 1324])
+            ("sf" type
+               (:members 
+                  ( ("Mutex" type
+                       (:prototype t
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1342 1354])
+                    ("NonCopyable" variable (:type "int") (reparse-symbol namespacesubparts) [1586 2276]))                  
+                :type "namespace")
+                nil [1327 2279]))          
+    :file "Lock.hpp"
+    :pointmax 2322
+    :fsize 2392
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((punctuation 1584 . 1585) (symbol 1579 . 1583) (symbol 1570 . 1578) (CLASS 1564 . 1569))
+    :lexical-table 
+        '(("SFML_LOCK_HPP")
+          )
+
+    )
+   (semanticdb-table "Mutex.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_MUTEX_HPP" variable (:constant-flag t) nil [1139 1153])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1288 1314])
+            ("SFML/System/Unix/Mutex.hpp" include (:system-flag t) nil [1396 1437]))          
+    :file "Mutex.hpp"
+    :pointmax 1473
+    :fsize 1517
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_MUTEX_HPP")
+          )
+
+    )
+   (semanticdb-table "Randomizer.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_RANDOMIZER_HPP" variable (:constant-flag t) nil [1144 1163])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1298 1324])
+            ("sf" type
+               (:members 
+                  ( ("Randomizer" variable
+                       (:dereference 1
+                        :type ("SFML_API" type
+                             (:prototype t
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol namespacesubparts) [1540 3195]))                  
+                :type "namespace")
+                nil [1327 3198]))          
+    :file "Randomizer.hpp"
+    :pointmax 3247
+    :fsize 3340
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_RANDOMIZER_HPP")
+          )
+
+    )
+   (semanticdb-table "Sleep.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_SLEEP_HPP" variable (:constant-flag t) nil [1139 1153])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1288 1314])
+            ("sf" type
+               (:members 
+                  ( ("Sleep" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("Duration" variable (:type "float") (reparse-symbol arg-sub-list) [1624 1639]))                          
+                        :type ("SFML_API" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1609 1640]))                  
+                :type "namespace")
+                nil [1317 1643]))          
+    :file "Sleep.hpp"
+    :pointmax 1687
+    :fsize 1733
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((VOID 1604 . 1608))
+    :lexical-table 
+        '(("SFML_SLEEP_HPP")
+          )
+
+    )
+   (semanticdb-table "Thread.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_THREAD_HPP" variable (:constant-flag t) nil [1140 1155])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1290 1316])
+            ("SFML/System/Unix/Thread.hpp" include (:system-flag t) nil [1399 1441]))          
+    :file "Thread.hpp"
+    :pointmax 1478
+    :fsize 1522
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_THREAD_HPP")
+          )
+
+    )
+   (semanticdb-table "Vector3.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_VECTOR3_HPP" variable (:constant-flag t) nil [1141 1157])
+            ("sf" type
+               (:members 
+                  ( ("Vector3" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1488 1496])
+                            ("Vector3" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1668 1678])
+                            ("Vector3" function
+                               (:prototype-flag t
+                                :constructor-flag t
+                                :arguments 
+                                  ( ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1984 1988])
+                                    ("Y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1989 1993])
+                                    ("Z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1994 1998]))                                  
+                                :type ("Vector3" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1976 1999])
+                            ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2154 2158])
+                            ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2195 2199])
+                            ("z" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2236 2240]))                          )
+                        (reparse-symbol namespacesubparts) [1450 2275])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2561 2581]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2517 2582])
+                    ("+=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2913 2928])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2929 2950]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [2867 2951])
+                    ("-=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3287 3302])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3303 3324]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3241 3325])
+                    ("+" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3627 3648])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3649 3670]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3583 3671])
+                    ("-" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3978 3999])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4000 4021]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [3934 4022])
+                    ("" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4288 4358])
+                    ("" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4624 4694])
+                    ("=" variable
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :functionpointer-flag t)
+                        (reparse-symbol namespacesubparts) [4968 5034])
+                    ("/" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5342 5362])
+                            ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5363 5367]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5298 5368])
+                    ("/=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("Vector3" type
+                             (:template-specifier 
+                                ( ("T" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("V" variable
+                               (:reference 1
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5686 5700])
+                            ("X" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5701 5705]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [5640 5706])
+                    ("==" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6042 6063])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6064 6085]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [6003 6086])
+                    ("!=" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "bool"
+                        :arguments 
+                          ( ("V1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6430 6451])
+                            ("V2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Vector3" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6452 6473]))                          
+                        :operator-flag t
+                        :prototype-flag t)
+                        (reparse-symbol namespacesubparts) [6391 6474])
+                    ("Vector3i" type
+                       (:typedef ("Vector3" type
+                             (:template-specifier 
+                                ( ("int" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Vector3"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6544 6576])
+                    ("Vector3f" type
+                       (:typedef ("Vector3" type
+                             (:template-specifier 
+                                ( ("float" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "Vector3"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [6577 6609]))                  
+                :type "namespace")
+                nil [1160 6612]))          
+    :file "Vector3.hpp"
+    :pointmax 6658
+    :fsize 6874
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((spp-system-include "SFML/System/Vector3.inl" 6476 . 6510))
+    :lexical-table 
+        '(("SFML_VECTOR3_HPP")
+          )
+
+    )
+   (semanticdb-table "NonCopyable.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_NONCOPYABLE_HPP" variable (:constant-flag t) nil [1145 1165])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1300 1326])
+            ("sf" type
+               (:members 
+                  ( ("NonCopyable" variable (:type ("SFML_API" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol namespacesubparts) [1591 2447]))                  
+                :type "namespace")
+                nil [1329 2450]))          
+    :file "NonCopyable.hpp"
+    :pointmax 2500
+    :fsize 2569
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_NONCOPYABLE_HPP")
+          )
+
+    )
+   )
+  :file "!usr!include!SFML!System!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

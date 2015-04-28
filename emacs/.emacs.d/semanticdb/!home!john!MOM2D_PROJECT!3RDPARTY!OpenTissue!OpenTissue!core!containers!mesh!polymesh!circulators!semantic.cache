@@ -1,0 +1,273 @@
+;; Object circulators/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "circulators/"
+  :tables (list 
+   (semanticdb-table "polymesh_vertex_halfedge_circulator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_CIRCULATORS_POLYMESH_VERTEX_HALFEDGE_CIRCULATOR_H" variable (:constant-flag t) nil [108 198])
+            ("OpenTissue/configuration.h" include (:system-flag t) nil [465 502])
+            ("OpenTissue" type
+               (:members 
+                  ( ("polymesh" type
+                       (:members 
+                          ( ("PolyMeshVertexHalfedgeCirculator" type
+                               (:template 
+                                  ( ("PolyMesh" type (:type "class") nil nil)
+                                    ("Value" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [653 661])
+                                    ("iterator_t" type
+                                       (:typedef ("PolyMesh::opt_halfedge_iter" type (:type "class") nil nil)
+                                        :superclasses "PolyMesh::opt_halfedge_iter"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [669 725])
+                                    ("m_kernel" variable
+                                       (:pointer 1
+                                        :typemodifiers ("typename")
+                                        :type ("PolyMesh::kernel_type" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [733 775])
+                                    ("m_first" variable (:type ("iterator_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [782 814])
+                                    ("m_cur" variable (:type ("iterator_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [821 851])
+                                    ("m_active" variable (:type "bool") (reparse-symbol classsubparts) [858 900])
+                                    ("private" label nil (reparse-symbol classsubparts) [906 914])
+                                    ("init" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :typemodifiers ("typename")
+                                                :constant-flag t
+                                                :type ("PolyMesh::vertex_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1636 1677]))                                          
+                                        :type ("iterator_t" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1613 1848])
+                                    ("public" label nil (reparse-symbol classsubparts) [1854 1861])
+                                    ("PolyMeshVertexHalfedgeCirculator" function
+                                       (:constructor-flag t
+                                        :type ("PolyMeshVertexHalfedgeCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1869 2003])
+                                    ("PolyMeshVertexHalfedgeCirculator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :typemodifiers ("typename")
+                                                :constant-flag t
+                                                :type ("PolyMesh::vertex_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2055 2096]))                                          
+                                        :type ("PolyMeshVertexHalfedgeCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2020 2249])
+                                    ("PolyMeshVertexHalfedgeCirculator" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type ("PolyMeshVertexHalfedgeCirculator" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2325 2393]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [2257 2550])
+                                    ("==" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2608 2679]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [2558 2807])
+                                    ("!=" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2865 2932]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [2815 2990])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :type ("PolyMeshVertexHalfedgeCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2998 3240])
+                                    ("--" function
+                                       (:operator-flag t
+                                        :type ("PolyMeshVertexHalfedgeCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3248 3490])
+                                    ("" variable
+                                       (:functionpointer-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3498 3571])
+                                    ("->" function
+                                       (:operator-flag t
+                                        :pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [3578 3658]))                                  )
+                                (reparse-symbol namespacesubparts) [557 3666]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [529 3671]))                  
+                :type "namespace")
+                nil [504 3695]))          
+    :file "polymesh_vertex_halfedge_circulator.h"
+    :pointmax 3821
+    :fsize 3820
+    :lastmodtime '(21443 47418 809101 601000)
+    :unmatched-syntax '((EXPLICIT 2011 . 2019))
+    :lexical-table 
+        '(("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_CIRCULATORS_POLYMESH_VERTEX_HALFEDGE_CIRCULATOR_H")
+          )
+
+    )
+   (semanticdb-table "polymesh_vertex_face_circulator.h"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_CIRCULATORS_POLYMESH_VERTEX_FACE_CIRCULATOR_H" variable (:constant-flag t) nil [104 190])
+            ("OpenTissue/configuration.h" include (:system-flag t) nil [457 494])
+            ("OpenTissue/core/containers/mesh/polymesh/circulators/polymesh_vertex_halfedge_circulator.h" include (:system-flag t) nil [496 597])
+            ("OpenTissue" type
+               (:members 
+                  ( ("polymesh" type
+                       (:members 
+                          ( ("PolyMeshVertexFaceCirculator" type
+                               (:template 
+                                  ( ("PolyMesh" type (:type "class") nil nil)
+                                    ("Value" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("protected" label nil (reparse-symbol classsubparts) [1192 1202])
+                                    ("m_circ" variable
+                                       (:typemodifiers ("typename")
+                                        :type ("PolyMesh::vertex_halfedge_circulator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1210 1263])
+                                    ("protected" label nil (reparse-symbol classsubparts) [1269 1279])
+                                    ("is_end" function (:type "bool") (reparse-symbol classsubparts) [1287 1496])
+                                    ("public" label nil (reparse-symbol classsubparts) [1502 1509])
+                                    ("PolyMeshVertexFaceCirculator" function
+                                       (:constructor-flag t
+                                        :type ("PolyMeshVertexFaceCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1517 1575])
+                                    ("PolyMeshVertexFaceCirculator" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("v" variable
+                                               (:reference 1
+                                                :typemodifiers ("typename")
+                                                :constant-flag t
+                                                :type ("PolyMesh::vertex_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1623 1664]))                                          
+                                        :type ("PolyMeshVertexFaceCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [1592 1820])
+                                    ("PolyMeshVertexFaceCirculator" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type ("PolyMeshVertexFaceCirculator" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1900 1972]))                                          
+                                        :constructor-flag t)
+                                        (reparse-symbol classsubparts) [1828 2014])
+                                    ("public" label nil (reparse-symbol classsubparts) [2020 2027])
+                                    ("==" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2085 2148]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [2035 2211])
+                                    ("!=" function
+                                       (:template 
+                                          ( ("OtherValue" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("other" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("PolyMeshVertexFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PolyMesh" type nil nil nil)
+                                                          ("OtherValue" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [2269 2332]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [2219 2395])
+                                    ("++" function
+                                       (:operator-flag t
+                                        :type ("PolyMeshVertexFaceCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2403 2651])
+                                    ("--" function
+                                       (:operator-flag t
+                                        :type ("PolyMeshVertexFaceCirculator" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2659 2759])
+                                    ("public" label nil (reparse-symbol classsubparts) [2765 2772])
+                                    ("" variable
+                                       (:functionpointer-flag t
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2780 2942])
+                                    ("->" function
+                                       (:operator-flag t
+                                        :pointer 1
+                                        :type ("Value" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [2950 3116]))                                  )
+                                (reparse-symbol namespacesubparts) [1086 3124]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [624 3129]))                  
+                :type "namespace")
+                nil [599 3153]))          
+    :file "polymesh_vertex_face_circulator.h"
+    :pointmax 3275
+    :fsize 3274
+    :lastmodtime '(21443 47418 809101 601000)
+    :unmatched-syntax '((EXPLICIT 1583 . 1591))
+    :lexical-table 
+        '(("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_CIRCULATORS_POLYMESH_VERTEX_FACE_CIRCULATOR_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!3RDPARTY!OpenTissue!OpenTissue!core!containers!mesh!polymesh!circulators!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

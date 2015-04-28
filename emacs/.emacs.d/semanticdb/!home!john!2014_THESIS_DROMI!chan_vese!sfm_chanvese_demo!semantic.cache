@@ -1,0 +1,1301 @@
+;; Object sfm_chanvese_demo/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sfm_chanvese_demo/"
+  :tables (list 
+   (semanticdb-table "sfm_local_chanvese_mex.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("sparse3c.h" include nil nil [438 459])
+            ("mexFunction" function
+               (:arguments 
+                  ( ("nlhs" variable (:type "int") (reparse-symbol arg-sub-list) [548 557])
+                    ("plhs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [558 574])
+                    ("nrhs" variable (:type "int") (reparse-symbol arg-sub-list) [575 584])
+                    ("prhs" variable
+                       (:pointer 1
+                        :dereference 1
+                        :constant-flag t
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [585 607]))                  
+                :type "void")
+                nil [531 3699])
+            ("lrbac_vessel_yz" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3723 3735])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3736 3748])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3749 3763])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3764 3775])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3797 3804])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3805 3813])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3814 3822])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3823 3831])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3832 3840])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3841 3853])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3854 3866])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3888 3897])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [3898 3909])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [3910 3924])
+                    ("dthresh" variable (:type "double") (reparse-symbol arg-sub-list) [3925 3940])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3941 3956])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [3978 3990]))                  
+                :type "void")
+                nil [3702 4598])
+            ("lrbac_vessel_cv" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4621 4633])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4634 4646])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4647 4661])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [4662 4673])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4695 4702])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4703 4711])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4712 4720])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4721 4729])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4730 4738])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4739 4751])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4752 4764])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [4786 4795])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [4796 4807])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [4808 4822])
+                    ("dthresh" variable (:type "double") (reparse-symbol arg-sub-list) [4823 4838])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4839 4854])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [4876 4888]))                  
+                :type "void")
+                nil [4600 5496])
+            ("lrbac_chanvese" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5518 5530])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5531 5543])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5544 5558])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [5559 5570])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5591 5598])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5599 5607])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5608 5616])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5617 5625])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5626 5634])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5635 5647])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5648 5660])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [5681 5690])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [5691 5702])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [5703 5717])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5719 5734])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [5734 5746]))                  
+                :type "void")
+                nil [5498 6318])
+            ("chanvese" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6334 6346])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6347 6359])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [6360 6374])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [6375 6386])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6401 6408])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6409 6417])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6418 6426])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6427 6435])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6436 6444])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6445 6457])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6458 6470])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [6485 6494])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [6494 6508])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6510 6525])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [6525 6537]))                  
+                :type "void")
+                nil [6320 7050])
+            ("meanvar" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7065 7077])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7078 7090])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7091 7105])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [7106 7117])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7131 7138])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7139 7147])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7148 7156])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7157 7165])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7166 7174])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7175 7187])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7188 7200])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [7214 7223])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [7223 7237])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7239 7254])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [7254 7266]))                  
+                :type "void")
+                nil [7052 7776])
+            ("bhattacharyya" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7797 7809])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7810 7822])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [7823 7837])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [7838 7849])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7869 7876])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7877 7885])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7886 7894])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7895 7903])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7904 7912])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7913 7925])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7926 7938])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [7958 7967])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [7967 7981])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7983 7998])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [7998 8010]))                  
+                :type "void")
+                nil [7778 8568])
+            ("yezzi" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8582 8594])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8595 8607])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [8608 8622])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [8623 8634])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8646 8653])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8654 8662])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8663 8671])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8672 8680])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8681 8689])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8690 8702])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8703 8715])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [8727 8736])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [8736 8750])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8752 8767])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [8767 8779]))                  
+                :type "void")
+                nil [8571 9284])
+            ("grow" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9296 9308])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9309 9321])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9322 9336])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [9337 9348])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9360 9367])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9368 9376])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9377 9385])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9386 9394])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9395 9403])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9404 9416])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9417 9429])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [9440 9449])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [9449 9463])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9465 9480])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [9480 9492]))                  
+                :type "void")
+                nil [9286 9886])
+            ("shrink" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9900 9912])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9913 9925])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [9926 9940])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [9941 9952])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9965 9972])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9973 9981])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9982 9990])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9991 9999])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10000 10008])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10009 10021])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10022 10034])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [10047 10056])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [10056 10067])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [10067 10081])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10082 10097])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [10097 10109]))                  
+                :type "void")
+                nil [9888 10638])
+            ("kappa" function
+               (:arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10651 10663])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10664 10676])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [10677 10691])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [10692 10703])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10715 10722])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10723 10731])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10732 10740])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10741 10749])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10750 10758])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10759 10771])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10772 10784])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [10796 10805])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [10805 10819])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10821 10836])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [10836 10848]))                  
+                :type "void")
+                nil [10640 11225])
+            ("prep_C_output" function
+               (:pointer 1
+                :arguments 
+                  ( ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11250 11257])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [11257 11268])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [11268 11280]))                  
+                :type ("mxArray" type (:type "class") nil nil))
+                nil [11227 11630])
+            ("show_countdown" function
+               (:arguments 
+                  ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [11652 11661])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [11661 11667])
+                    ("countdown" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [11667 11682])
+                    ("ppphi" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11683 11699]))                  
+                :type "void")
+                nil [11632 12134]))          
+    :file "sfm_local_chanvese_mex.cpp"
+    :pointmax 12135
+    :fsize 12134
+    :lastmodtime '(18993 34757 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sparse3c.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("__SPARSE3C_H" variable (:constant-flag t) nil [30 42])
+            ("stdlib.h" include (:system-flag t) nil [44 63])
+            ("mex.h" include nil nil [64 80])
+            ("matrix.h" include (:system-flag t) nil [81 100])
+            ("math.h" include (:system-flag t) nil [101 118])
+            ("llist.h" include nil nil [119 137])
+            ("lsops3c.h" include nil nil [138 158])
+            ("energy3c.h" include nil nil [159 180])
+            ("DIMX" variable (:constant-flag t) nil [190 194])
+            ("DIMY" variable (:constant-flag t) nil [211 215])
+            ("DIMZ" variable (:constant-flag t) nil [232 236])
+            ("DIMXY" variable (:constant-flag t) nil [253 258])
+            ("NUMEL" variable (:constant-flag t) nil [275 280])
+            ("OFFX" variable (:constant-flag t) nil [298 302])
+            ("OFFY" variable (:constant-flag t) nil [319 323])
+            ("OFFZ" variable (:constant-flag t) nil [334 338])
+            ("mwSize" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [435 454])
+            ("mwIndex" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [455 475])
+            ("mwSignedIndex" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [476 502])
+            ("MWSIZE_MAX" variable (:constant-flag t) nil [630 640])
+            ("MWINDEX_MAX" variable (:constant-flag t) nil [671 682])
+            ("MWSINDEX_MAX" variable (:constant-flag t) nil [712 724])
+            ("MWSINDEX_MIN" variable (:constant-flag t) nil [752 764])
+            ("MWSIZE_MIN" variable (:constant-flag t) nil [946 956])
+            ("MWINDEX_MIN" variable (:constant-flag t) nil [972 983])
+            ("show_countdown" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [1018 1027])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1027 1033])
+                    ("countdown" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1034 1049])
+                    ("ppphi" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1050 1066]))                  
+                :type "void")
+                nil [998 1067])
+            ("prep_C_output" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1092 1099])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1099 1110])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1111 1123]))                  
+                :type ("mxArray" type (:type "class") nil nil))
+                nil [1069 1124])
+            ("lrbac_vessel_yz" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1221 1233])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1234 1246])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1247 1261])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1262 1273])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1292 1299])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1300 1308])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1309 1317])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1318 1326])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1327 1335])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1336 1348])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1349 1361])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [1380 1389])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [1390 1401])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [1402 1416])
+                    ("dthresh" variable (:type "double") (reparse-symbol arg-sub-list) [1417 1432])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1433 1448])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [1467 1479]))                  
+                :type "void")
+                nil [1200 1480])
+            ("lrbac_vessel_cv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1577 1589])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1590 1602])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1603 1617])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1618 1629])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1648 1655])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1656 1664])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1665 1673])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1674 1682])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1683 1691])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1692 1704])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1705 1717])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [1736 1745])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [1746 1757])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [1758 1772])
+                    ("dthresh" variable (:type "double") (reparse-symbol arg-sub-list) [1773 1788])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1804])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [1823 1835]))                  
+                :type "void")
+                nil [1556 1836])
+            ("lrbac_chanvese" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1926 1938])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1939 1951])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1952 1966])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [1967 1978])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1999 2006])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2007 2015])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2016 2024])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2025 2033])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2034 2042])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2043 2055])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2056 2068])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [2089 2098])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [2099 2110])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [2111 2125])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2127 2142])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [2142 2154]))                  
+                :type "void")
+                nil [1906 2155])
+            ("bhattacharyya" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2290 2302])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2303 2315])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2316 2330])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2331 2342])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2362 2369])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2370 2378])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2379 2387])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2388 2396])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2397 2405])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2406 2418])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2419 2431])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [2451 2460])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [2460 2474])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2476 2491])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [2491 2503]))                  
+                :type "void")
+                nil [2271 2504])
+            ("chanvese" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2571 2583])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2584 2596])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2597 2611])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2612 2623])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2638 2645])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2646 2654])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2655 2663])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2664 2672])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2673 2681])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2682 2694])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2695 2707])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [2722 2731])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [2731 2745])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2747 2762])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [2762 2774]))                  
+                :type "void")
+                nil [2557 2775])
+            ("meanvar" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2905 2917])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2918 2930])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2931 2945])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [2946 2957])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2971 2978])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2979 2987])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2988 2996])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2997 3005])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3006 3014])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3015 3027])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3028 3040])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3054 3063])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [3063 3077])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3079 3094])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [3094 3106]))                  
+                :type "void")
+                nil [2892 3107])
+            ("yezzi" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3229 3241])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3242 3254])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3255 3269])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3270 3281])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3293 3300])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3301 3309])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3310 3318])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3319 3327])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3328 3336])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3337 3349])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3350 3362])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3374 3383])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [3383 3397])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3399 3414])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [3414 3426]))                  
+                :type "void")
+                nil [3218 3427])
+            ("grow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3439 3451])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3452 3464])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3465 3479])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3480 3491])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3503 3510])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3511 3519])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3520 3528])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3529 3537])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3538 3546])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3547 3559])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3560 3572])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3584 3593])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [3593 3607])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3609 3624])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [3624 3636]))                  
+                :type "void")
+                nil [3429 3637])
+            ("shrink" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3723 3735])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3736 3748])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3749 3763])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3764 3775])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3787 3794])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3795 3803])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3804 3812])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3813 3821])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3822 3830])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3831 3843])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3844 3856])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [3869 3878])
+                    ("rad" variable (:type "double") (reparse-symbol arg-sub-list) [3878 3889])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [3889 3903])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3904 3919])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [3919 3931]))                  
+                :type "void")
+                nil [3711 3932])
+            ("kappa" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("img" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3945 3957])
+                    ("phi" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3958 3970])
+                    ("label" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3971 3985])
+                    ("dims" variable
+                       (:pointer 1
+                        :type "long")
+                        (reparse-symbol arg-sub-list) [3986 3997])
+                    ("Lz" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4009 4016])
+                    ("Ln1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4017 4025])
+                    ("Lp1" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4026 4034])
+                    ("Ln2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4035 4043])
+                    ("Lp2" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4044 4052])
+                    ("Lin2out" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4053 4065])
+                    ("Lout2in" variable
+                       (:pointer 1
+                        :type ("LL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4066 4078])
+                    ("iter" variable (:type "int") (reparse-symbol arg-sub-list) [4090 4099])
+                    ("lambda" variable (:type "double") (reparse-symbol arg-sub-list) [4099 4113])
+                    ("plhs" variable
+                       (:pointer 2
+                        :type ("mxArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4115 4130])
+                    ("display" variable (:type "int") (reparse-symbol arg-sub-list) [4130 4142]))                  
+                :type "void")
+                nil [3934 4143]))          
+    :file "sparse3c.h"
+    :pointmax 4152
+    :fsize 4151
+    :lastmodtime '(18993 34594 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MWSINDEX_MAX" . ((number "281474976710655L" 726 . 742)))
+          ("MWSINDEX_MIN" . ((punctuation "-" 765 . 766) (number "281474976710655L" 766 . 782)))
+          ("DIMX" . ((symbol "dims" 195 . 199) (semantic-list "[1]" 199 . 202)))
+          ("DIMY" . ((symbol "dims" 216 . 220) (semantic-list "[0]" 220 . 223)))
+          ("DIMZ" . ((symbol "dims" 237 . 241) (semantic-list "[2]" 241 . 244)))
+          ("OFFX" . ((symbol "dims" 303 . 307) (semantic-list "[0]" 307 . 310)))
+          ("OFFY" . ((number "1" 324 . 325)))
+          ("MWSIZE_MAX" . ((symbol "281474976710655UL" 644 . 661)))
+          ("NUMEL" . ((symbol "dims" 281 . 285) (semantic-list "[4]" 285 . 288)))
+          ("OFFZ" . ((symbol "dims" 339 . 343) (semantic-list "[3]" 343 . 346)))
+          ("MWSIZE_MIN" . ((symbol "0UL" 960 . 963)))
+          ("MWINDEX_MAX" . ((symbol "281474976710655UL" 685 . 702)))
+          ("DIMXY" . ((symbol "dims" 259 . 263) (semantic-list "[3]" 263 . 266)))
+          ("MWINDEX_MIN" . ((symbol "0UL" 986 . 989)))
+          ("__SPARSE3C_H")
+          )
+
+    )
+   (semanticdb-table "llist.h"
+    :file "llist.h"
+    :fsize 676
+    :lastmodtime '(18993 35446 0 0)
+    )
+   (semanticdb-table "lsops3c.h"
+    :file "lsops3c.h"
+    :fsize 730
+    :lastmodtime '(18993 35452 0 0)
+    )
+   (semanticdb-table "energy3c.h"
+    :file "energy3c.h"
+    :fsize 3833
+    :lastmodtime '(18993 35258 0 0)
+    )
+   )
+  :file "!home!john!2014_THESIS_DROMI!chan_vese!sfm_chanvese_demo!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

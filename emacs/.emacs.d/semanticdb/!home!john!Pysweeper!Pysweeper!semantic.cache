@@ -1,0 +1,111 @@
+;; Object Pysweeper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Pysweeper/"
+  :tables (list 
+   (semanticdb-table "Board.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [1 14])
+            ("colorama" include nil nil [15 52])
+            ("Board" type
+               (:documentation "class for handling the playing field for the game"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [185 200])
+                            ("self" variable nil (reparse-symbol indented_block_body) [209 223])
+                            ("self" variable nil (reparse-symbol indented_block_body) [232 251])
+                            ("self" variable nil (reparse-symbol indented_block_body) [260 346])
+                            ("self" variable nil (reparse-symbol indented_block_body) [355 441])
+                            ("init" code nil (reparse-symbol indented_block_body) [450 456]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [158 162])
+                            ("h" variable nil (reparse-symbol function_parameters) [164 165])
+                            ("w" variable nil (reparse-symbol function_parameters) [167 168])
+                            ("m_no" variable nil (reparse-symbol function_parameters) [170 174]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [145 478])
+                    ("genBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [496 500])
+                            ("x" variable nil (reparse-symbol function_parameters) [502 503])
+                            ("y" variable nil (reparse-symbol function_parameters) [505 506]))                          )
+                        (reparse-symbol indented_block_body) [483 1716])
+                    ("printBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1736 1740]))                          
+                        :documentation "Print the players view of the field to stdout")
+                        (reparse-symbol indented_block_body) [1721 2514])
+                    ("printSolution" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2537 2541]))                          
+                        :documentation "Print the solution of the field to stdout")
+                        (reparse-symbol indented_block_body) [2519 3052])
+                    ("turnTile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3070 3074])
+                            ("x" variable nil (reparse-symbol function_parameters) [3076 3077])
+                            ("y" variable nil (reparse-symbol function_parameters) [3078 3079]))                          )
+                        (reparse-symbol indented_block_body) [3057 4149])
+                    ("flagTile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4175 4179])
+                            ("x" variable nil (reparse-symbol function_parameters) [4181 4182])
+                            ("y" variable nil (reparse-symbol function_parameters) [4183 4184]))                          )
+                        (reparse-symbol indented_block_body) [4162 4543])
+                    ("gameFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4565 4569]))                          )
+                        (reparse-symbol indented_block_body) [4548 4909])
+                    ("flipBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4928 4932]))                          )
+                        (reparse-symbol indented_block_body) [4914 5288]))                  
+                :type "class")
+                nil [54 5288]))          
+    :file "Board.py"
+    :pointmax 5289
+    :fsize 5288
+    :lastmodtime '(21287 29419 989171 772000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Pysweeper.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("re" include nil nil [11 20])
+            ("random" include nil nil [21 34])
+            ("platform" include nil nil [35 50])
+            ("Board" include nil nil [52 64])
+            ("title_text" variable nil nil [66 503])
+            ("clear_cmd" variable nil nil [505 519])
+            ("max_height" variable nil nil [521 536])
+            ("max_width" variable nil nil [537 551])
+            ("findOS" function nil nil [553 726])
+            ("title" function nil nil [727 787])
+            ("help" function nil nil [790 1041])
+            ("options" function nil nil [1042 1549])
+            ("getParams" function nil nil [1552 3019])
+            ("run" function (:documentation "Run the game") nil [3021 6254])
+            ("menu" function nil nil [6255 6790])
+            ("if" code nil nil [6791 6907]))          
+    :file "Pysweeper.py"
+    :pointmax 6907
+    :fsize 6906
+    :lastmodtime '(21287 29419 989171 772000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!Pysweeper!Pysweeper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

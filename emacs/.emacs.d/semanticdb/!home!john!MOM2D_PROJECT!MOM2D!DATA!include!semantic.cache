@@ -1,0 +1,61 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "mom2d_data.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DATA_H" variable (:constant-flag t) nil [24 30])
+            ("string" include (:system-flag t) nil [32 49])
+            ("data_path" variable (:type ("std::string" type (:type "class") nil nil)) nil [51 120])
+            ("get_data_file_path" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [153 178]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [122 179]))          
+    :file "mom2d_data.h"
+    :pointmax 198
+    :fsize 197
+    :lastmodtime '(21334 35821 563936 8000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DATA_H")
+          )
+
+    )
+   (semanticdb-table "mom2d_data.h.in"
+    :major-mode 'c-mode
+    :tags 
+        '( ("DATA_H" variable (:constant-flag t) nil [24 30])
+            ("string" include (:system-flag t) nil [32 49])
+            ("data_path" variable (:type ("std::string" type (:type "class") nil nil)) nil [51 110])
+            ("get_data_file_path" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [143 168]))                  
+                :type ("std::string" type (:type "class") nil nil))
+                nil [112 169]))          
+    :file "mom2d_data.h.in"
+    :pointmax 188
+    :fsize 187
+    :lastmodtime '(21334 35189 951959 735000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("DATA_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!DATA!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,585 @@
+;; Object polymesh/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "polymesh/"
+  :tables (list 
+   (semanticdb-table "polymesh.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_POLYMESH_H" variable (:constant-flag t) nil [69 120])
+            ("OpenTissue/configuration.h" include (:system-flag t) nil [387 424])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_mesh.h" include (:system-flag t) nil [427 494])
+            ("OpenTissue/core/containers/mesh/mesh_default_traits.h" include (:system-flag t) nil [495 559])
+            ("OpenTissue/core/containers/mesh/polymesh/kernels/polymesh_kernels.h" include (:system-flag t) nil [560 638])
+            ("OpenTissue/core/math/math_basic_types.h" include (:system-flag t) nil [639 689])
+            ("OpenTissue" type
+               (:members 
+                  ( ("polymesh" type
+                       (:members 
+                          ( ("PolyMesh" type
+                               (:superclasses 
+                                  ( ("detail::PMesh" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  
+                                :type "class")
+                                (reparse-symbol namespacesubparts) [1694 1762]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [718 1767]))                  
+                :type "namespace")
+                nil [692 1791]))          
+    :file "polymesh.h"
+    :pointmax 1878
+    :fsize 1876
+    :lastmodtime '(21443 47418 805101 601000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_POLYMESH_H")
+          )
+
+    )
+   (semanticdb-table "polymesh_mesh.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_POLYMESH_MESH_H" variable (:constant-flag t) nil [74 130])
+            ("OpenTissue/configuration.h" include (:system-flag t) nil [397 434])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_vertex.h" include (:system-flag t) nil [436 505])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_halfedge.h" include (:system-flag t) nil [506 577])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_edge.h" include (:system-flag t) nil [578 645])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_face.h" include (:system-flag t) nil [646 713])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh_core_access.h" include (:system-flag t) nil [714 788])
+            ("OpenTissue/core/containers/mesh/polymesh/circulators/polymesh_circulators.h" include (:system-flag t) nil [790 876])
+            ("OpenTissue/core/containers/mesh/polymesh/util/polymesh_is_boundary.h" include (:system-flag t) nil [877 956])
+            ("OpenTissue/core/containers/mesh/polymesh/util/polymesh_valency.h" include (:system-flag t) nil [957 1032])
+            ("vector" include (:system-flag t) nil [1034 1051])
+            ("algorithm" include (:system-flag t) nil [1052 1072])
+            ("OpenTissue" type
+               (:members 
+                  ( ("polymesh" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("PMesh" type
+                                       (:superclasses 
+                                          ( ("M" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil)
+                                            ("K" type
+                                               (:protection "public"
+                                                :type "class")
+                                                nil nil))                                          
+                                        :members 
+                                          ( ("public" label nil (reparse-symbol classsubparts) [2125 2132])
+                                            ("math_types" type
+                                               (:typedef ("MT" type (:type "class") nil nil)
+                                                :superclasses "MT"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2142 2215])
+                                            ("vertex_traits" type
+                                               (:typedef ("V" type (:type "class") nil nil)
+                                                :superclasses "V"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2225 2301])
+                                            ("halfedge_traits" type
+                                               (:typedef ("H" type (:type "class") nil nil)
+                                                :superclasses "H"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2310 2388])
+                                            ("edge_traits" type
+                                               (:typedef ("E" type (:type "class") nil nil)
+                                                :superclasses "E"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2397 2471])
+                                            ("face_traits" type
+                                               (:typedef ("F" type (:type "class") nil nil)
+                                                :superclasses "F"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2480 2554])
+                                            ("mesh_traits" type
+                                               (:typedef ("M" type (:type "class") nil nil)
+                                                :superclasses "M"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2563 2637])
+                                            ("mesh_type" type
+                                               (:typedef ("PMesh" type
+                                                     (:template-specifier 
+                                                        ( ("MT" type nil nil nil)
+                                                          ("V" type nil nil nil)
+                                                          ("H" type nil nil nil)
+                                                          ("E" type nil nil nil)
+                                                          ("F" type nil nil nil)
+                                                          ("M" type nil nil nil)
+                                                          ("K" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PMesh"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2646 2718])
+                                            ("vertex_type" type
+                                               (:typedef ("PolyMeshVertex" type
+                                                     (:template-specifier 
+                                                        ( ("mesh_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertex"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2727 2801])
+                                            ("halfedge_type" type
+                                               (:typedef ("PolyMeshHalfEdge" type
+                                                     (:template-specifier 
+                                                        ( ("mesh_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshHalfEdge"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2810 2886])
+                                            ("edge_type" type
+                                               (:typedef ("PolyMeshEdge" type
+                                                     (:template-specifier 
+                                                        ( ("mesh_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshEdge"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2895 2967])
+                                            ("face_type" type
+                                               (:typedef ("PolyMeshFace" type
+                                                     (:template-specifier 
+                                                        ( ("mesh_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFace"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [2976 3048])
+                                            ("kernel_type" type
+                                               (:typedef ("K" type
+                                                     (:template-specifier 
+                                                        ( ("vertex_type" type nil nil nil)
+                                                          ("halfedge_type" type nil nil nil)
+                                                          ("edge_type" type nil nil nil)
+                                                          ("face_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "K"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3058 3132])
+                                            ("vertex_handle" type
+                                               (:typedef ("kernel_type::vertex_handle" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::vertex_handle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3142 3210])
+                                            ("halfedge_handle" type
+                                               (:typedef ("kernel_type::halfedge_handle" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::halfedge_handle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3219 3289])
+                                            ("edge_handle" type
+                                               (:typedef ("kernel_type::edge_handle" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::edge_handle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3298 3364])
+                                            ("face_handle" type
+                                               (:typedef ("kernel_type::face_handle" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::face_handle"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3373 3439])
+                                            ("vertex_iterator" type
+                                               (:typedef ("kernel_type::vertex_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::vertex_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3449 3519])
+                                            ("halfedge_iterator" type
+                                               (:typedef ("kernel_type::halfedge_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::halfedge_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3528 3600])
+                                            ("edge_iterator" type
+                                               (:typedef ("kernel_type::edge_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::edge_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3609 3677])
+                                            ("face_iterator" type
+                                               (:typedef ("kernel_type::face_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::face_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3686 3754])
+                                            ("opt_vertex_iter" type
+                                               (:typedef ("kernel_type::opt_vertex_iter" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::opt_vertex_iter"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3764 3834])
+                                            ("opt_halfedge_iter" type
+                                               (:typedef ("kernel_type::opt_halfedge_iter" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::opt_halfedge_iter"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3843 3915])
+                                            ("const_vertex_iterator" type
+                                               (:typedef ("kernel_type::const_vertex_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::const_vertex_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [3925 4001])
+                                            ("const_halfedge_iterator" type
+                                               (:typedef ("kernel_type::const_halfedge_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::const_halfedge_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4010 4088])
+                                            ("const_edge_iterator" type
+                                               (:typedef ("kernel_type::const_edge_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::const_edge_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4097 4171])
+                                            ("const_face_iterator" type
+                                               (:typedef ("kernel_type::const_face_iterator" type (:type "class") nil nil)
+                                                :superclasses "kernel_type::const_face_iterator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4180 4254])
+                                            ("public" label nil (reparse-symbol classsubparts) [4262 4269])
+                                            ("vertex_vertex_circulator" type
+                                               (:typedef ("PolyMeshVertexVertexCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("vertex_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexVertexCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4279 4372])
+                                            ("vertex_halfedge_circulator" type
+                                               (:typedef ("PolyMeshVertexHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("halfedge_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexHalfedgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4381 4476])
+                                            ("vertex_edge_circulator" type
+                                               (:typedef ("PolyMeshVertexEdgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("edge_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexEdgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4485 4576])
+                                            ("vertex_face_circulator" type
+                                               (:typedef ("PolyMeshVertexFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("face_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexFaceCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4585 4676])
+                                            ("const_vertex_vertex_circulator" type
+                                               (:typedef ("PolyMeshVertexVertexCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("vertex_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexVertexCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4686 4785])
+                                            ("const_vertex_halfedge_circulator" type
+                                               (:typedef ("PolyMeshVertexHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("halfedge_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexHalfedgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4794 4895])
+                                            ("const_vertex_edge_circulator" type
+                                               (:typedef ("PolyMeshVertexEdgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("edge_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexEdgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [4904 5001])
+                                            ("const_vertex_face_circulator" type
+                                               (:typedef ("PolyMeshVertexFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("face_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshVertexFaceCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5010 5107])
+                                            ("face_vertex_circulator" type
+                                               (:typedef ("PolyMeshFaceVertexCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("vertex_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceVertexCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5117 5208])
+                                            ("face_halfedge_circulator" type
+                                               (:typedef ("PolyMeshFaceHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("halfedge_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceHalfedgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5217 5310])
+                                            ("face_edge_circulator" type
+                                               (:typedef ("PolyMeshFaceEdgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("edge_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceEdgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5319 5408])
+                                            ("face_face_circulator" type
+                                               (:typedef ("PolyMeshFaceFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("face_type" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceFaceCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5417 5506])
+                                            ("const_face_vertex_circulator" type
+                                               (:typedef ("PolyMeshFaceVertexCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("vertex_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceVertexCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5516 5613])
+                                            ("const_face_halfedge_circulator" type
+                                               (:typedef ("PolyMeshFaceHalfedgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("halfedge_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceHalfedgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5622 5721])
+                                            ("const_face_edge_circulator" type
+                                               (:typedef ("PolyMeshFaceEdgeCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("edge_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceEdgeCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5730 5825])
+                                            ("const_face_face_circulator" type
+                                               (:typedef ("PolyMeshFaceFaceCirculator" type
+                                                     (:template-specifier 
+                                                        ( ("PMesh" type nil nil nil)
+                                                          ("face_type" type (:constant-flag t) nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil)
+                                                :superclasses "PolyMeshFaceFaceCirculator"
+                                                :type "typedef")
+                                                (reparse-symbol classsubparts) [5834 5929])
+                                            ("private" label nil (reparse-symbol classsubparts) [5937 5945])
+                                            ("assign_owner" type
+                                               (:members 
+                                                  ( ("assign_owner" function
+                                                       (:constructor-flag t
+                                                        :arguments 
+                                                          ( ("new_owner" variable
+                                                               (:pointer 1
+                                                                :type ("mesh_type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6008 6030]))                                                          
+                                                        :type ("assign_owner" type (:type "struct") nil nil))
+                                                        (reparse-symbol classsubparts) [5995 6080])
+                                                    ("()" function
+                                                       (:template 
+                                                          ( ("feature_type" type (:type "class") nil nil))                                                          
+                                                        :type "void"
+                                                        :arguments 
+                                                          ( ("f" variable
+                                                               (:reference 1
+                                                                :type ("feature_type" type (:type "class") nil nil))
+                                                                (reparse-symbol arg-sub-list) [6152 6169]))                                                          
+                                                        :operator-flag t)
+                                                        (reparse-symbol classsubparts) [6092 6258])
+                                                    ("m_new_owner" variable
+                                                       (:pointer 1
+                                                        :type ("mesh_type" type (:type "class") nil nil))
+                                                        (reparse-symbol classsubparts) [6270 6294]))                                                  
+                                                :type "struct")
+                                                (reparse-symbol classsubparts) [5955 6305])
+                                            ("public" label nil (reparse-symbol classsubparts) [6313 6320])
+                                            ("PMesh" function
+                                               (:constructor-flag t
+                                                :type ("PMesh" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6330 6339])
+                                            ("PMesh" function
+                                               (:destructor-flag t
+                                                :type "void")
+                                                (reparse-symbol classsubparts) [6349 6399])
+                                            ("PMesh" function
+                                               (:constructor-flag t
+                                                :arguments 
+                                                  ( ("m" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("PMesh" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6424 6440]))                                                  
+                                                :type ("PMesh" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6418 6458])
+                                            ("=" function
+                                               (:operator-flag t
+                                                :arguments 
+                                                  ( ("mesh" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("PMesh" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [6486 6505]))                                                  
+                                                :type ("PMesh" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [6468 7101])
+                                            ("public" label nil (reparse-symbol classsubparts) [7109 7116])
+                                            ("find_halfedge_iterator" function
+                                               (:arguments 
+                                                  ( ("A" variable (:type ("vertex_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7167 7185])
+                                                    ("B" variable (:type ("vertex_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7186 7204]))                                                  
+                                                :type ("halfedge_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7126 7584])
+                                            ("find_halfedge_handle" function
+                                               (:arguments 
+                                                  ( ("A" variable (:type ("vertex_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7631 7647])
+                                                    ("B" variable (:type ("vertex_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7648 7664]))                                                  
+                                                :type ("halfedge_handle" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [7594 8281])
+                                            ("find_edge_handle" function
+                                               (:arguments 
+                                                  ( ("A" variable (:type ("vertex_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8320 8336])
+                                                    ("B" variable (:type ("vertex_handle" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8337 8353]))                                                  
+                                                :type ("edge_handle" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8291 8563])
+                                            ("private" label nil (reparse-symbol classsubparts) [8571 8579])
+                                            ("add_halfedge" function
+                                               (:arguments 
+                                                  ( ("A" variable (:type ("vertex_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8943 8961])
+                                                    ("B" variable (:type ("vertex_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8961 8979]))                                                  
+                                                :type ("halfedge_iterator" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [8912 10504])
+                                            ("public" label nil (reparse-symbol classsubparts) [10512 10519])
+                                            ("add_vertex" function (:type ("vertex_handle" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10529 10768])
+                                            ("add_vertex" function
+                                               (:template 
+                                                  ( ("vector3_type" type (:type "class") nil nil))                                                  
+                                                :type ("vertex_handle" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("coord" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vector3_type" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [10843 10870]))                                                  )
+                                                (reparse-symbol classsubparts) [10778 11016])
+                                            ("add_face" function
+                                               (:template 
+                                                  ( ("vertex_handle_iterator" type (:type "class") nil nil))                                                  
+                                                :type ("face_handle" type (:type "class") nil nil)
+                                                :arguments 
+                                                  ( ("begin" variable (:type ("vertex_handle_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11097 11126])
+                                                    ("end" variable (:type ("vertex_handle_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11126 11153]))                                                  )
+                                                (reparse-symbol classsubparts) [11026 22489])
+                                            ("add_face" function
+                                               (:arguments 
+                                                  ( ("v0" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vertex_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22520 22545])
+                                                    ("v1" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vertex_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22545 22570])
+                                                    ("v2" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vertex_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22570 22595]))                                                  
+                                                :type ("face_handle" type (:type "class") nil nil))
+                                                (reparse-symbol classsubparts) [22499 22778])
+                                            ("remove_vertex" function
+                                               (:arguments 
+                                                  ( ("v" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("vertex_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [22807 22831]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [22788 23149])
+                                            ("remove_vertex" function
+                                               (:arguments 
+                                                  ( ("v" variable (:type ("vertex_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23178 23196]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [23159 23655])
+                                            ("remove_edge" function
+                                               (:arguments 
+                                                  ( ("e" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("edge_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [23682 23704]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [23665 23990])
+                                            ("remove_edge" function
+                                               (:arguments 
+                                                  ( ("e" variable (:type ("edge_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24017 24033]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [24000 30721])
+                                            ("remove_face" function
+                                               (:arguments 
+                                                  ( ("f" variable
+                                                       (:reference 1
+                                                        :constant-flag t
+                                                        :type ("face_handle" type (:type "class") nil nil))
+                                                        (reparse-symbol arg-sub-list) [30748 30770]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [30731 31031])
+                                            ("remove_face" function
+                                               (:arguments 
+                                                  ( ("f" variable (:type ("face_iterator" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31058 31074]))                                                  
+                                                :type "bool")
+                                                (reparse-symbol classsubparts) [31041 32074]))                                          
+                                        :type "class")
+                                        (reparse-symbol namespacesubparts) [1861 32084]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [1126 32091]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [1099 32115]))                  
+                :type "namespace")
+                nil [1074 32139]))          
+    :file "polymesh_mesh.h"
+    :pointmax 32231
+    :fsize 32230
+    :lastmodtime '(21443 47418 789101 602000)
+    :unmatched-syntax '((EXPLICIT 6409 . 6417) (punctuation 1853 . 1854) (symbol 1845 . 1846) (CLASS 1839 . 1844) (punctuation 1837 . 1838) (TYPENAME 1829 . 1837) (punctuation 1828 . 1829) (TYPENAME 1820 . 1828) (punctuation 1818 . 1819) (TYPENAME 1810 . 1818) (punctuation 1808 . 1809) (TYPENAME 1800 . 1808) (punctuation 1799 . 1800) (TEMPLATE 1790 . 1798) (punctuation 1788 . 1789) (symbol 1778 . 1779) (TYPENAME 1769 . 1777) (punctuation 1767 . 1768) (symbol 1757 . 1758) (TYPENAME 1748 . 1756) (punctuation 1746 . 1747) (symbol 1736 . 1737) (TYPENAME 1727 . 1735) (punctuation 1725 . 1726) (symbol 1715 . 1716) (TYPENAME 1706 . 1714) (punctuation 1704 . 1705) (symbol 1694 . 1695) (TYPENAME 1685 . 1693) (punctuation 1683 . 1684) (symbol 1672 . 1674) (TYPENAME 1663 . 1671) (punctuation 1651 . 1652) (TEMPLATE 1643 . 1651))
+    :lexical-table 
+        '(("OPENTISSUE_CORE_CONTAINERS_MESH_POLYMESH_POLYMESH_MESH_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!3RDPARTY!OpenTissue!OpenTissue!core!containers!mesh!polymesh!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

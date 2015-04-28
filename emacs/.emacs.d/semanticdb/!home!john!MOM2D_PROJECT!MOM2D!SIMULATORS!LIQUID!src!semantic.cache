@@ -1,0 +1,19 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "liquid.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("i_am_a_dummy_function_to_avoid_compiler_warnings" function (:type "void") nil [5 64]))          
+    :file "liquid.cpp"
+    :pointmax 64
+    :fsize 63
+    :lastmodtime '(21454 33459 865232 263000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!SIMULATORS!LIQUID!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

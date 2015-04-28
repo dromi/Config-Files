@@ -1,0 +1,176 @@
+;; Object SFML/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "SFML/"
+  :tables (list 
+   (semanticdb-table "Graphics.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_GRAPHICS_HPP" variable (:constant-flag t) nil [1142 1159])
+            ("SFML/Window.hpp" include (:system-flag t) nil [1295 1321])
+            ("SFML/Graphics/Color.hpp" include (:system-flag t) nil [1322 1356])
+            ("SFML/Graphics/Font.hpp" include (:system-flag t) nil [1357 1390])
+            ("SFML/Graphics/Glyph.hpp" include (:system-flag t) nil [1391 1425])
+            ("SFML/Graphics/Image.hpp" include (:system-flag t) nil [1426 1460])
+            ("SFML/Graphics/PostFX.hpp" include (:system-flag t) nil [1461 1496])
+            ("SFML/Graphics/RenderWindow.hpp" include (:system-flag t) nil [1497 1538])
+            ("SFML/Graphics/Shape.hpp" include (:system-flag t) nil [1539 1573])
+            ("SFML/Graphics/Sprite.hpp" include (:system-flag t) nil [1574 1609])
+            ("SFML/Graphics/String.hpp" include (:system-flag t) nil [1610 1645])
+            ("SFML/Graphics/View.hpp" include (:system-flag t) nil [1646 1679]))          
+    :file "Graphics.hpp"
+    :pointmax 1710
+    :fsize 1754
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_GRAPHICS_HPP")
+          )
+
+    )
+   (semanticdb-table "Window.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_SFML_WINDOW_HPP" variable (:constant-flag t) nil [1145 1165])
+            ("SFML/System.hpp" include (:system-flag t) nil [1301 1327])
+            ("SFML/Window/Context.hpp" include (:system-flag t) nil [1328 1362])
+            ("SFML/Window/Event.hpp" include (:system-flag t) nil [1363 1395])
+            ("SFML/Window/Input.hpp" include (:system-flag t) nil [1396 1428])
+            ("SFML/Window/VideoMode.hpp" include (:system-flag t) nil [1429 1465])
+            ("SFML/Window/Window.hpp" include (:system-flag t) nil [1466 1499])
+            ("SFML/Window/WindowListener.hpp" include (:system-flag t) nil [1500 1541])
+            ("SFML/Window/WindowStyle.hpp" include (:system-flag t) nil [1542 1580])
+            ("SFML/Window/OpenGL.hpp" include (:system-flag t) nil [1581 1614]))          
+    :file "Window.hpp"
+    :pointmax 1648
+    :fsize 1690
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_SFML_WINDOW_HPP")
+          )
+
+    )
+   (semanticdb-table "System.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_SYSTEM_HPP" variable (:constant-flag t) nil [1140 1155])
+            ("SFML/Config.hpp" include (:system-flag t) nil [1291 1317])
+            ("SFML/System/Clock.hpp" include (:system-flag t) nil [1318 1350])
+            ("SFML/System/Lock.hpp" include (:system-flag t) nil [1351 1382])
+            ("SFML/System/Mutex.hpp" include (:system-flag t) nil [1383 1415])
+            ("SFML/System/Randomizer.hpp" include (:system-flag t) nil [1416 1453])
+            ("SFML/System/Sleep.hpp" include (:system-flag t) nil [1454 1486])
+            ("SFML/System/Thread.hpp" include (:system-flag t) nil [1487 1520])
+            ("SFML/System/Unicode.hpp" include (:system-flag t) nil [1521 1555])
+            ("SFML/System/Vector2.hpp" include (:system-flag t) nil [1556 1590])
+            ("SFML/System/Vector3.hpp" include (:system-flag t) nil [1591 1625]))          
+    :file "System.hpp"
+    :pointmax 1653
+    :fsize 1695
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("SFML_SYSTEM_HPP")
+          )
+
+    )
+   (semanticdb-table "Config.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("SFML_CONFIG_HPP" variable (:constant-flag t) nil [1140 1155])
+            ("SFML_SYSTEM_LINUX" variable (:constant-flag t) nil [1606 1623])
+            ("SFML_DEBUG" variable (:constant-flag t) nil [2189 2199])
+            ("SFML_API" variable (:constant-flag t) nil [3271 3279])
+            ("climits" include (:system-flag t) nil [3448 3466])
+            ("sf" type
+               (:members 
+                  ( ("Int8" type
+                       (:typedef ("signed char")
+                        :superclasses "signed char"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3545 3572])
+                    ("Uint8" type
+                       (:typedef ("unsigned char")
+                        :superclasses "unsigned char"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3581 3609])
+                    ("Int16" type
+                       (:typedef ("signed short")
+                        :superclasses "signed short"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3753 3782])
+                    ("Uint16" type
+                       (:typedef ("unsigned short")
+                        :superclasses "unsigned short"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3791 3821])
+                    ("Int16" type
+                       (:typedef ("signed int")
+                        :superclasses "signed int"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3859 3886])
+                    ("Uint16" type
+                       (:typedef ("unsigned int")
+                        :superclasses "unsigned int"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3895 3923])
+                    ("Int16" type
+                       (:typedef ("signed long")
+                        :superclasses "signed long"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3962 3990])
+                    ("Uint16" type
+                       (:typedef ("unsigned long")
+                        :superclasses "unsigned long"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [3999 4028])
+                    ("Int32" type
+                       (:typedef ("signed short")
+                        :superclasses "signed short"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4177 4206])
+                    ("Uint32" type
+                       (:typedef ("unsigned short")
+                        :superclasses "unsigned short"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4215 4245])
+                    ("Int32" type
+                       (:typedef ("signed int")
+                        :superclasses "signed int"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4287 4314])
+                    ("Uint32" type
+                       (:typedef ("unsigned int")
+                        :superclasses "unsigned int"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4323 4351])
+                    ("Int32" type
+                       (:typedef ("signed long")
+                        :superclasses "signed long"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4394 4422])
+                    ("Uint32" type
+                       (:typedef ("unsigned long")
+                        :superclasses "unsigned long"
+                        :type "typedef")
+                        (reparse-symbol namespacesubparts) [4431 4460]))                  
+                :type "namespace")
+                nil [3468 4541]))          
+    :file "Config.hpp"
+    :pointmax 4586
+    :fsize 4750
+    :lastmodtime '(20556 62414 0 0)
+    :unmatched-syntax '((symbol 1982 . 1989) (symbol 1977 . 1981) (symbol 1974 . 1976) (symbol 1964 . 1973) (symbol 1960 . 1963) (symbol 1957 . 1959) (symbol 1950 . 1956) (symbol 1940 . 1949) (symbol 1935 . 1939) (symbol 1929 . 1934) (punctuation 1928 . 1929))
+    :lexical-table 
+        '(("SFML_CONFIG_HPP")
+          ("SFML_SYSTEM_LINUX")
+          ("SFML_DEBUG")
+          ("SFML_API")
+          )
+
+    )
+   )
+  :file "!usr!include!SFML!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

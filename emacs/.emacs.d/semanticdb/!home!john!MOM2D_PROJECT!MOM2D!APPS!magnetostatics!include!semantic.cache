@@ -1,0 +1,333 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "remeshing_algorithm.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("REMESHING_ALGORITHM_H" variable (:constant-flag t) nil [39 60])
+            ("mom2d_scheduler.h" include (:system-flag t) nil [62 90])
+            ("mom2d_default_algorithm.h" include (:system-flag t) nil [91 127])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [128 163])
+            ("mom2d_mesh_operation.h" include (:system-flag t) nil [164 197])
+            ("mom2d_quality_comparer.h" include (:system-flag t) nil [198 233])
+            ("mom2d_quality_measures.h" include (:system-flag t) nil [234 269])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [270 297])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [298 329])
+            ("mom2d_laplacian_smoothing.h" include (:system-flag t) nil [330 368])
+            ("mom2d_monitor.h" include (:system-flag t) nil [369 395])
+            ("mom2d_needle_split.h" include (:system-flag t) nil [396 427])
+            ("mom2d_do_optimization.h" include (:system-flag t) nil [428 462])
+            ("quality_maxmin_edge_ratio.h" include (:system-flag t) nil [464 502])
+            ("quality_needle.h" include (:system-flag t) nil [503 530])
+            ("magnetostatics_quality_measure.h" include (:system-flag t) nil [531 574])
+            ("RemeshingAlgorithm" type
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [654 661])
+                    ("T" type
+                       (:typedef ("MT::real_type" type (:type "class") nil nil)
+                        :superclasses "MT::real_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [665 701])
+                    ("V" type
+                       (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                        :superclasses "MT::vector3_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [704 740])
+                    ("vector3_coord" type
+                       (:typedef ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :superclasses "mom2d::Simplex0AttributeVector"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [743 799])
+                    ("set_interpolated_values_simplex2_callback" variable
+                       (:functionpointer-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1016 1133])
+                    ("public" label nil (reparse-symbol classsubparts) [1135 1142])
+                    ("m_id" variable (:type "int") (reparse-symbol classsubparts) [1146 1167])
+                    ("m_coords" variable
+                       (:pointer 1
+                        :type ("vector3_coord" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1300 1325])
+                    ("m_refinement_threshold" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1379 1418])
+                    ("m_coarsening_threshold" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1457 1496])
+                    ("m_needle_threshold" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1535 1570])
+                    ("m_steps" variable (:type "unsigned int") (reparse-symbol classsubparts) [1613 1637])
+                    ("m_coarsening_qm" variable (:type ("MagnetostaticsQualityMeasure" type
+                         (:template-specifier 
+                            ( ("MT" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1692 1741])
+                    ("m_refinement_qm" variable (:type ("MagnetostaticsQualityMeasure" type
+                         (:template-specifier 
+                            ( ("MT" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [1744 1793])
+                    ("m_refinement_interface_func" variable (:type ("set_interpolated_values_simplex2_callback" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1801 1871])
+                    ("public" label nil (reparse-symbol classsubparts) [1873 1880])
+                    ("RemeshingAlgorithm" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("id" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [1904 1942])
+                            ("refinement_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1943 1996])
+                            ("coarsening_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1997 2050])
+                            ("needle_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2051 2100])
+                            ("steps" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [2101 2128]))                          
+                        :type ("RemeshingAlgorithm" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1884 2444])
+                    ("set_external_quality_values" function
+                       (:arguments 
+                          ( ("quality_vector" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex2AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2484 2543]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2450 2827])
+                    ("run" function
+                       (:arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2839 2861]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [2831 7301]))                  
+                :superclasses 
+                  ( ("mom2d::Algorithm" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [576 7305]))          
+    :file "remeshing_algorithm.h"
+    :pointmax 7339
+    :fsize 7338
+    :lastmodtime '(21465 10404 557202 330000)
+    :unmatched-syntax '((TYPEDEF 1008 . 1015))
+    :lexical-table 
+        '(("REMESHING_ALGORITHM_H")
+          )
+
+    )
+   (semanticdb-table "quality_maxmin_edge_ratio.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("QUALITY_MAXIMUM_EDGE_RATIO_H" variable (:constant-flag t) nil [46 74])
+            ("util_sort.h" include (:system-flag t) nil [76 98])
+            ("quality_maxmin_edge_ratio" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [230 316])
+                    ("v2" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [317 403])
+                    ("v3" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [404 490]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [100 773]))          
+    :file "quality_maxmin_edge_ratio.h"
+    :pointmax 815
+    :fsize 814
+    :lastmodtime '(21465 10404 557202 330000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("QUALITY_MAXIMUM_EDGE_RATIO_H")
+          )
+
+    )
+   (semanticdb-table "quality_needle.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("QUALITY_NEEDLE_H" variable (:constant-flag t) nil [34 50])
+            ("util_sort.h" include (:system-flag t) nil [52 74])
+            ("quality_needle" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("MT::real_type" type (:type "class") nil nil)
+                :arguments 
+                  ( ("v1" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [191 273])
+                    ("v2" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [274 356])
+                    ("v3" variable
+                       (:reference 1
+                        :typemodifiers ("typename")
+                        :constant-flag t
+                        :type ("MT::vector3_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [357 439]))                  
+                :typemodifiers ("inline" "typename"))
+                nil [76 966]))          
+    :file "quality_needle.h"
+    :pointmax 994
+    :fsize 993
+    :lastmodtime '(21465 10404 557202 330000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("QUALITY_NEEDLE_H")
+          )
+
+    )
+   (semanticdb-table "magnetostatics_quality_measure.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("REGISTRATION_QUALITY_MEASURE_H" variable (:constant-flag t) nil [48 78])
+            ("mom2d_quality_measures.h" include (:system-flag t) nil [80 115])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [116 151])
+            ("RegistrationQualityMeasure" type
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type "class"
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [252 259])
+                    ("T" type
+                       (:typedef ("MT::real_type" type (:type "class") nil nil)
+                        :superclasses "MT::real_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [263 299])
+                    ("V" type
+                       (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                        :superclasses "MT::vector3_type"
+                        :type "typedef")
+                        (reparse-symbol classsubparts) [302 338])
+                    ("protected" label nil (reparse-symbol classsubparts) [340 350])
+                    ("m_vel_vector" variable (:type ("mom2d::Simplex0AttributeVector" type
+                         (:template-specifier 
+                            ( ("V" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [354 401])
+                    ("m_coords" variable (:type ("mom2d::Simplex0AttributeVector" type
+                         (:template-specifier 
+                            ( ("V" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [404 447])
+                    ("m_lower_bound" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [451 467])
+                    ("m_length_bound" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [470 487])
+                    ("public" label nil (reparse-symbol classsubparts) [489 496])
+                    ("lower_bound" function (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [500 561])
+                    ("public" label nil (reparse-symbol classsubparts) [563 570])
+                    ("m_coords" function
+                       (:constructor-flag t
+                        :type ("RegistrationQualityMeasure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [631 723])
+                    ("RegistrationQualityMeasure" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("velocity_field" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [755 814])
+                            ("cs" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [815 862])
+                            ("lower_bound" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [863 895])
+                            ("length_bound" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [896 919]))                          
+                        :type ("RegistrationQualityMeasure" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [726 1053])
+                    ("public" label nil (reparse-symbol classsubparts) [1055 1062])
+                    ("update" function
+                       (:arguments 
+                          ( ("v" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1078 1114])
+                            ("c" variable (:type ("mom2d::Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol arg-sub-list) [1122 1158]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1066 1206])
+                    ("is_bad" function
+                       (:arguments 
+                          ( ("e" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex1" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1223 1249]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1211 1898]))                  
+                :superclasses 
+                  ( ("mom2d::Simplex1QualityMeasure" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  )
+                nil [153 1902]))          
+    :file "magnetostatics_quality_measure.h"
+    :pointmax 1838
+    :fsize 1309
+    :lastmodtime '(21465 10404 557202 330000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("REGISTRATION_QUALITY_MEASURE_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!APPS!magnetostatics!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

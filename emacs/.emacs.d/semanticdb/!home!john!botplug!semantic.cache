@@ -1,0 +1,117 @@
+;; Object botplug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "botplug/"
+  :tables (list 
+   (semanticdb-table "open_hours.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("urllib3" include nil nil [48 62])
+            ("datetime" include nil nil [63 78])
+            ("re" include nil nil [79 88])
+            ("now" variable nil nil [90 119])
+            ("weekday" variable nil nil [120 143])
+            ("huse" variable nil nil [145 549])
+            ("section_re" variable nil nil [551 606])
+            ("line_re" variable nil nil [607 649])
+            ("opening_hours" function nil nil [651 1349]))          
+    :file "open_hours.py"
+    :pointmax 1349
+    :fsize 1351
+    :lastmodtime '(21751 29712 267373 726000)
+    :unmatched-syntax '(($EOI 1349 . 1349))
+    )
+   (semanticdb-table "bot.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [48 58])
+            ("logging" include nil nil [59 73])
+            ("getpass" include nil nil [74 88])
+            ("sleekxmpp" include nil nil [89 105])
+            ("optparse" include nil nil [107 140])
+            ("parse" include nil nil [141 160])
+            ("parse" include nil nil [161 186])
+            ("sig_til" include nil nil [187 224])
+            ("cmd_help" include nil nil [225 247])
+            ("open_hours" include nil nil [248 272])
+            ("bot_plugins.hey" include nil nil [273 302])
+            ("if" code nil nil [371 480])
+            ("Botplug" type
+               (:superclasses ("sleekxmpp.ClientXMPP")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [561 597])
+                            ("self" variable nil (reparse-symbol indented_block_body) [606 627])
+                            ("self" variable nil (reparse-symbol indented_block_body) [636 670])
+                            ("self" variable nil (reparse-symbol indented_block_body) [679 720])
+                            ("sleekxmpp" code nil (reparse-symbol indented_block_body) [730 786])
+                            ("self" code nil (reparse-symbol indented_block_body) [795 846])
+                            ("self" code nil (reparse-symbol indented_block_body) [855 902])
+                            ("self" code nil (reparse-symbol indented_block_body) [919 980]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [536 540])
+                            ("password" variable nil (reparse-symbol function_parameters) [542 550]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [523 981])
+                    ("start" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1112 1116])
+                            ("event" variable nil (reparse-symbol function_parameters) [1118 1123]))                          )
+                        (reparse-symbol indented_block_body) [1102 1481])
+                    ("muc_message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1653 1657])
+                            ("msg" variable nil (reparse-symbol function_parameters) [1659 1662]))                          )
+                        (reparse-symbol indented_block_body) [1637 3123])
+                    ("message" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3140 3144])
+                            ("msg" variable nil (reparse-symbol function_parameters) [3146 3149]))                          )
+                        (reparse-symbol indented_block_body) [3128 3305])
+                    ("say" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3418 3422])
+                            ("body" variable nil (reparse-symbol function_parameters) [3424 3428]))                          )
+                        (reparse-symbol indented_block_body) [3410 3555])
+                    ("create_parse_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3582 3586]))                          )
+                        (reparse-symbol indented_block_body) [3560 3979]))                  
+                :type "class")
+                nil [481 3979])
+            ("if" code nil nil [3981 5614]))          
+    :file "bot.py"
+    :pointmax 5614
+    :fsize 5620
+    :lastmodtime '(21751 29203 267393 196000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sig_til.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("parse" include nil nil [1 24])
+            ("parse_sig_command" function (:arguments 
+              ( ("msg" variable nil (reparse-symbol function_parameters) [49 52])
+                ("query" variable nil (reparse-symbol function_parameters) [54 59]))              ) nil [27 758]))          
+    :file "sig_til.py"
+    :pointmax 758
+    :fsize 757
+    :lastmodtime '(21751 29203 267393 196000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cmd_help.py"
+    :file "cmd_help.py"
+    :fsize 901
+    :lastmodtime '(21751 29203 267393 196000)
+    )
+   )
+  :file "!home!john!botplug!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

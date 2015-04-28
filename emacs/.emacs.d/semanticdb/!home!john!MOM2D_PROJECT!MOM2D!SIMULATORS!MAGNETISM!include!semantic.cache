@@ -1,0 +1,506 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "magnetism_problem.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAGNETISM_PROBLEM_H" variable (:constant-flag t) nil [37 56])
+            ("vector" include (:system-flag t) nil [58 75])
+            ("magnetism" type
+               (:members 
+                  ( ("Problem" type
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [145 152])
+                            ("m_nvars" variable (:type "unsigned int") (reparse-symbol classsubparts) [158 179])
+                            ("m_nzeros" variable (:type "unsigned int") (reparse-symbol classsubparts) [184 206])
+                            ("m_row_indices" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [212 252])
+                            ("m_column_indices" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [257 300])
+                            ("m_values" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [305 340])
+                            ("m_b_values" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("T" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [345 382])
+                            ("public" label nil (reparse-symbol classsubparts) [386 393])
+                            ("Problem" function
+                               (:constructor-flag t
+                                :type ("Problem" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [399 533])
+                            ("clear" function (:type "void") (reparse-symbol classsubparts) [539 713])
+                            ("init" function
+                               (:arguments 
+                                  ( ("nvars" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [729 756]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [719 1254])
+                            ("add_matrix_element" function
+                               (:arguments 
+                                  ( ("r" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1284 1307])
+                                    ("c" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1307 1330])
+                                    ("value" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1330 1346]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1260 1494]))                          )
+                        (reparse-symbol namespacesubparts) [102 1504]))                  
+                :type "namespace")
+                nil [77 1509]))          
+    :file "magnetism_problem.h"
+    :pointmax 1562
+    :fsize 1561
+    :lastmodtime '(21495 21285 271735 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAGNETISM_PROBLEM_H")
+          )
+
+    )
+   (semanticdb-table "magnetism_compute_triangle_centers.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAGNETISM_COMPUTE_TRIANGLE_CENTERS" variable (:constant-flag t) nil [52 86])
+            ("glue_triplet.h" include (:system-flag t) nil [88 113])
+            ("vector" include (:system-flag t) nil [115 132])
+            ("magnetism" type
+               (:members 
+                  ( ("compute_triangle_centers" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [258 343])
+                            ("px" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [344 416])
+                            ("py" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [417 489])
+                            ("cx" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [490 562])
+                            ("cy" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [563 635]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [158 1094]))                  
+                :type "namespace")
+                nil [134 1097]))          
+    :file "magnetism_compute_triangle_centers.h"
+    :pointmax 1165
+    :fsize 1164
+    :lastmodtime '(21495 21285 271735 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAGNETISM_COMPUTE_TRIANGLE_CENTERS")
+          )
+
+    )
+   (semanticdb-table "magnetism_compute_triangle_areas.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAGNETISM_COMPUTE_TRIANGLE_AREAS_H" variable (:constant-flag t) nil [52 86])
+            ("glue_triplet.h" include (:system-flag t) nil [88 113])
+            ("vector" include (:system-flag t) nil [115 132])
+            ("cassert" include (:system-flag t) nil [133 151])
+            ("cmath" include (:system-flag t) nil [152 168])
+            ("magnetism" type
+               (:members 
+                  ( ("compute_triangle_areas" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [291 374])
+                            ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [375 479])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [480 584])
+                            ("Ae" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [585 650]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [195 1992]))                  
+                :type "namespace")
+                nil [170 1997]))          
+    :file "magnetism_compute_triangle_areas.h"
+    :pointmax 2065
+    :fsize 2064
+    :lastmodtime '(21495 21285 271735 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAGNETISM_COMPUTE_TRIANGLE_AREAS_H")
+          )
+
+    )
+   (semanticdb-table "magnetism_compute_static_potential.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAGNETISM_COMPUTE_STATIC_POTENTIAL_H" variable (:constant-flag t) nil [54 90])
+            ("MAGNETISM_COMPUTE_STATIC_POTENTIAL_H" variable (:constant-flag t) nil [54 90])
+            ("MAGNETISM_COMPUTE_STATIC_POTENTIAL_H" variable (:constant-flag t) nil [54 90])
+            ("magnetism_problem.h" include (:system-flag t) nil [92 122])
+            ("magnetism_assemble_problem.h" include (:system-flag t) nil [123 162])
+            ("magnetism_solve_eq.h" include (:system-flag t) nil [163 194])
+            ("magnetism_compute_quality_measure.h" include (:system-flag t) nil [195 241])
+            ("glue_triplet.h" include (:system-flag t) nil [243 268])
+            ("glue_matlab_write_mesh.h" include (:system-flag t) nil [269 304])
+            ("util_matlab_write_vector.h" include (:system-flag t) nil [306 343])
+            ("util_matlab_write_matrix.h" include (:system-flag t) nil [344 381])
+            ("util_generate_filename.h" include (:system-flag t) nil [382 417])
+            ("util_log.h" include (:system-flag t) nil [418 439])
+            ("vector" include (:system-flag t) nil [441 458])
+            ("magnetism" type
+               (:members 
+                  ( ("compute_static_potential" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("labels" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [952 1036])
+                            ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1037 1122])
+                            ("neighbors" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1123 1208])
+                            ("px" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1209 1287])
+                            ("py" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1288 1366])
+                            ("Mx" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1367 1445])
+                            ("My" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1446 1524])
+                            ("phi" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1525 1617])
+                            ("q" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1618 1717])
+                            ("refinement_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1718 1814])
+                            ("coarsening_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1815 1911])
+                            ("use_host" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1912 1996])
+                            ("max_iterations" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1997 2087])
+                            ("relative_tolerance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2088 2182])
+                            ("absolute_tolerance" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2183 2277])
+                            ("use_precond" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2278 2365])
+                            ("write" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2366 2447])
+                            ("append" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [2448 2530])
+                            ("filename" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2531 2615]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [852 10195]))                  
+                :type "namespace")
+                nil [460 10270]))          
+    :file "magnetism_compute_static_potential.h"
+    :pointmax 10270
+    :fsize 10269
+    :lastmodtime '(21495 21285 271735 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAGNETISM_COMPUTE_STATIC_POTENTIAL_H")
+          )
+
+    )
+   (semanticdb-table "magnetism_assemble_problem.h"
+    :file "magnetism_assemble_problem.h"
+    :fsize 6193
+    :lastmodtime '(21495 21285 267735 252000)
+    )
+   (semanticdb-table "magnetism_solve_eq.h"
+    :file "magnetism_solve_eq.h"
+    :fsize 3428
+    :lastmodtime '(21495 21285 271735 252000)
+    )
+   (semanticdb-table "magnetism_compute_quality_measure.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MAGNETISM_COMPUTE_QUALITY_MEASURE_H" variable (:constant-flag t) nil [53 88])
+            ("magnetism_compute_triangle_centers.h" include (:system-flag t) nil [90 137])
+            ("magnetism_compute_triangle_areas.h" include (:system-flag t) nil [138 183])
+            ("magnetism_compute_1ring.h" include (:system-flag t) nil [184 220])
+            ("magnetism_compute_linear_regression.h" include (:system-flag t) nil [221 269])
+            ("glue_triplet.h" include (:system-flag t) nil [271 296])
+            ("util_log.h" include (:system-flag t) nil [298 319])
+            ("vector" include (:system-flag t) nil [321 338])
+            ("magnetism" type
+               (:members 
+                  ( ("compute_quality_measure" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("labels" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [440 521])
+                            ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [522 606])
+                            ("neighbors" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [607 691])
+                            ("px" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [692 769])
+                            ("py" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [770 847])
+                            ("phi" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [848 926])
+                            ("q" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [927 1003])
+                            ("refinement_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1004 1099])
+                            ("coarsening_threshold" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1100 1195]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [365 2668]))                  
+                :type "namespace")
+                nil [340 2673]))          
+    :file "magnetism_compute_quality_measure.h"
+    :pointmax 2742
+    :fsize 2741
+    :lastmodtime '(21495 21285 267735 252000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("MAGNETISM_COMPUTE_QUALITY_MEASURE_H")
+          )
+
+    )
+   (semanticdb-table "magnetism_compute_1ring.h"
+    :file "magnetism_compute_1ring.h"
+    :fsize 2257
+    :lastmodtime '(21537 35980 878693 464000)
+    )
+   (semanticdb-table "magnetism_compute_linear_regression.h"
+    :file "magnetism_compute_linear_regression.h"
+    :fsize 2323
+    :lastmodtime '(21495 21285 267735 252000)
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!SIMULATORS!MAGNETISM!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

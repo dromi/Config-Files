@@ -1,0 +1,585 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "util_distance_fields.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_DISTANCE_FIELDS_H" variable (:constant-flag t) nil [40 62])
+            ("cmath" include (:system-flag t) nil [64 80])
+            ("algorithm" include (:system-flag t) nil [81 101])
+            ("util" type
+               (:members 
+                  ( ("DistanceFieldExp" type
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [175 182])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [206 223])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [224 241]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [188 339]))                          )
+                        (reparse-symbol namespacesubparts) [123 490])
+                    ("Plane" type
+                       (:superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [547 554])
+                            ("m_nx" variable (:type "double") (reparse-symbol classsubparts) [560 572])
+                            ("m_ny" variable (:type "double") (reparse-symbol classsubparts) [577 589])
+                            ("m_w" variable (:type "double") (reparse-symbol classsubparts) [594 605])
+                            ("public" label nil (reparse-symbol classsubparts) [609 616])
+                            ("Plane" function
+                               (:constructor-flag t
+                                :type ("Plane" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [622 690])
+                            ("Plane" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("nx" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [702 718])
+                                    ("ny" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [719 735])
+                                    ("w" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [735 750]))                                  
+                                :type ("Plane" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [696 880])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [904 921])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [922 939]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [886 995]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [494 1001])
+                    ("Box" type
+                       (:superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1053 1060])
+                            ("m_min_x" variable (:type "double") (reparse-symbol classsubparts) [1066 1081])
+                            ("m_max_x" variable (:type "double") (reparse-symbol classsubparts) [1086 1101])
+                            ("m_min_y" variable (:type "double") (reparse-symbol classsubparts) [1106 1121])
+                            ("m_max_y" variable (:type "double") (reparse-symbol classsubparts) [1126 1141])
+                            ("public" label nil (reparse-symbol classsubparts) [1145 1152])
+                            ("m_max_y" function (:type "int") (reparse-symbol classsubparts) [1227 1251])
+                            ("m_max_y" function
+                               (:arguments 
+                                  ( ("" variable (:type ("max_y" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1415 1421]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [1407 1433])
+                            ("Box" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [1439 1465])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1489 1506])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [1507 1524]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [1471 2343]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1005 2349])
+                    ("Circle" type
+                       (:superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [2408 2415])
+                            ("m_x" variable (:type "double") (reparse-symbol classsubparts) [2421 2432])
+                            ("m_y" variable (:type "double") (reparse-symbol classsubparts) [2437 2448])
+                            ("m_r" variable (:type "double") (reparse-symbol classsubparts) [2453 2464])
+                            ("public" label nil (reparse-symbol classsubparts) [2468 2475])
+                            ("Circle" function
+                               (:constructor-flag t
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2481 2546])
+                            ("Circle" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2559 2574])
+                                    ("y" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2574 2589])
+                                    ("r" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2589 2604]))                                  
+                                :type ("Circle" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2552 2655])
+                            ("Circle" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2661 2690])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2714 2731])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [2732 2749]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [2696 2936]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [2353 2941])
+                    ("Intersection" type
+                       (:template 
+                          ( ("F1" type (:type "class") nil nil)
+                            ("F2" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3058 3065])
+                            ("m_A" variable (:type ("F1" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3071 3086])
+                            ("m_B" variable (:type ("F2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3091 3106])
+                            ("public" label nil (reparse-symbol classsubparts) [3110 3117])
+                            ("Intersection" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3137 3168])
+                                    ("B" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3169 3200]))                                  
+                                :type ("Intersection" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3123 3238])
+                            ("Intersection" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3244 3279])
+                            ("public" label nil (reparse-symbol classsubparts) [3283 3290])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [3314 3331])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [3332 3349]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [3296 3430]))                          
+                        :superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [2945 3436])
+                    ("Invert" type
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3523 3530])
+                            ("m_A" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3536 3550])
+                            ("public" label nil (reparse-symbol classsubparts) [3554 3561])
+                            ("Invert" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3574 3604]))                                  
+                                :type ("Invert" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3567 3629])
+                            ("Invert" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [3635 3664])
+                            ("public" label nil (reparse-symbol classsubparts) [3668 3675])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [3699 3716])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [3717 3734]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [3681 3777]))                          
+                        :superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3440 3783])
+                    ("Union" type
+                       (:template 
+                          ( ("F1" type (:type "class") nil nil)
+                            ("F2" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [3886 3893])
+                            ("m_A" variable (:type ("F1" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3899 3914])
+                            ("m_B" variable (:type ("F2" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3919 3934])
+                            ("public" label nil (reparse-symbol classsubparts) [3938 3945])
+                            ("Union" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F1" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3957 3988])
+                                    ("B" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F2" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3989 4020]))                                  
+                                :type ("Union" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3951 4058])
+                            ("public" label nil (reparse-symbol classsubparts) [4062 4069])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4093 4110])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4111 4128]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [4075 4209]))                          
+                        :superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [3787 4215])
+                    ("Const" type
+                       (:superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4272 4279])
+                            ("m_val" variable (:type "double") (reparse-symbol classsubparts) [4285 4298])
+                            ("public" label nil (reparse-symbol classsubparts) [4302 4309])
+                            ("Const" function
+                               (:constructor-flag t
+                                :type ("Const" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4315 4352])
+                            ("Const" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("val" variable
+                                       (:constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4364 4381]))                                  
+                                :type ("Const" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4358 4410])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4434 4451])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4452 4469]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [4416 4507]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [4219 4513])
+                    ("Dilation" type
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [4604 4611])
+                            ("m_A" variable (:type ("F" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4617 4635])
+                            ("m_B" variable (:type ("Const" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4640 4658])
+                            ("public" label nil (reparse-symbol classsubparts) [4662 4669])
+                            ("Dilation" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("DistanceFieldExp" type
+                                             (:template-specifier 
+                                                ( ("F" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [4684 4714])
+                                    ("B" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Const" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4715 4731]))                                  
+                                :type ("Dilation" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [4675 4769])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4793 4810])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "double")
+                                        (reparse-symbol arg-sub-list) [4811 4828]))                                  
+                                :type "double")
+                                (reparse-symbol classsubparts) [4775 4880]))                          
+                        :superclasses 
+                          ( ("DistanceFieldExp" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [4517 4886])
+                    ("+" function
+                       (:template 
+                          ( ("F1" type (:type "class") nil nil)
+                            ("F2" type (:type "class") nil nil))                          
+                        :type ("Union" type
+                             (:template-specifier 
+                                ( ("F1" type nil nil nil)
+                                  ("F2" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4964 4994])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4995 5025]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [4890 5063])
+                    ("%" function
+                       (:template 
+                          ( ("F1" type (:type "class") nil nil)
+                            ("F2" type (:type "class") nil nil))                          
+                        :type ("Intersection" type
+                             (:template-specifier 
+                                ( ("F1" type nil nil nil)
+                                  ("F2" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F1" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5148 5178])
+                            ("B" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F2" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5179 5209]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [5067 5254])
+                    ("-" function
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type ("Invert" type
+                             (:template-specifier 
+                                ( ("F" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5317 5346]))                          
+                        :typemodifiers ("inline")
+                        :operator-flag t)
+                        (reparse-symbol namespacesubparts) [5260 5379])
+                    ("dilation" function
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type ("Dilation" type
+                             (:template-specifier 
+                                ( ("F" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5443 5472])
+                            ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5473 5492]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5385 5538])
+                    ("dilation" function
+                       (:template 
+                          ( ("F" type (:type "class") nil nil))                          
+                        :type ("Dilation" type
+                             (:template-specifier 
+                                ( ("F" type nil nil nil))                                
+                              :type "class")
+                              nil nil)
+                        :arguments 
+                          ( ("val" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [5602 5621])
+                            ("A" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("DistanceFieldExp" type
+                                     (:template-specifier 
+                                        ( ("F" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5621 5650]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5544 5676]))                  
+                :type "namespace")
+                nil [103 5681]))          
+    :file "util_distance_fields.h"
+    :pointmax 5733
+    :fsize 5732
+    :lastmodtime '(21428 137 684260 640000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_DISTANCE_FIELDS_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!UTIL!UTIL!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

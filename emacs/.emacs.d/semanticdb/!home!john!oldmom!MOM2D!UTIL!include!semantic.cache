@@ -1,0 +1,43 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "util_timer.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("UTIL_TIMER_H" variable (:constant-flag t) nil [30 42])
+            ("time.h" include (:system-flag t) nil [160 179])
+            ("util" type
+               (:members 
+                  ( ("Timer" type
+                       (:members 
+                          ( ("protected" label nil (reparse-symbol classsubparts) [971 981])
+                            ("m_start" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [987 1011])
+                            ("m_end" variable (:type ("clock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1071 1093])
+                            ("public" label nil (reparse-symbol classsubparts) [1154 1161])
+                            ("start" function (:type "void") (reparse-symbol classsubparts) [1167 1224])
+                            ("stop" function (:type "void") (reparse-symbol classsubparts) [1230 1276])
+                            ("duration" function (:type "float") (reparse-symbol classsubparts) [1427 1758])
+                            ("()" function
+                               (:operator-flag t
+                                :type "float")
+                                (reparse-symbol classsubparts) [1872 2359]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [953 2369]))                  
+                :type "namespace")
+                nil [188 2380]))          
+    :file "util_timer.h"
+    :pointmax 2432
+    :fsize 2431
+    :lastmodtime '(21537 39856 578561 150000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("UTIL_TIMER_H")
+          )
+
+    )
+   )
+  :file "!home!john!oldmom!MOM2D!UTIL!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

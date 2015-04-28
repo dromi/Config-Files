@@ -1,0 +1,770 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "configurations.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("CONFIGURATIONS_H" variable (:constant-flag t) nil [34 50])
+            ("elasticity.h" include (:system-flag t) nil [52 75])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [77 104])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [105 140])
+            ("glue_make_phase.h" include (:system-flag t) nil [142 170])
+            ("glue_compute_contact_points.h" include (:system-flag t) nil [171 211])
+            ("glue_sub_range.h" include (:system-flag t) nil [212 239])
+            ("util_distance_fields.h" include (:system-flag t) nil [241 274])
+            ("util_generate_filename.h" include (:system-flag t) nil [275 310])
+            ("util_log.h" include (:system-flag t) nil [311 332])
+            ("compute_time_step" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("obj" variable
+                       (:reference 1
+                        :type ("elasticity::Object" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [395 451])
+                    ("params" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("elasticity::Parameters" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [452 521]))                  
+                :type "void")
+                nil [334 1243])
+            ("make_object" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type ("elasticity::Object" type (:type "class") nil nil)
+                :arguments 
+                  ( ("label" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::MeshAPI::phase_id" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1331 1397])
+                    ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1398 1447])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1448 1520])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1521 1592])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1593 1638]))                  
+                :typemodifiers ("inline"))
+                nil [1245 2020])
+            ("make_object" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type ("elasticity::Object" type (:type "class") nil nil)
+                :arguments 
+                  ( ("label" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::MeshAPI::phase_id" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2111 2177])
+                    ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2178 2227])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2228 2315])
+                    ("p" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2316 2387])
+                    ("v" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2388 2474])
+                    ("labels" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2475 2568]))                  
+                :typemodifiers ("inline"))
+                nil [2023 2994])
+            ("configuration_0" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3141 3202])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3203 3277])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3278 3345])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3346 3417])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3418 3485]))                  
+                :typemodifiers ("inline"))
+                nil [3061 4477])
+            ("configuration_1" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4643 4704])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4705 4779])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4780 4847])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4848 4984])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4985 5052]))                  
+                :typemodifiers ("inline"))
+                nil [4565 6556])
+            ("configuration_2" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6720 6781])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6782 6856])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6857 6924])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6925 7061])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7062 7129]))                  
+                :typemodifiers ("inline"))
+                nil [6642 8531])
+            ("configuration_3" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8700 8761])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8762 8836])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8837 8904])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8905 9041])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9042 9109]))                  
+                :typemodifiers ("inline"))
+                nil [8622 10816])
+            ("configuration_4" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10988 11049])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11050 11124])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11125 11192])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11193 11329])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11330 11397]))                  
+                :typemodifiers ("inline"))
+                nil [10908 13104])
+            ("configuration_5" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13297 13358])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13359 13433])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13434 13501])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13502 13638])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13639 13706]))                  
+                :typemodifiers ("inline"))
+                nil [13219 15159])
+            ("configuration_6" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15370 15431])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15432 15506])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15507 15574])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15575 15711])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15712 15779]))                  
+                :typemodifiers ("inline"))
+                nil [15292 17623])
+            ("resolve_collisions" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("contacts" variable
+                       (:reference 1
+                        :type ("std::vector" type
+                             (:template-specifier 
+                                ( ("glue::ContactPoint" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17931 17974])
+                    ("objects" variable (:type ("std::vector" type
+                         (:template-specifier 
+                            ( ("elasticity::Object" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol arg-sub-list) [17975 18015])
+                    ("free_object" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18016 18040])
+                    ("sliding" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [18041 18062]))                  
+                :type "void")
+                nil [17900 22460])
+            ("configuration_7" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22750 22811])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22812 22886])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22887 22954])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22955 23026])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23027 23094]))                  
+                :typemodifiers ("inline"))
+                nil [22672 25642])
+            ("configuration_8" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type "void"
+                :arguments 
+                  ( ("mesh" variable
+                       (:reference 1
+                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25873 25934])
+                    ("p0" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25935 26024])
+                    ("p" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("V" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26025 26092])
+                    ("p_new" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26093 26179])
+                    ("v" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26180 26262])
+                    ("labels" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex0AttributeVector" type
+                             (:template-specifier 
+                                ( ("std::vector" type nil nil nil))                                
+                              :type "class")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26263 26352])
+                    ("sliding_allowed" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type "bool")
+                        (reparse-symbol arg-sub-list) [26353 26411]))                  
+                :typemodifiers ("inline"))
+                nil [25795 30221]))          
+    :file "configurations.h"
+    :pointmax 30250
+    :fsize 30252
+    :lastmodtime '(21495 21285 339735 250000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("CONFIGURATIONS_H")
+          )
+
+    )
+   (semanticdb-table "time_stepper.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("TIME_STEPPER_H" variable (:constant-flag t) nil [32 46])
+            ("configurations.h" include (:system-flag t) nil [48 75])
+            ("mom2d_time_stepper.h" include (:system-flag t) nil [77 108])
+            ("util_log.h" include (:system-flag t) nil [110 131])
+            ("cassert" include (:system-flag t) nil [133 151])
+            ("vector" include (:system-flag t) nil [152 169])
+            ("mom2d" type
+               (:members 
+                  ( ("HyperelasticityTimeStepper" type
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [284 292])
+                            ("T" type
+                               (:typedef ("MT::real_type" type (:type "class") nil nil)
+                                :superclasses "MT::real_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [297 330])
+                            ("V" type
+                               (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                                :superclasses "MT::vector3_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [335 371])
+                            ("private" label nil (reparse-symbol classsubparts) [375 383])
+                            ("m_mesh" variable (:type ("MeshAPI" type (:type "class") nil nil)) (reparse-symbol classsubparts) [389 406])
+                            ("m_coords" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [411 449])
+                            ("m_material_coords" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [454 501])
+                            ("m_positions" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [506 547])
+                            ("m_velocity_field" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [552 598])
+                            ("m_configuration_id" variable (:type "int") (reparse-symbol classsubparts) [603 626])
+                            ("public" label nil (reparse-symbol classsubparts) [630 637])
+                            ("HyperelasticityTimeStepper" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("mesh" variable
+                                       (:reference 1
+                                        :type ("MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [702 749])
+                                    ("coords" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [750 818])
+                                    ("material_coords" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [819 896])
+                                    ("positions" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [897 937])
+                                    ("" variable (:type ("l" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [936 969])
+                                    ("velocity_field" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [970 1046])
+                                    ("configuration_id" variable (:type "int") (reparse-symbol arg-sub-list) [1047 1100])
+                                    ("copy" variable (:type "bool") (reparse-symbol arg-sub-list) [1101 1112])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1113 1151]))                                  
+                                :type ("HyperelasticityTimeStepper" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [643 1357])
+                            ("do_timestep" function
+                               (:arguments 
+                                  ( ("time" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1380 1387]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [1363 2803]))                          
+                        :superclasses 
+                          ( ("TimeStepper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [193 2808]))                  
+                :type "namespace")
+                nil [172 2813]))          
+    :file "time_stepper.h"
+    :pointmax 2841
+    :fsize 2839
+    :lastmodtime '(21465 10404 409128 324000)
+    :unmatched-syntax '((punctuation 1111 . 1112) (punctuation 1110 . 1111))
+    :lexical-table 
+        '(("TIME_STEPPER_H")
+          )
+
+    )
+   (semanticdb-table "time_stepper_multiphase.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("REG_TIME_STEPPER_H" variable (:constant-flag t) nil [36 54])
+            ("mom2d_time_stepper.h" include (:system-flag t) nil [56 87])
+            ("util_log.h" include (:system-flag t) nil [88 88])
+            ("util_profiling.h" include (:system-flag t) nil [88 88])
+            ("cassert" include (:system-flag t) nil [88 88])
+            ("vector" include (:system-flag t) nil [88 105])
+            ("mom2d" type
+               (:members 
+                  ( ("RegistrationMultiPhaseTimeStepper" type
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [265 273])
+                            ("T" type
+                               (:typedef ("MT::real_type" type (:type "class") nil nil)
+                                :superclasses "MT::real_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [279 312])
+                            ("V" type
+                               (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                                :superclasses "MT::vector3_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [317 353])
+                            ("private" label nil (reparse-symbol classsubparts) [357 365])
+                            ("m_mesh" variable (:type ("MeshAPI" type (:type "class") nil nil)) (reparse-symbol classsubparts) [371 388])
+                            ("m_coords" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [393 431])
+                            ("m_positions" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [436 477])
+                            ("m_velocity_field" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [482 528])
+                            ("public" label nil (reparse-symbol classsubparts) [532 539])
+                            ("m_velocity_field" function
+                               (:arguments 
+                                  ( ("" variable (:type ("velocity_field" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [866 881]))                                  
+                                :type "int")
+                                (reparse-symbol classsubparts) [849 888])
+                            ("do_timestep" function
+                               (:arguments 
+                                  ( ("time" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [911 918]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [894 1323]))                          
+                        :superclasses 
+                          ( ("TimeStepper" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          )
+                        (reparse-symbol namespacesubparts) [165 1328]))                  
+                :type "namespace")
+                nil [107 1333]))          
+    :file "time_stepper_multiphase.h"
+    :pointmax 1602
+    :fsize 2481
+    :lastmodtime '(21465 10404 405126 324000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("REG_TIME_STEPPER_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!APPS!elastic!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

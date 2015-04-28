@@ -1,0 +1,18 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "mom2d.cpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "mom2d.cpp"
+    :pointmax 3
+    :fsize 2
+    :lastmodtime '(21334 35190 99959 729000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!MOM2D!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

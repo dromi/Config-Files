@@ -1,0 +1,7 @@
+[user]
+	email = dromi@diku.dk
+	name = dromi
+[push]
+	default = simple
+[credential]
+	helper = cache --timeout=3600

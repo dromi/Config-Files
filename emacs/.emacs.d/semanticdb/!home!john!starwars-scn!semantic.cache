@@ -1,0 +1,58 @@
+;; Object starwars-scn/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "starwars-scn/"
+  :tables (list 
+   (semanticdb-table "wikigrapper.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("wikipedia" include nil nil [1 17])
+            ("requests" include nil nil [18 33])
+            ("dump" variable nil nil [35 91])
+            ("page_length" variable nil nil [93 108])
+            ("try" code nil nil [110 616])
+            ("\"\"\"
+print(page.title, \"\\n\")
+print(page.content)
+print('\\n\\n'+str(len(page.content)))
+
+
+
+sum = 0
+e = 0
+
+for i in range(25):
+    topic = wikipedia.random()
+    try:
+        sum += len(wikipedia.page(topic).content)
+    except wikipedia.DisambiguationError:
+        print(\"Disambiguous answer!!\")
+        e += 1
+    print(\"done no\", i)
+
+\"\"\"" code nil nil [618 955]))          
+    :file "wikigrapper.py"
+    :pointmax 956
+    :fsize 955
+    :lastmodtime '(21288 18138 633038 213000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "reddit-grabber.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("praw" include nil nil [24 35])
+            ("requests" include nil nil [36 51])
+            ("random" include nil nil [52 65])
+            ("subprocess" include nil nil [66 93])
+            ("res" variable nil nil [94 102])
+            ("try" code nil nil [103 521]))          
+    :file "reddit-grabber.py"
+    :pointmax 513
+    :fsize 520
+    :lastmodtime '(21496 58111 711893 117000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!starwars-scn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

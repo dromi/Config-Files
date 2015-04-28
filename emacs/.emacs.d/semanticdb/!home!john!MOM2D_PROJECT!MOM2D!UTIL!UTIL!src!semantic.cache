@@ -1,0 +1,165 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "util_string_helper.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("util_string_helper.h" include (:system-flag t) nil [1 32])
+            ("cassert" include (:system-flag t) nil [34 52])
+            ("sstream" include (:system-flag t) nil [53 71])
+            ("util" type
+               (:members 
+                  ( ("to_value" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("T" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [129 153]))                          )
+                        (reparse-symbol namespacesubparts) [95 335])
+                    ("to_string" function
+                       (:template 
+                          ( ("T" type (:type "class") nil nil))                          
+                        :type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [386 402]))                          )
+                        (reparse-symbol namespacesubparts) [341 544])
+                    ("to_value" function
+                       (:type "bool"
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [581 605]))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [548 860])
+                    ("to_value" function
+                       (:template-specifier 
+                          ( ("float" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [897 921]))                          
+                        :type "float")
+                        (reparse-symbol namespacesubparts) [875 922])
+                    ("to_value" function
+                       (:template-specifier 
+                          ( ("double" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [963 987]))                          
+                        :type "double")
+                        (reparse-symbol namespacesubparts) [939 988])
+                    ("to_value" function
+                       (:template-specifier 
+                          ( ("size_t" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1029 1053]))                          
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1005 1054])
+                    ("to_value" function
+                       (:template-specifier 
+                          ( ("unsigned int" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("txt" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1105 1129]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [1069 1130])
+                    ("to_string" function
+                       (:type ("std::string" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "bool")
+                                (reparse-symbol arg-sub-list) [1177 1196]))                          
+                        :template-specifier 
+                          ( ("bool" type nil nil nil))                          )
+                        (reparse-symbol namespacesubparts) [1136 1243])
+                    ("to_string" function
+                       (:template-specifier 
+                          ( ("float" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "float")
+                                (reparse-symbol arg-sub-list) [1287 1307]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1258 1308])
+                    ("to_string" function
+                       (:template-specifier 
+                          ( ("double" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [1355 1376]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1325 1377])
+                    ("to_string" function
+                       (:template-specifier 
+                          ( ("size_t" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("size_t" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1424 1445]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1394 1446])
+                    ("to_string" function
+                       (:template-specifier 
+                          ( ("unsigned int" type nil nil nil))                          
+                        :prototype-flag t
+                        :arguments 
+                          ( ("value" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1497 1524]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1461 1525]))                  
+                :type "namespace")
+                nil [73 1528]))          
+    :file "util_string_helper.cpp"
+    :pointmax 1383
+    :fsize 1546
+    :lastmodtime '(21428 947 976226 305000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!UTIL!UTIL!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

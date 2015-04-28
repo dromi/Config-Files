@@ -1,0 +1,180 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "area_object.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("AREA_OBJECT_H" variable (:constant-flag t) nil [31 44])
+            ("glue_phase.h" include (:system-flag t) nil [46 69])
+            ("vector" include (:system-flag t) nil [71 88])
+            ("area" type
+               (:members 
+                  ( ("Object" type
+                       (:superclasses 
+                          ( ("glue::Phase" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [152 159])
+                            ("m_px" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [165 190])
+                            ("m_py" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [222 247])
+                            ("m_px_new" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [279 308])
+                            ("m_py_new" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [340 369])
+                            ("m_dx" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [401 426])
+                            ("m_dy" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("double" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [474 499])
+                            ("public" label nil (reparse-symbol classsubparts) [546 553])
+                            ("Object" function
+                               (:constructor-flag t
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [559 594])
+                            ("Object" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Object" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [607 626]))                                  
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [600 657])
+                            ("Object" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("phase" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("glue::Phase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [670 696]))                                  
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [663 728])
+                            ("Object" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [734 753])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("obj" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Object" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [784 803]))                                  
+                                :type ("Object" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [759 1160]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [110 1170]))                  
+                :type "namespace")
+                nil [90 1173]))          
+    :file "area_object.h"
+    :pointmax 1223
+    :fsize 1222
+    :lastmodtime '(21500 43003 794817 73000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AREA_OBJECT_H")
+          )
+
+    )
+   (semanticdb-table "area_compute_area_gradient.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("AREA_COMPUTE_AREA_GRADIENT_H" variable (:constant-flag t) nil [46 74])
+            ("mom2d_configuration.h" include (:system-flag t) nil [76 108])
+            ("glue_triplet.h" include (:system-flag t) nil [110 135])
+            ("vector" include (:system-flag t) nil [137 154])
+            ("cassert" include (:system-flag t) nil [155 173])
+            ("cmath" include (:system-flag t) nil [174 190])
+            ("area" type
+               (:members 
+                  ( ("compute_area_gradient" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("glue::Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [286 369])
+                            ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [370 480])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [481 591])
+                            ("nabla_x" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [592 700])
+                            ("nabla_y" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [701 809]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [214 3037]))                  
+                :type "namespace")
+                nil [192 3040]))          
+    :file "area_compute_area_gradient.h"
+    :pointmax 3105
+    :fsize 3104
+    :lastmodtime '(21537 35980 930693 462000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("AREA_COMPUTE_AREA_GRADIENT_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!SIMULATORS!AREA!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

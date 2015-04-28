@@ -1,0 +1,441 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "mom2d_svg_export.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("MOM2D_SVG_EXPORT_H" variable (:constant-flag t) nil [36 54])
+            ("mom2d_meshapi.h" include (:system-flag t) nil [56 82])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [83 118])
+            ("mom2d_compute_interface.h" include (:system-flag t) nil [119 155])
+            ("sstream" include (:system-flag t) nil [157 175])
+            ("fstream" include (:system-flag t) nil [176 194])
+            ("iostream" include (:system-flag t) nil [195 214])
+            ("string" include (:system-flag t) nil [215 232])
+            ("iomanip" include (:system-flag t) nil [233 251])
+            ("mom2d" type
+               (:members 
+                  ( ("HSLtoRGB_Subfunction" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("c" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [346 353])
+                            ("temp1" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [354 374])
+                            ("temp2" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [375 395])
+                            ("temp3" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "double")
+                                (reparse-symbol arg-sub-list) [396 416]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [313 736])
+                    ("HSLtoRGB" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("h" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [915 928])
+                            ("s" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [929 942])
+                            ("l" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [943 956])
+                            ("r" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [957 965])
+                            ("g" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [966 974])
+                            ("b" variable
+                               (:reference 1
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [975 983]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [894 2240])
+                    ("svg_style" type
+                       (:members 
+                          ( ("stroke_width" variable (:type "double") (reparse-symbol classsubparts) [2269 2289])
+                            ("stroke" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2294 2313])
+                            ("fill" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2318 2335])
+                            ("svg_style" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("s" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2351 2365])
+                                    ("f" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2366 2380]))                                  
+                                :type ("svg_style" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2341 2442]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2244 2448])
+                    ("simplex_styles" type
+                       (:members 
+                          ( ("simplex0" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2482 2501])
+                            ("simplex1" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2506 2525])
+                            ("simplex2" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2530 2549])
+                            ("simplex0_interface" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2554 2583])
+                            ("simplex1_interface" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2588 2617])
+                            ("simplex_styles" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("s0" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2638 2651])
+                                    ("s1" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2652 2665])
+                                    ("s2" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2666 2679])
+                                    ("s0_int" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2680 2697])
+                                    ("s1_int" variable (:type ("svg_style" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2698 2715]))                                  
+                                :type ("simplex_styles" type (:type "struct") nil nil))
+                                (reparse-symbol classsubparts) [2623 2830]))                          
+                        :type "struct")
+                        (reparse-symbol namespacesubparts) [2452 2835])
+                    ("SVGExporter" type
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "class"
+                        :members 
+                          ( ("private" label nil (reparse-symbol classsubparts) [2888 2896])
+                            ("T" type
+                               (:typedef ("MT::real_type" type (:type "class") nil nil)
+                                :superclasses "MT::real_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2901 2937])
+                            ("V" type
+                               (:typedef ("MT::vector3_type" type (:type "class") nil nil)
+                                :superclasses "MT::vector3_type"
+                                :type "typedef")
+                                (reparse-symbol classsubparts) [2942 2978])
+                            ("private" label nil (reparse-symbol classsubparts) [2982 2990])
+                            ("m_coords" variable (:type ("Simplex0AttributeVector" type
+                                 (:template-specifier 
+                                    ( ("V" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2996 3034])
+                            ("m_mesh" variable (:type ("MeshAPI" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3071 3107])
+                            ("m_stream" variable (:type ("std::ostream" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3112 3150])
+                            ("m_simplex_set" variable (:type ("SimplexSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3155 3198])
+                            ("m_simplex_set_mesh" variable (:type ("SimplexSet" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3203 3251])
+                            ("m_dx" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3257 3264])
+                            ("m_dy" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3269 3276])
+                            ("m_scale" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3281 3291])
+                            ("public" label nil (reparse-symbol classsubparts) [3295 3302])
+                            ("m_colors" variable
+                               (:pointer 1
+                                :type ("Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("T" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol classsubparts) [3308 3346])
+                            ("public" label nil (reparse-symbol classsubparts) [3350 3357])
+                            ("SVGExporter" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("coords" variable
+                                       (:reference 1
+                                        :type ("Simplex0AttributeVector" type
+                                             (:template-specifier 
+                                                ( ("V" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [3392 3445])
+                                    ("mesh" variable
+                                       (:reference 1
+                                        :type ("MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3446 3478])
+                                    ("stream" variable
+                                       (:reference 1
+                                        :type ("std::ostream" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3479 3518])
+                                    ("simplex_set" variable
+                                       (:reference 1
+                                        :type ("SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3519 3544]))                                  
+                                :type ("SVGExporter" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3363 3790])
+                            ("private" label nil (reparse-symbol classsubparts) [3794 3802])
+                            ("dx" function
+                               (:arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3813 3817]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3808 3850])
+                            ("dy" function
+                               (:arguments 
+                                  ( ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3861 3865]))                                  
+                                :type ("T" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3856 3899])
+                            ("style_attr" function
+                               (:arguments 
+                                  ( ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3955 3979])
+                                    ("stroke" variable (:type "bool") (reparse-symbol arg-sub-list) [3980 3993])
+                                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3994 3999]))                                  
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3932 4308])
+                            ("public" label nil (reparse-symbol classsubparts) [4312 4319])
+                            ("scale" function
+                               (:arguments 
+                                  ( ("scale" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4336 4344]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4325 4365])
+                            ("begin_document" function (:type "void") (reparse-symbol classsubparts) [4371 4565])
+                            ("end_document" function (:type "void") (reparse-symbol classsubparts) [4571 4644])
+                            ("draw_edge" function
+                               (:arguments 
+                                  ( ("x1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4665 4670])
+                                    ("y1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4671 4676])
+                                    ("x2" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4677 4682])
+                                    ("y2" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4683 4688])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4708 4732])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [4752 4776]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [4650 4998])
+                            ("draw_vertex" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5021 5031])
+                                    ("y" variable
+                                       (:constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5032 5042])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5064 5088])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5110 5134]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5004 5352])
+                            ("draw_triangle" function
+                               (:arguments 
+                                  ( ("x1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5377 5382])
+                                    ("y1" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5383 5388])
+                                    ("x2" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5412 5417])
+                                    ("y2" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5418 5423])
+                                    ("x3" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5447 5452])
+                                    ("y3" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5453 5458])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5482 5506])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5530 5554]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5358 5816])
+                            ("draw_simplex0" function
+                               (:arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Simplex0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5841 5860])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5884 5908])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [5932 5956]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [5822 6354])
+                            ("draw_simplex1" function
+                               (:arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Simplex1" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6379 6398])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6422 6446])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6470 6494]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6360 6656])
+                            ("draw_simplex2" function
+                               (:arguments 
+                                  ( ("s" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Simplex2" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6681 6700])
+                                    ("style" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("svg_style" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6724 6748])
+                                    ("oid" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("std::string" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [6772 6796]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [6662 7678])
+                            ("draw_simplices" function
+                               (:arguments 
+                                  ( ("simplex_set" variable
+                                       (:reference 1
+                                        :type ("SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7704 7729])
+                                    ("exclude_set" variable
+                                       (:reference 1
+                                        :type ("SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7754 7779])
+                                    ("dimension" variable (:type "int") (reparse-symbol arg-sub-list) [7804 7818])
+                                    ("type" variable (:type ("std::string" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7843 7860])
+                                    ("styles" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("simplex_styles" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [7885 7915]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [7684 9503])
+                            ("export_svg" function
+                               (:arguments 
+                                  ( ("exclude_set" variable (:type "bool") (reparse-symbol arg-sub-list) [9525 9543])
+                                    ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9544 9549])
+                                    ("exclude_vertices" variable (:type "bool") (reparse-symbol arg-sub-list) [9550 9573])
+                                    ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9574 9580]))                                  
+                                :type "void")
+                                (reparse-symbol classsubparts) [9509 11335])
+                            ("set_bounding_box" function (:type "void") (reparse-symbol classsubparts) [11341 11739])
+                            ("export_slabs" function (:type "void") (reparse-symbol classsubparts) [11745 11879]))                          )
+                        (reparse-symbol namespacesubparts) [2839 11884])
+                    ("export_svg" function
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [11955 11980])
+                            ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11981 12005])
+                            ("" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::vector3_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12005 12031])
+                            ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12034 12060])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12061 12095])
+                            ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12096 12120])
+                            ("" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::real_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12120 12143])
+                            ("" variable (:type ("colors" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12146 12154])
+                            ("" variable (:type ("NULL" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12155 12179])
+                            ("leading" variable (:type "int") (reparse-symbol arg-sub-list) [12180 12193])
+                            ("exclude_vertices" variable (:type "bool") (reparse-symbol arg-sub-list) [12216 12239])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12240 12265])
+                            ("scale" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::real_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12266 12296]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [11888 12796])
+                    ("export_svg" function
+                       (:template 
+                          ( ("MT" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [12867 12892])
+                            ("" variable (:type ("Simplex0AttributeVector" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12893 12917])
+                            ("" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::vector3_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12917 12943])
+                            ("" variable (:type ("coords" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12946 12972])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [12973 13007])
+                            ("simplex_set" variable
+                               (:reference 1
+                                :type ("SimplexSet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13008 13052])
+                            ("leading" variable (:type "int") (reparse-symbol arg-sub-list) [13053 13066])
+                            ("exclude_vertices" variable (:type "bool") (reparse-symbol arg-sub-list) [13089 13112])
+                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13113 13138])
+                            ("scale" variable
+                               (:typemodifiers ("typename")
+                                :type ("MT::real_type" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [13139 13169]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [12800 13626]))                  
+                :type "namespace")
+                nil [253 13631]))          
+    :file "mom2d_svg_export.h"
+    :pointmax 13683
+    :fsize 13682
+    :lastmodtime '(21401 42938 111250 610000)
+    :unmatched-syntax '((number 13170 . 13171) (punctuation 13168 . 13169) (punctuation 13111 . 13112) (number 13067 . 13068) (punctuation 13065 . 13066) (punctuation 12944 . 12945) (punctuation 12942 . 12943) (punctuation 12916 . 12917) (number 12297 . 12298) (punctuation 12295 . 12296) (punctuation 12238 . 12239) (number 12194 . 12195) (punctuation 12192 . 12193) (punctuation 12153 . 12154) (punctuation 12144 . 12145) (punctuation 12142 . 12143) (punctuation 12119 . 12120) (punctuation 12032 . 12033) (punctuation 12030 . 12031) (punctuation 12004 . 12005) (punctuation 9572 . 9573) (punctuation 9542 . 9543) (punctuation 3992 . 3993))
+    :lexical-table 
+        '(("MOM2D_SVG_EXPORT_H")
+          )
+
+    )
+   (semanticdb-table "mom2d_meshapi.h"
+    :file "mom2d_meshapi.h"
+    :fsize 2860
+    :lastmodtime '(21401 42938 123250 610000)
+    )
+   (semanticdb-table "mom2d_attribute_vector.h"
+    :file "mom2d_attribute_vector.h"
+    :fsize 2308
+    :lastmodtime '(21401 42938 123250 610000)
+    )
+   (semanticdb-table "mom2d_compute_interface.h"
+    :file "mom2d_compute_interface.h"
+    :fsize 6253
+    :lastmodtime '(21401 42938 127250 610000)
+    )
+   )
+  :file "!home!john!mom_clone!MOM2D_PROJECT!MOM2D!MOM2D!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

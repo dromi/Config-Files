@@ -1,0 +1,129 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("magnetism_compute_static_potential.h" include (:system-flag t) nil [1 48])
+            ("remeshing_algorithm.h" include (:system-flag t) nil [49 81])
+            ("mom2d_simplex.h" include (:system-flag t) nil [83 109])
+            ("mom2d_opentissue_mesh.h" include (:system-flag t) nil [110 144])
+            ("mom2d_opentissue_math_types.h" include (:system-flag t) nil [145 185])
+            ("mom2d_svg_draw_mom2d.h" include (:system-flag t) nil [186 219])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [220 255])
+            ("mom2d_slab_decomposition.h" include (:system-flag t) nil [256 293])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [294 325])
+            ("mom2d_random_simplex.h" include (:system-flag t) nil [326 359])
+            ("mom2d_load_from_txt.h" include (:system-flag t) nil [360 392])
+            ("mom2d_pthread_scheduler.h" include (:system-flag t) nil [393 429])
+            ("mom2d_sequential_scheduler.h" include (:system-flag t) nil [430 469])
+            ("mom2d_time_stepper.h" include (:system-flag t) nil [470 501])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [502 533])
+            ("mom2d_data.h" include (:system-flag t) nil [534 557])
+            ("glue_triplet.h" include (:system-flag t) nil [559 584])
+            ("glue_phase.h" include (:system-flag t) nil [585 608])
+            ("glue_make_phase.h" include (:system-flag t) nil [609 637])
+            ("glue_make_phase_labels.h" include (:system-flag t) nil [638 673])
+            ("glue_make_adjacency.h" include (:system-flag t) nil [674 706])
+            ("glue_sub_range.h" include (:system-flag t) nil [707 734])
+            ("util_generate_filename.h" include (:system-flag t) nil [736 771])
+            ("util_profiling.h" include (:system-flag t) nil [772 799])
+            ("util_matlab_write_vector.h" include (:system-flag t) nil [800 837])
+            ("util_config_file.h" include (:system-flag t) nil [838 867])
+            ("util_log.h" include (:system-flag t) nil [868 889])
+            ("util_timestamp.h" include (:system-flag t) nil [890 917])
+            ("iostream" include (:system-flag t) nil [919 938])
+            ("time.h" include (:system-flag t) nil [939 956])
+            ("vector" include (:system-flag t) nil [957 974])
+            ("set" include (:system-flag t) nil [975 989])
+            ("mesh_type" type
+               (:typedef ("OpenTissue::polymesh::PolyMesh" type (:type "class") nil nil)
+                :superclasses "OpenTissue::polymesh::PolyMesh"
+                :type "typedef")
+                nil [991 1058])
+            ("math_types" type
+               (:typedef ("mesh_type::math_types" type (:type "class") nil nil)
+                :superclasses "mesh_type::math_types"
+                :type "typedef")
+                nil [1059 1127])
+            ("VT" type
+               (:typedef ("math_types::value_traits" type (:type "class") nil nil)
+                :superclasses "math_types::value_traits"
+                :type "typedef")
+                nil [1128 1188])
+            ("V" type
+               (:typedef ("math_types::vector3_type" type (:type "class") nil nil)
+                :superclasses "math_types::vector3_type"
+                :type "typedef")
+                nil [1189 1248])
+            ("T" type
+               (:typedef ("math_types::real_type" type (:type "class") nil nil)
+                :superclasses "math_types::real_type"
+                :type "typedef")
+                nil [1249 1308])
+            ("mesh_impl" type
+               (:typedef ("mom2d::OpenTissueMesh" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "mom2d::OpenTissueMesh"
+                :type "typedef")
+                nil [1309 1376])
+            ("MT" type
+               (:typedef ("mom2d::OpenTissueMathTypes" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "mom2d::OpenTissueMathTypes"
+                :type "typedef")
+                nil [1377 1437])
+            ("settings" variable (:type ("util::ConfigFile" type (:type "class") nil nil)) nil [1439 1465])
+            ("logging" variable (:type ("util::Log" type (:type "class") nil nil)) nil [1466 1491])
+            ("newline" variable (:type ("std::string" type (:type "class") nil nil)) nil [1492 1541])
+            ("coords" variable (:type ("mom2d::Simplex0AttributeVector" type
+                 (:template-specifier 
+                    ( ("V" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1543 1584])
+            ("mesh" variable (:type ("mesh_impl" type (:type "class") nil nil)) nil [1585 1624])
+            ("interpolation_interface_refinement" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("mom2d::SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1667 1701])
+                    ("s" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1702 1722])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1723 1729]))                  
+                :type "void")
+                nil [1627 2080])
+            ("default_interface_refinement" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("mom2d::SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2116 2150])
+                    ("s" variable
+                       (:reference 1
+                        :type ("mom2d::Simplex2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2151 2171])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2172 2178]))                  
+                :type "void")
+                nil [2082 2182])
+            ("main" function (:type "int") nil [2185 7103]))          
+    :file "main.cpp"
+    :pointmax 7104
+    :fsize 7103
+    :lastmodtime '(21545 24576 261148 996000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!APPS!magnetostatics!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

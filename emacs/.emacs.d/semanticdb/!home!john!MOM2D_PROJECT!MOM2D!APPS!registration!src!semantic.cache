@@ -1,0 +1,158 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("mom2d_simplex.h" include (:system-flag t) nil [1 27])
+            ("mom2d_opentissue_mesh.h" include (:system-flag t) nil [28 62])
+            ("mom2d_opentissue_math_types.h" include (:system-flag t) nil [63 103])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [104 139])
+            ("mom2d_slab_decomposition.h" include (:system-flag t) nil [140 177])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [178 209])
+            ("mom2d_random_simplex.h" include (:system-flag t) nil [210 243])
+            ("mom2d_load_from_txt.h" include (:system-flag t) nil [244 276])
+            ("mom2d_pthread_scheduler.h" include (:system-flag t) nil [277 313])
+            ("mom2d_sequential_scheduler.h" include (:system-flag t) nil [314 353])
+            ("mom2d_time_stepper.h" include (:system-flag t) nil [354 385])
+            ("mom2d_data.h" include (:system-flag t) nil [386 409])
+            ("mom2d_svg_draw_mom2d.h" include (:system-flag t) nil [410 443])
+            ("mom2d_compute_interface.h" include (:system-flag t) nil [445 481])
+            ("util_generate_filename.h" include (:system-flag t) nil [483 518])
+            ("util_distance_fields.h" include (:system-flag t) nil [519 552])
+            ("util_config_file.h" include (:system-flag t) nil [553 582])
+            ("util_log.h" include (:system-flag t) nil [583 604])
+            ("util_timestamp.h" include (:system-flag t) nil [605 632])
+            ("util_timer.h" include (:system-flag t) nil [633 656])
+            ("util_matlab_write_vector.h" include (:system-flag t) nil [657 694])
+            ("util_image.h" include (:system-flag t) nil [696 719])
+            ("util_image_write.h" include (:system-flag t) nil [720 749])
+            ("glue_phase.h" include (:system-flag t) nil [751 774])
+            ("glue_make_phase.h" include (:system-flag t) nil [775 803])
+            ("glue_matlab_write_mesh.h" include (:system-flag t) nil [804 839])
+            ("energy_terms.h" include (:system-flag t) nil [841 866])
+            ("energy_gradients.h" include (:system-flag t) nil [867 896])
+            ("imagefunctor.h" include (:system-flag t) nil [897 922])
+            ("remeshing_algorithm.h" include (:system-flag t) nil [923 955])
+            ("draw_utils.h" include (:system-flag t) nil [986 1009])
+            ("smoothe_gradient.h" include (:system-flag t) nil [1010 1039])
+            ("registration_quality_measure.h" include (:system-flag t) nil [1040 1081])
+            ("registration_refine_measure.h" include (:system-flag t) nil [1082 1122])
+            ("reg_time_stepper.h" include (:system-flag t) nil [1123 1152])
+            ("iostream" include (:system-flag t) nil [1155 1174])
+            ("ctime" include (:system-flag t) nil [1175 1191])
+            ("cmath" include (:system-flag t) nil [1192 1208])
+            ("vector" include (:system-flag t) nil [1209 1226])
+            ("chrono" include (:system-flag t) nil [1227 1244])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [1246 1268])
+            ("mesh_type" type
+               (:typedef ("OpenTissue::polymesh::PolyMesh" type (:type "class") nil nil)
+                :superclasses "OpenTissue::polymesh::PolyMesh"
+                :type "typedef")
+                nil [1270 1330])
+            ("math_types" type
+               (:typedef ("mesh_type::math_types" type (:type "class") nil nil)
+                :superclasses "mesh_type::math_types"
+                :type "typedef")
+                nil [1331 1392])
+            ("VT" type
+               (:typedef ("math_types::value_traits" type (:type "class") nil nil)
+                :superclasses "math_types::value_traits"
+                :type "typedef")
+                nil [1393 1446])
+            ("V" type
+               (:typedef ("math_types::vector3_type" type (:type "class") nil nil)
+                :superclasses "math_types::vector3_type"
+                :type "typedef")
+                nil [1447 1499])
+            ("T" type
+               (:typedef ("math_types::real_type" type (:type "class") nil nil)
+                :superclasses "math_types::real_type"
+                :type "typedef")
+                nil [1500 1552])
+            ("mesh_impl" type
+               (:typedef ("OpenTissueMesh" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "OpenTissueMesh"
+                :type "typedef")
+                nil [1553 1613])
+            ("MT" type
+               (:typedef ("OpenTissueMathTypes" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "OpenTissueMathTypes"
+                :type "typedef")
+                nil [1614 1667])
+            ("vec3_vector" type
+               (:typedef ("Simplex0AttributeVector" type
+                     (:template-specifier 
+                        ( ("V" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "Simplex0AttributeVector"
+                :type "typedef")
+                nil [1668 1730])
+            ("coords" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1732 1751])
+            ("coords_0" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1752 1773])
+            ("positions" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1774 1796])
+            ("mesh" variable (:type ("mesh_impl" type (:type "class") nil nil)) nil [1797 1812])
+            ("settings" variable (:type ("util::ConfigFile" type (:type "class") nil nil)) nil [1814 1840])
+            ("logging" variable (:type ("util::Log" type (:type "class") nil nil)) nil [1841 1866])
+            ("timer" variable (:type ("util::Timer" type (:type "class") nil nil)) nil [1867 1890])
+            ("newline" variable (:type ("std::string" type (:type "class") nil nil)) nil [1892 1941])
+            ("interpolation_refinement" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1973 2000])
+                    ("s" variable
+                       (:reference 1
+                        :type ("Simplex1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2001 2014])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2015 2021]))                  
+                :type "void")
+                nil [1943 2747])
+            ("interpolation_coarsening" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2780 2807])
+                    ("s" variable
+                       (:reference 1
+                        :type ("Simplex1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2808 2821])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2822 2828]))                  
+                :type "void")
+                nil [2750 3050])
+            ("setup_algorithm" function
+               (:template 
+                  ( ("MT" type (:type "class") nil nil))                  
+                :type ("RemeshingAlgorithm" type
+                     (:template-specifier 
+                        ( ("MT" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [3053 4865])
+            ("main" function (:type "int") nil [4869 16958]))          
+    :file "main.cpp"
+    :pointmax 16959
+    :fsize 16958
+    :lastmodtime '(21610 34061 689123 978000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!APPS!registration!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

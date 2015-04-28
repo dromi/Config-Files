@@ -1,0 +1,351 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("time.h" include (:system-flag t) nil [21 38])
+            ("vector" include (:system-flag t) nil [39 56])
+            ("mom2d_simplex.h" include (:system-flag t) nil [58 84])
+            ("mom2d_opentissue_mesh.h" include (:system-flag t) nil [85 119])
+            ("mom2d_opentissue_math_types.h" include (:system-flag t) nil [120 160])
+            ("mom2d_svg_export.h" include (:system-flag t) nil [161 190])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [191 226])
+            ("mom2d_slab_decomposition.h" include (:system-flag t) nil [227 264])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [265 296])
+            ("mom2d_random_simplex.h" include (:system-flag t) nil [297 330])
+            ("mom2d_mesh_io.h" include (:system-flag t) nil [331 357])
+            ("mom2d_pdsc.h" include (:system-flag t) nil [358 381])
+            ("mom2d_sdsc.h" include (:system-flag t) nil [382 405])
+            ("mom2d_time_stepper.h" include (:system-flag t) nil [406 437])
+            ("mom2d_data.h" include (:system-flag t) nil [439 462])
+            ("OpenTissue/core/containers/mesh/polymesh/polymesh.h" include (:system-flag t) nil [464 526])
+            ("compute_magneostatic_potential.h" include (:system-flag t) nil [528 571])
+            ("compute_quality_measure.h" include (:system-flag t) nil [572 608])
+            ("domain.h" include (:system-flag t) nil [609 628])
+            ("remeshing_algorithm.h" include (:system-flag t) nil [629 661])
+            ("mom2d_interpolator.h" include (:system-flag t) nil [662 693])
+            ("mom2d" using (:type ("mom2d" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [696 718])
+            ("mesh_type" type
+               (:typedef ("OpenTissue::polymesh::PolyMesh" type (:type "class") nil nil)
+                :superclasses "OpenTissue::polymesh::PolyMesh"
+                :type "typedef")
+                nil [720 771])
+            ("math_types" type
+               (:typedef ("mesh_type::math_types" type (:type "class") nil nil)
+                :superclasses "mesh_type::math_types"
+                :type "typedef")
+                nil [773 825])
+            ("value_traits" type
+               (:typedef ("math_types::value_traits" type (:type "class") nil nil)
+                :superclasses "math_types::value_traits"
+                :type "typedef")
+                nil [827 881])
+            ("vector3_type" type
+               (:typedef ("math_types::vector3_type" type (:type "class") nil nil)
+                :superclasses "math_types::vector3_type"
+                :type "typedef")
+                nil [882 936])
+            ("real_type" type
+               (:typedef ("math_types::real_type" type (:type "class") nil nil)
+                :superclasses "math_types::real_type"
+                :type "typedef")
+                nil [937 988])
+            ("mesh_impl" type
+               (:typedef ("OpenTissueMesh" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "OpenTissueMesh"
+                :type "typedef")
+                nil [990 1050])
+            ("MT" type
+               (:typedef ("OpenTissueMathTypes" type
+                     (:template-specifier 
+                        ( ("mesh_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "OpenTissueMathTypes"
+                :type "typedef")
+                nil [1051 1104])
+            ("vec3_vector" type
+               (:typedef ("Simplex0AttributeVector" type
+                     (:template-specifier 
+                        ( ("vector3_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "Simplex0AttributeVector"
+                :type "typedef")
+                nil [1105 1167])
+            ("real_vector" type
+               (:typedef ("Simplex0AttributeVector" type
+                     (:template-specifier 
+                        ( ("real_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "Simplex0AttributeVector"
+                :type "typedef")
+                nil [1168 1230])
+            ("id_vector" type
+               (:typedef ("Simplex2AttributeVector" type
+                     (:template-specifier 
+                        ( ("unsigned int" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "Simplex2AttributeVector"
+                :type "typedef")
+                nil [1231 1291])
+            ("quality_vector" type
+               (:typedef ("Simplex2AttributeVector" type
+                     (:template-specifier 
+                        ( ("real_type" type nil nil nil))                        
+                      :type "class")
+                      nil nil)
+                :superclasses "Simplex2AttributeVector"
+                :type "typedef")
+                nil [1292 1357])
+            ("coords" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1359 1378])
+            ("coords_i" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1379 1400])
+            ("coords_imm" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1401 1424])
+            ("positions" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1425 1447])
+            ("triangle_id" variable (:type ("id_vector" type (:type "class") nil nil)) nil [1448 1470])
+            ("mesh" variable (:type ("mesh_impl" type (:type "class") nil nil)) nil [1471 1486])
+            ("new_mesh" variable (:type ("mesh_impl" type (:type "class") nil nil)) nil [1487 1506])
+            ("submeshes" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("mesh_impl" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1509 1542])
+            ("coord_vectors" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("vec3_vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1543 1582])
+            ("coord_i_vectors" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("vec3_vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1583 1624])
+            ("coord_imm_vectors" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("vec3_vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1625 1668])
+            ("pos_vectors" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("vec3_vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1669 1706])
+            ("dsc_algorithms" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("DSCDefaultAlgorithm" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1707 1761])
+            ("velocity_vectors" variable (:type ("std::vector" type
+                 (:template-specifier 
+                    ( ("vec3_vector" type nil nil nil))                    
+                  :type "class")
+                  nil nil)) nil [1764 1806])
+            ("velocities" variable (:type ("vec3_vector" type (:type "class") nil nil)) nil [1807 1830])
+            ("submesh_count" variable (:type "int") nil [1833 1855])
+            ("interpolation_interface_refinement" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1897 1924])
+                    ("s" variable
+                       (:reference 1
+                        :type ("Simplex1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1925 1938])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1939 1945]))                  
+                :type "void")
+                nil [1857 2450])
+            ("default_interface_refinement" function
+               (:arguments 
+                  ( ("new_simplices" variable
+                       (:reference 1
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2932 2959])
+                    ("s" variable
+                       (:reference 1
+                        :type ("Simplex2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2960 2973])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [2974 2980]))                  
+                :type "void")
+                nil [2898 2984])
+            ("set_value_submesh" function
+               (:arguments 
+                  ( ("mesh_simplex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex0" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3009 3039])
+                    ("submesh_simplex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex0" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3040 3073])
+                    ("submesh" variable (:type "int") (reparse-symbol arg-sub-list) [3074 3086]))                  
+                :type "void")
+                nil [2986 3440])
+            ("set_value_mesh" function
+               (:arguments 
+                  ( ("mesh_simplex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex0" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3462 3492])
+                    ("submesh_simplex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex0" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3493 3526])
+                    ("submesh" variable (:type "int") (reparse-symbol arg-sub-list) [3527 3539]))                  
+                :type "void")
+                nil [3442 3893])
+            ("get_submesh" function
+               (:arguments 
+                  ( ("submesh" variable (:type "int") (reparse-symbol arg-sub-list) [4735 4747]))                  
+                :type ("MeshAPI" type (:type "class") nil nil))
+                nil [4713 4778])
+            ("get_dsc" function
+               (:arguments 
+                  ( ("submesh" variable (:type "int") (reparse-symbol arg-sub-list) [4803 4815]))                  
+                :type ("DSCAlgorithm" type (:type "class") nil nil))
+                nil [4780 4851])
+            ("get_new_mesh" function (:type ("MeshAPI" type (:type "class") nil nil)) nil [4853 4957])
+            ("get_coord" function
+               (:template 
+                  ( ("V" type (:type "class") nil nil))                  
+                :type ("V" type (:type "class") nil nil)
+                :arguments 
+                  ( ("submesh_simplex" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex0" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4993 5026])
+                    ("submesh" variable (:type "int") (reparse-symbol arg-sub-list) [5027 5039]))                  )
+                nil [4959 5093])
+            ("init_submesh_data" function (:type "void") nil [5095 6352])
+            ("update_mesh" function (:type "void") nil [7274 7315])
+            ("copy_coords" function
+               (:arguments 
+                  ( ("from" variable
+                       (:reference 1
+                        :type ("vec3_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7334 7353])
+                    ("to" variable
+                       (:reference 1
+                        :type ("vec3_vector" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7354 7371]))                  
+                :type "void")
+                nil [7317 7595])
+            ("enumerate_triangles" function (:type "void") nil [7597 7874])
+            ("triangle_area" function
+               (:arguments 
+                  ( ("e" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex2" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8139 8158]))                  
+                :type ("real_type" type (:type "class") nil nil))
+                nil [8115 8323])
+            ("line_length" function
+               (:arguments 
+                  ( ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("Simplex1" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8347 8366]))                  
+                :type ("real_type" type (:type "class") nil nil))
+                nil [8325 8487])
+            ("simpset_area" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8563 8585]))                  
+                :type ("real_type" type (:type "class") nil nil))
+                nil [8540 8787])
+            ("boundary_length" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8878 8900]))                  
+                :type ("real_type" type (:type "class") nil nil))
+                nil [8852 9098])
+            ("image" function
+               (:arguments 
+                  ( ("point" variable (:type ("vector3_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9117 9136]))                  
+                :type ("real_type" type (:type "class") nil nil))
+                nil [9101 9298])
+            ("gradient_simpset_area" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9334 9356])
+                    ("my" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("real_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9357 9378]))                  
+                :type ("vec3_vector" type (:type "class") nil nil))
+                nil [9300 10069])
+            ("gradient_simpset_length" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10121 10143])
+                    ("ny" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("real_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10144 10165]))                  
+                :type ("vec3_vector" type (:type "class") nil nil))
+                nil [10085 10755])
+            ("gradient_simpset_ioside" function
+               (:arguments 
+                  ( ("ss" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("SimplexSet" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10793 10815])
+                    ("l" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("real_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10816 10836])
+                    ("c" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("real_type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10837 10857]))                  
+                :type ("vec3_vector" type (:type "class") nil nil))
+                nil [10757 12090])
+            ("main" function (:type "int") nil [12092 15240])
+            ("main_old" function (:type "int") nil [15244 18408]))          
+    :file "main.cpp"
+    :pointmax 18409
+    :fsize 18408
+    :lastmodtime '(21428 631 544239 713000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!mom_temp!MOM2D_PROJECT!MOM2D!APPS!chan-vese!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

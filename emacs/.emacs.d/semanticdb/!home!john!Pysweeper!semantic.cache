@@ -1,0 +1,249 @@
+;; Object Pysweeper/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Pysweeper/"
+  :tables (list 
+   (semanticdb-table "Pysweeper.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [49 58])
+            ("re" include nil nil [59 68])
+            ("random" include nil nil [69 82])
+            ("platform" include nil nil [83 98])
+            ("Board" include nil nil [100 112])
+            ("ASCIIPrinter" include nil nil [113 132])
+            ("Controller" include nil nil [133 150])
+            ("max_height" variable nil nil [152 167])
+            ("max_width" variable nil nil [168 182])
+            ("alphabet" variable nil nil [184 223])
+            ("help" function nil nil [225 512])
+            ("options" function nil nil [513 1076])
+            ("main_menu" function nil nil [1077 1963])
+            ("if" code nil nil [1964 2146]))          
+    :file "Pysweeper.py"
+    :pointmax 2146
+    :fsize 2145
+    :lastmodtime '(21771 823 387223 641000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Board.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [1 14])
+            ("util" include nil nil [16 27])
+            ("Board" type
+               (:documentation "class for handling the playing field for the game"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [160 175])
+                            ("self" variable nil (reparse-symbol indented_block_body) [184 198])
+                            ("self" variable nil (reparse-symbol indented_block_body) [207 226])
+                            ("self" variable nil (reparse-symbol indented_block_body) [235 321])
+                            ("self" variable nil (reparse-symbol indented_block_body) [330 416])
+                            ("self" variable nil (reparse-symbol indented_block_body) [425 442]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [133 137])
+                            ("h" variable nil (reparse-symbol function_parameters) [139 140])
+                            ("w" variable nil (reparse-symbol function_parameters) [142 143])
+                            ("m_no" variable nil (reparse-symbol function_parameters) [145 149]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [120 443])
+                    ("genBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [461 465])
+                            ("x" variable nil (reparse-symbol function_parameters) [467 468])
+                            ("y" variable nil (reparse-symbol function_parameters) [470 471]))                          )
+                        (reparse-symbol indented_block_body) [448 1825])
+                    ("getBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1843 1847]))                          
+                        :documentation "Returns the players view of the field")
+                        (reparse-symbol indented_block_body) [1830 2794])
+                    ("turnTile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2812 2816])
+                            ("x" variable nil (reparse-symbol function_parameters) [2818 2819])
+                            ("y" variable nil (reparse-symbol function_parameters) [2820 2821]))                          )
+                        (reparse-symbol indented_block_body) [2799 4129])
+                    ("flagTile" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4155 4159])
+                            ("x" variable nil (reparse-symbol function_parameters) [4161 4162])
+                            ("y" variable nil (reparse-symbol function_parameters) [4163 4164]))                          )
+                        (reparse-symbol indented_block_body) [4142 4523])
+                    ("gameFinished" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4545 4549]))                          )
+                        (reparse-symbol indented_block_body) [4528 4774])
+                    ("flipBoard" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4793 4797]))                          )
+                        (reparse-symbol indented_block_body) [4779 5153]))                  
+                :type "class")
+                nil [29 5153]))          
+    :file "Board.py"
+    :pointmax 5153
+    :fsize 5152
+    :lastmodtime '(21771 13240 614782 714000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Controller.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [1 10])
+            ("random" include nil nil [11 24])
+            ("ASCIIPrinter" include nil nil [26 45])
+            ("Board" include nil nil [46 58])
+            ("max_height" variable nil nil [60 75])
+            ("alphabet" variable nil nil [92 131])
+            ("Controller" type
+               (:documentation "Controller class for processing user inputs"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"initialize controller\"\"\"" code nil (reparse-symbol indented_block_body) [250 277])
+                            ("self" variable nil (reparse-symbol indented_block_body) [286 300])
+                            ("self" variable nil (reparse-symbol indented_block_body) [309 326])
+                            ("self" variable nil (reparse-symbol indented_block_body) [335 353])
+                            ("self" variable nil (reparse-symbol indented_block_body) [362 379])
+                            ("self" variable nil (reparse-symbol indented_block_body) [388 407])
+                            ("self" variable nil (reparse-symbol indented_block_body) [416 448]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [231 235])
+                            ("ap" variable nil (reparse-symbol function_parameters) [237 239]))                          
+                        :documentation "initialize controller"
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [218 449])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [464 468]))                          )
+                        (reparse-symbol indented_block_body) [454 619])
+                    ("setGameMode" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [640 644]))                          
+                        :documentation "Set parameters for game mode")
+                        (reparse-symbol indented_block_body) [624 1786])
+                    ("getCustomParams" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1812 1816]))                          
+                        :documentation "Set custom parameters for game mode")
+                        (reparse-symbol indented_block_body) [1792 3585])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3599 3603]))                          
+                        :documentation "Run the main game loop")
+                        (reparse-symbol indented_block_body) [3591 6343]))                  
+                :type "class")
+                nil [133 6343]))          
+    :file "Controller.py"
+    :pointmax 6347
+    :fsize 6344
+    :lastmodtime '(21771 13642 58768 459000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ASCIIPrinter.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("os" include nil nil [1 10])
+            ("platform" include nil nil [11 26])
+            ("logo" variable nil nil [28 442])
+            ("logo_subtext" variable nil nil [443 472])
+            ("msg_container" variable nil nil [474 726])
+            ("ASCIIPrinter" type
+               (:documentation "class for printing the pysweeper board to the terminal"
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [854 878])
+                            ("self" variable nil (reparse-symbol indented_block_body) [887 901])
+                            ("self" variable nil (reparse-symbol indented_block_body) [910 935])
+                            ("self" variable nil (reparse-symbol indented_block_body) [944 981])
+                            ("if" code nil (reparse-symbol indented_block_body) [990 1140]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [839 843]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [826 1140])
+                    ("flush" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1155 1159]))                          
+                        :documentation "Print current inputted board to stdout")
+                        (reparse-symbol indented_block_body) [1145 1379])
+                    ("setMsg" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1395 1399])
+                            ("text" variable nil (reparse-symbol function_parameters) [1401 1405]))                          
+                        :documentation "Add a text to the msg field")
+                        (reparse-symbol indented_block_body) [1384 1597])
+                    ("pushToBody" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1617 1621])
+                            ("text" variable nil (reparse-symbol function_parameters) [1623 1627]))                          
+                        :documentation "Add content to the body field")
+                        (reparse-symbol indented_block_body) [1602 1709])
+                    ("reset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1861 1865]))                          
+                        :documentation "Reset view default")
+                        (reparse-symbol indented_block_body) [1851 1957])
+                    ("getUserInput" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1979 1983]))                          
+                        :documentation "Wait for user input")
+                        (reparse-symbol indented_block_body) [1962 2080])
+                    ("getUserConfirm" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2104 2108]))                          
+                        :documentation "Wait for user confirmation")
+                        (reparse-symbol indented_block_body) [2085 2188]))                  
+                :type "class")
+                nil [728 2188]))          
+    :file "ASCIIPrinter.py"
+    :pointmax 2189
+    :fsize 2188
+    :lastmodtime '(21770 62261 175369 166000)
+    :unmatched-syntax '((INDENT_BLOCK 1737 . 1846) (NEWLINE 1736 . 1737) (DEF 1714 . 1717) (PRINT 1718 . 1723) (COLON 1735 . 1736))
+    )
+   (semanticdb-table "util.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("termcolor" include nil nil [1 17])
+            ("colors" variable nil nil [19 91])
+            ("colorize" function (:arguments 
+              ( ("text" variable nil (reparse-symbol function_parameters) [106 110])
+                ("fgcolor" variable nil (reparse-symbol function_parameters) [112 119])
+                ("bgcolor" variable nil (reparse-symbol function_parameters) [121 128]))              ) nil [93 316])
+            ("colorByContent" function (:arguments 
+              ( ("slot" variable nil (reparse-symbol function_parameters) [336 340]))              ) nil [317 1324]))          
+    :file "util.py"
+    :pointmax 1572
+    :fsize 1323
+    :lastmodtime '(21771 14109 982751 844000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!john!Pysweeper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

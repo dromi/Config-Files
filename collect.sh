@@ -9,18 +9,18 @@ echo "Launch script from ~/Config-Files folder"
 else 
 
 echo "Collecting files"
-cp -r ~/.i3/ .
-cp -r ~/.emacs.d/ .
-cp ~/.emacs .
-cp ~/.zshrc .
+sudo cp -r ~/.i3/ i3/
+sudo cp -r ~/.emacs.d/ emacs/
+sudo cp ~/.zshrc zsh/
+sudo cp ~/.gitconfig git/
 
 # remove auto saves from emacs.d
-rm -rf .emacs.d/auto-save-list
+sudo rm -rf emacs/.emacs.d/auto-save-list
 
 # remove wallpapers from i3 folder
-rm -rf .i3/wallpapers
+rm -rf i3/.i3/wallpapers/*
 
-echo "pushing to the hub"
+# echo "Pushing to the hub"
 git commit -a
 git push
 fi

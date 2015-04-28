@@ -1,0 +1,948 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables (list 
+   (semanticdb-table "glue_matlab_write_mesh.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_MATLAB_WRITE_MESH_H" variable (:constant-flag t) nil [42 66])
+            ("glue_triplet.h" include (:system-flag t) nil [68 93])
+            ("sstream" include (:system-flag t) nil [95 113])
+            ("string" include (:system-flag t) nil [114 131])
+            ("vector" include (:system-flag t) nil [132 149])
+            ("glue" type
+               (:members 
+                  ( ("matlab_write_mesh" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("T" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [845 877]))                          
+                        :type ("std::string" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [807 1152]))                  
+                :type "namespace")
+                nil [151 1155]))          
+    :file "glue_matlab_write_mesh.h"
+    :pointmax 1214
+    :fsize 1213
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_MATLAB_WRITE_MESH_H")
+          )
+
+    )
+   (semanticdb-table "glue.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_H" variable (:constant-flag t) nil [24 30])
+            ("glue_triplet.h" include (:system-flag t) nil [975 1000])
+            ("glue_tuple.h" include (:system-flag t) nil [1001 1024])
+            ("glue_contact_point.h" include (:system-flag t) nil [1025 1056])
+            ("glue_phase.h" include (:system-flag t) nil [1057 1080])
+            ("glue_neighbors.h" include (:system-flag t) nil [1081 1108])
+            ("glue_make_phase.h" include (:system-flag t) nil [1145 1173])
+            ("glue_make_phase_labels.h" include (:system-flag t) nil [1174 1209])
+            ("glue_make_adjacency.h" include (:system-flag t) nil [1210 1242])
+            ("glue_compute_contact_points.h" include (:system-flag t) nil [1243 1283])
+            ("glue_compute_neighbors.h" include (:system-flag t) nil [1284 1319])
+            ("glue_matlab_write_mesh.h" include (:system-flag t) nil [1320 1355])
+            ("glue_sub_range.h" include (:system-flag t) nil [1356 1383]))          
+    :file "glue.h"
+    :pointmax 1402
+    :fsize 1401
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_H")
+          )
+
+    )
+   (semanticdb-table "glue_make_phase.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_MAKE_PHASE" variable (:constant-flag t) nil [33 48])
+            ("glue_phase.h" include (:system-flag t) nil [50 73])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [75 102])
+            ("mom2d_compute_interface.h" include (:system-flag t) nil [103 139])
+            ("cassert" include (:system-flag t) nil [141 159])
+            ("glue" type
+               (:members 
+                  ( ("details" type
+                       (:members 
+                          ( ("make_phase" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("domain" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mom2d::SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [828 890])
+                                    ("mesh" variable
+                                       (:reference 1
+                                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [891 952]))                                  
+                                :type ("Phase" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [775 3331]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [181 3336])
+                    ("make_phase" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("label" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [4016 4061])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4062 4121]))                          
+                        :type ("Phase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [3965 4302])
+                    ("make_phase" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4399 4432]))                          
+                        :type ("Phase" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [4374 4584]))                  
+                :type "namespace")
+                nil [161 4587]))          
+    :file "glue_make_phase.h"
+    :pointmax 4636
+    :fsize 4635
+    :lastmodtime '(21465 10404 917382 345000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_MAKE_PHASE")
+          )
+
+    )
+   (semanticdb-table "glue_phase.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_PHASE_H" variable (:constant-flag t) nil [30 42])
+            ("glue_triplet.h" include (:system-flag t) nil [44 69])
+            ("glue_tuple.h" include (:system-flag t) nil [70 93])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [95 122])
+            ("mom2d_simplex.h" include (:system-flag t) nil [123 149])
+            ("vector" include (:system-flag t) nil [151 168])
+            ("map" include (:system-flag t) nil [169 183])
+            ("cassert" include (:system-flag t) nil [184 202])
+            ("glue" type
+               (:members 
+                  ( ("Phase" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1865 1872])
+                            ("m_label" variable (:type ("mom2d::MeshAPI::phase_id" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1878 1923])
+                            ("m_vertices" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("mom2d::Simplex0" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1993 2041])
+                            ("m_indices" variable (:type ("std::map" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil)
+                                      ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2079 2126])
+                            ("m_edges" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Tuple" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2166 2211])
+                            ("m_triangles" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("Triplet" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2268 2317])
+                            ("public" label nil (reparse-symbol classsubparts) [2373 2380])
+                            ("Phase" function
+                               (:constructor-flag t
+                                :type ("Phase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2386 2417])
+                            ("Phase" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Phase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2429 2445]))                                  
+                                :type ("Phase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2423 2474])
+                            ("Phase" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2480 2498])
+                            ("=" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("A" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Phase" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2528 2544]))                                  
+                                :type ("Phase" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2504 2817])
+                            ("public" label nil (reparse-symbol classsubparts) [2821 2828])
+                            ("get_local_index" function
+                               (:arguments 
+                                  ( ("global" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mom2d::Simplex0" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2864 2895]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2834 2977])
+                            ("get_local_index" function
+                               (:arguments 
+                                  ( ("global" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [3013 3041]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [2983 3112]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1847 3122]))                  
+                :type "namespace")
+                nil [204 3127]))          
+    :file "glue_phase.h"
+    :pointmax 3176
+    :fsize 3175
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_PHASE_H")
+          )
+
+    )
+   (semanticdb-table "glue_triplet.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_TRIPLET_H" variable (:constant-flag t) nil [32 46])
+            ("vector" include (:system-flag t) nil [48 65])
+            ("limits" include (:system-flag t) nil [66 83])
+            ("glue" type
+               (:members 
+                  ( ("Triplet" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [553 560])
+                            ("UNDEFINED" function
+                               (:typemodifiers ("static")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [566 650])
+                            ("public" label nil (reparse-symbol classsubparts) [654 661])
+                            ("i" variable (:type "unsigned int") (reparse-symbol classsubparts) [668 683])
+                            ("j" variable (:type "unsigned int") (reparse-symbol classsubparts) [688 703])
+                            ("k" variable (:type "unsigned int") (reparse-symbol classsubparts) [708 723])
+                            ("public" label nil (reparse-symbol classsubparts) [727 734])
+                            ("Triplet" function
+                               (:constructor-flag t
+                                :type ("Triplet" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [740 825])
+                            ("public" label nil (reparse-symbol classsubparts) [829 836])
+                            ("has_member" function
+                               (:arguments 
+                                  ( ("n" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [858 881]))                                  
+                                :type "bool")
+                                (reparse-symbol classsubparts) [842 942])
+                            ("convert_to_vector" function (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [948 1171])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1201 1226]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [1177 1378])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1408 1433]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [1384 1478]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [533 1484])
+                    ("get_local_index" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("T" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Triplet" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1524 1542])
+                            ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1543 1560]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [1488 1718])
+                    ("make_triplet" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("i" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1751 1768])
+                            ("j" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1769 1786])
+                            ("k" variable
+                               (:reference 1
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [1787 1804]))                          
+                        :type ("Triplet" type (:type "class") nil nil))
+                        (reparse-symbol namespacesubparts) [1723 1912]))                  
+                :type "namespace")
+                nil [85 1915]))          
+    :file "glue_triplet.h"
+    :pointmax 1959
+    :fsize 1958
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_TRIPLET_H")
+          )
+
+    )
+   (semanticdb-table "glue_tuple.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_TUPLE_H" variable (:constant-flag t) nil [30 42])
+            ("limits" include (:system-flag t) nil [44 61])
+            ("glue" type
+               (:members 
+                  ( ("Tuple" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [257 264])
+                            ("UNDEFINED" function
+                               (:typemodifiers ("static")
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [274 358])
+                            ("public" label nil (reparse-symbol classsubparts) [362 369])
+                            ("i" variable (:type "unsigned int") (reparse-symbol classsubparts) [376 391])
+                            ("j" variable (:type "unsigned int") (reparse-symbol classsubparts) [396 411])
+                            ("public" label nil (reparse-symbol classsubparts) [415 422])
+                            ("Tuple" function
+                               (:constructor-flag t
+                                :type ("Tuple" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [428 488])
+                            ("[]" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [518 543]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [494 659])
+                            ("()" function
+                               (:operator-flag t
+                                :arguments 
+                                  ( ("idx" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [689 714]))                                  
+                                :type "unsigned int")
+                                (reparse-symbol classsubparts) [665 759]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [239 765])
+                    ("get_local_index" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("T" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("Tuple" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [805 821])
+                            ("idx" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [822 839]))                          
+                        :type "unsigned int")
+                        (reparse-symbol namespacesubparts) [769 956]))                  
+                :type "namespace")
+                nil [63 959]))          
+    :file "glue_tuple.h"
+    :pointmax 1008
+    :fsize 1007
+    :lastmodtime '(21465 10404 925386 347000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_TUPLE_H")
+          )
+
+    )
+   (semanticdb-table "glue_contact_point.h"
+    :file "glue_contact_point.h"
+    :fsize 3771
+    :lastmodtime '(21465 10404 921384 346000)
+    )
+   (semanticdb-table "glue_neighbors.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_NEIGHBORS_H" variable (:constant-flag t) nil [34 50])
+            ("vector" include (:system-flag t) nil [52 69])
+            ("glue" type
+               (:members 
+                  ( ("Neighbors" type
+                       (:members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1904 1911])
+                            ("m_V2T" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("std::pair" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [1917 1975])
+                            ("m_offset" variable (:type ("std::vector" type
+                                 (:template-specifier 
+                                    ( ("unsigned int" type nil nil nil))                                    
+                                  :type "class")
+                                  nil nil)) (reparse-symbol classsubparts) [2070 2131]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1882 2224]))                  
+                :type "namespace")
+                nil [71 2227]))          
+    :file "glue_neighbors.h"
+    :pointmax 2273
+    :fsize 2272
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_NEIGHBORS_H")
+          )
+
+    )
+   (semanticdb-table "glue_make_phase_labels.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_MAKE_PHASE_LABELS" variable (:constant-flag t) nil [40 62])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [64 91])
+            ("cassert" include (:system-flag t) nil [93 111])
+            ("glue" type
+               (:members 
+                  ( ("details" type
+                       (:members 
+                          ( ("make_phase_labels" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("domain" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mom2d::SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [225 293])
+                                    ("mesh" variable
+                                       (:reference 1
+                                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [294 361])
+                                    ("labels" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("int" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [362 423]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [160 1036]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [133 1042])
+                    ("make_phase_labels" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1331 1363])
+                            ("labels" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("int" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1364 1391]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [1300 1517]))                  
+                :type "namespace")
+                nil [113 1520]))          
+    :file "glue_make_phase_labels.h"
+    :pointmax 1576
+    :fsize 1575
+    :lastmodtime '(21465 10404 917382 345000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_MAKE_PHASE_LABELS")
+          )
+
+    )
+   (semanticdb-table "glue_make_adjacency.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_MAKE_ADJACENCY" variable (:constant-flag t) nil [37 56])
+            ("glue_triplet.h" include (:system-flag t) nil [58 83])
+            ("mom2d_mesh_api.h" include (:system-flag t) nil [85 112])
+            ("mom2d_compute_interface.h" include (:system-flag t) nil [113 149])
+            ("util_log.h" include (:system-flag t) nil [151 172])
+            ("cassert" include (:system-flag t) nil [174 192])
+            ("vector" include (:system-flag t) nil [193 210])
+            ("glue" type
+               (:members 
+                  ( ("details" type
+                       (:members 
+                          ( ("make_adjacency" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("domain" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("mom2d::SimplexSet" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [318 383])
+                                    ("mesh" variable
+                                       (:reference 1
+                                        :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [384 448])
+                                    ("adjacency" variable
+                                       (:reference 1
+                                        :type ("std::vector" type
+                                             (:template-specifier 
+                                                ( ("Triplet" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil))
+                                        (reparse-symbol arg-sub-list) [449 514]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [259 2790]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [232 2795])
+                    ("make_adjacency" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("label" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [2883 2931])
+                            ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2932 2994])
+                            ("adjacency" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2995 3055]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [2826 3190])
+                    ("make_adjacency" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("mesh" variable
+                               (:reference 1
+                                :type ("mom2d::MeshAPI" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3249 3307])
+                            ("adjacency" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3308 3367]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3194 3497]))                  
+                :type "namespace")
+                nil [212 3500]))          
+    :file "glue_make_adjacency.h"
+    :pointmax 3553
+    :fsize 3552
+    :lastmodtime '(21465 10404 917382 345000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_MAKE_ADJACENCY")
+          )
+
+    )
+   (semanticdb-table "glue_compute_contact_points.h"
+    :file "glue_compute_contact_points.h"
+    :fsize 8647
+    :lastmodtime '(21465 10404 921384 346000)
+    )
+   (semanticdb-table "glue_compute_neighbors.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_COMPUTE_NEIGHBORS_H" variable (:constant-flag t) nil [42 66])
+            ("glue_tuple.h" include (:system-flag t) nil [68 91])
+            ("glue_triplet.h" include (:system-flag t) nil [92 117])
+            ("glue_neighbors.h" include (:system-flag t) nil [118 145])
+            ("util_log.h" include (:system-flag t) nil [147 168])
+            ("vector" include (:system-flag t) nil [170 187])
+            ("algorithm" include (:system-flag t) nil [188 208])
+            ("glue" type
+               (:members 
+                  ( ("details" type
+                       (:members 
+                          ( ("print_V2T" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Neighbors" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [279 302]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [257 598])
+                            ("print_offset" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("info" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("Neighbors" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [629 652]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [604 919])
+                            ("scan_for_start_offset" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("V" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [998 1060])
+                                    ("info" variable
+                                       (:reference 1
+                                        :type ("Neighbors" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1061 1118]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [925 1710])
+                            ("skip_isolated_nodes" function
+                               (:typemodifiers ("inline")
+                                :arguments 
+                                  ( ("V" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type "unsigned int")
+                                        (reparse-symbol arg-sub-list) [1785 1845])
+                                    ("info" variable
+                                       (:reference 1
+                                        :type ("Neighbors" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1846 1901]))                                  
+                                :type "void")
+                                (reparse-symbol namespacesubparts) [1716 2438]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [230 2443])
+                    ("compute_neighbors" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("triangles" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Triplet" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3937 4009])
+                            ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [4010 4066])
+                            ("info" variable
+                               (:reference 1
+                                :type ("Neighbors" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4067 4117]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [3874 4851])
+                    ("compute_neighbors" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("edges" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("Tuple" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6448 6514])
+                            ("V" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [6515 6571])
+                            ("info" variable
+                               (:reference 1
+                                :type ("Neighbors" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [6572 6622]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [6385 7236]))                  
+                :type "namespace")
+                nil [210 7241]))          
+    :file "glue_compute_neighbors.h"
+    :pointmax 7295
+    :fsize 7294
+    :lastmodtime '(21465 10404 925386 347000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_COMPUTE_NEIGHBORS_H")
+          )
+
+    )
+   (semanticdb-table "glue_sub_range.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("GLUE_SUB_RANGE_H" variable (:constant-flag t) nil [34 50])
+            ("mom2d_attribute_vector.h" include (:system-flag t) nil [52 87])
+            ("vector" include (:system-flag t) nil [89 106])
+            ("glue" type
+               (:members 
+                  ( ("get_sub_range" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("vertices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("mom2d::Simplex0" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1423 1498])
+                            ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("V" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1499 1572])
+                            ("x" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1573 1626])
+                            ("y" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [1627 1680]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [1345 1950])
+                    ("get_sub_range" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("vertices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("mom2d::Simplex0" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3857 3932])
+                            ("label" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [3933 4045])
+                            ("p" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4046 4135])
+                            ("labels" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4136 4231])
+                            ("x" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4232 4285])
+                            ("y" variable
+                               (:reference 1
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4286 4339]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [3779 4989])
+                    ("set_sub_range" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("vertices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("mom2d::Simplex0" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5209 5284])
+                            ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5285 5344])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5345 5404])
+                            ("p" variable
+                               (:reference 1
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("V" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5405 5473]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5131 5669])
+                    ("set_sub_range" function
+                       (:template 
+                          ( ("V" type (:type "class") nil nil))                          
+                        :type "void"
+                        :arguments 
+                          ( ("vertices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("mom2d::Simplex0" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [5971 6046])
+                            ("x" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6047 6106])
+                            ("y" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("double" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6107 6166])
+                            ("p" variable
+                               (:reference 1
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [6167 6249]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [5893 6472])
+                    ("set_sub_range" function
+                       (:typemodifiers ("inline")
+                        :arguments 
+                          ( ("vertices" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type ("std::vector" type
+                                     (:template-specifier 
+                                        ( ("mom2d::Simplex0" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7087 7162])
+                            ("label" variable
+                               (:reference 1
+                                :constant-flag t
+                                :type "int")
+                                (reparse-symbol arg-sub-list) [7163 7210])
+                            ("phases" variable
+                               (:reference 1
+                                :type ("mom2d::Simplex0AttributeVector" type
+                                     (:template-specifier 
+                                        ( ("std::vector" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [7211 7300]))                          
+                        :type "void")
+                        (reparse-symbol namespacesubparts) [7032 7490]))                  
+                :type "namespace")
+                nil [108 7495]))          
+    :file "glue_sub_range.h"
+    :pointmax 7545
+    :fsize 7544
+    :lastmodtime '(21465 10404 921384 346000)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("GLUE_SUB_RANGE_H")
+          )
+
+    )
+   )
+  :file "!home!john!MOM2D_PROJECT!MOM2D!GLUE!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
