@@ -1,5 +1,9 @@
 # the following script is intended to be used for linux mint
 
+# install aptitude
+
+sudo apt-get install aptitude -y
+
 #install essentials
 sudo aptitude install zsh -y
 sudo aptitude install emacs -y
@@ -11,17 +15,17 @@ sudo aptitude install deluge -y
 sudo aptitude install htop -y
 
 # create git repos folder
-mkdir ~/repos
+# mkdir ~/repos
 
 #clone personal config files
-cd ~/repos
-git clone https://github.com/dromi/Config-Files.git
+#cd ~/repos
+#git clone https://github.com/dromi/Config-Files.git
 
 #setup zsh with oh-my-zsh
 
 chsh -s /bin/zsh
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-cp ~/repos/Config-Files/zsh/.zshrc ~/
+cp ~/git/Config-Files/zsh/.zshrc ~/
 
 # bind caps lock to ctrl
 # sign into firefox
@@ -44,3 +48,6 @@ sudo apt-get install fluxgui
 
 sudo apt-get update
 sudo apt-get upgrade
+
+# Move config files to location
+# TODO
