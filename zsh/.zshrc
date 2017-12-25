@@ -1,118 +1,92 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
+# Path to your oh-my-zsh installation.
+export ZSH=$HOME/.oh-my-zsh
+
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="nanotech"
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
+# Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
-# Comment this out to disable bi-weekly auto-update checks
- DISABLE_AUTO_UPDATE="true"
+# Uncomment the following line to use hyphen-insensitive completion. Case
+# sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
 
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
 
-# Uncomment following line if you want to disable colors in ls
+# Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
-# Uncomment following line if you want to disable autosetting terminal title.
+# Uncomment the following line to disable auto-setting terminal title.
 # DISABLE_AUTO_TITLE="true"
 
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git colored-man themes svn zsh-syntax-highlighting python sudo pip)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git themes sudo zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/bin/core_perl:/usr/games
+# User configuration
 
-# Added by Dromi
-export EDITOR='/usr/bin/emacs -nw'
-export CC=/usr/bin/clang
-export CXX=/usr/bin/clang++
+# export MANPATH="/usr/local/man:$MANPATH"
 
-#used for Arch
-#alias update='sudo pacman -Syuq --noconfirm;sudo pacman -Rns $(pacman -Qqtd) --noconfirm'
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-alias update='sudo aptitude update; sudo aptitude safe-upgrade; upgrade_oh_my_zsh'
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
 
-alias ls='ls --color=auto'
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
 
-alias temacs='emacs -nw'
+# ssh
+# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-alias ffs='sudo'
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Define aliases for launching config-files
-alias config-emacs='emacs -nw ~/.emacs'
-alias config-zsh='emacs -nw ~/.zshrc'
-#alias config-Xdefaults='emacs -nw ~/.Xdefaults'
-alias config-i3='emacs -nw ~/.i3/config'
-alias config-i3status='emacs -nw ~/.i3/i3status.conf'
+# Load aliases file:
+source $HOME/.zsh_aliases
 
-alias tarz='tar zxvf'
-
-alias maple='echo "drop det"'
-
-alias dikussh='ssh -XY dromi@ask.diku.dk'
-alias dikussh_noX='ssh dromi@ask.diku.dk'
-
-alias kantinessh='ssh -p 443 dromi@kantinen.org'
-
-alias nautilus='nautilus --no-desktop'
-
-#not sure if this is stil a good idea?
-alias python='python3'
-
-alias zebra='feh --bg-scale /home/john/.i3/wallpapers/meltingzebra.png'
-
-# aliases for aptitude
-alias ai='sudo aptitude install'
-alias ar='sudo aptitude remove'
-alias ap='sudo aptitude purge'
-alias as='aptitude search'
-alias aw='aptitude show'
-
-# aliases for svn
-alias sa='svn add' 
-alias sc='svn commit'
-alias sup='svn update'
-alias slo='svn log | less'
-alias srm='svn rm --keep-local'
-alias st='svn status'
-
-alias lsdir='ll -d */'
-
-# Define aliases for filetypes
-alias -s tex=emacs
-alias -s cpp=emacs
-alias -s h=emacs
-alias -s pdf=evince
-alias -s png=eog
-alias -s jpg=eog
-alias -s svg=eog
-alias -s html=firefox
-alias -s txt=less
-alias -s sh=sh
-alias -s doc=libreoffice
-alias -s docx=libreoffice
-alias -s mp4=mplayer
-alias -s mkv=mplayer
-
-alias mompull='svn co svn+ssh://dromi@image.diku.dk/home/mmg/svn/CODE/MOM2D_PROJECT'
-
-
-# Start X (if not already running)
-[[ -z $DISPLAY && XDG_VTNR -eq 1 ]] && exec startx
+export EDITOR=/usr/bin/emacs
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
