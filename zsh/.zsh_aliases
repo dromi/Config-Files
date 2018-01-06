@@ -20,7 +20,7 @@ alias git_branch_clean="git branch --merged master | grep -v master | xargs git 
 
 ################### APTITUDE ####################
 
-if [ "$(uname)" == "Linux" ]; then
+if [[ "$(uname)" == "Linux" ]]; then
     # aliases for aptitude
     alias ai='sudo aptitude install'
     alias ar='sudo aptitude remove'
@@ -31,7 +31,7 @@ fi
 
 ################### MAC ####################
 
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     alias reset_mouse="defaults write .GlobalPreferences com.apple.mouse.scaling -1"
 fi
 ################# PYTHON ###################
@@ -41,7 +41,7 @@ alias pip="pip3.6"
 
 ################### NPM  ###################
 
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     alias ni="home_node npm install"
     alias nig="home_node npm install -g"
     alias nis="home_node npm install -s"
@@ -60,7 +60,7 @@ fi
 
 ################# COINIFY  ##################
 
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$(uname)" == "Darwin" ]]; then
     alias dp="coinify-deploy -p production"
     alias ds="coinify-deploy -p sandbox"
 
