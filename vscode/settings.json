@@ -1,0 +1,33 @@
+// Place your settings in this file to overwrite the default settings
+{
+    "editor.fontSize": 10,
+    "editor.fontFamily": "Monaco",
+    "workbench.colorTheme": "Cobalt2",
+    "workbench.activityBar.visible": true,
+    "workbench.panel.location": "bottom",
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.presets.foldersAllDefaultIcon": true,
+    "workbench.iconTheme": "vscode-icons",
+    "git.confirmSync": false,
+    "window.zoomLevel": 0,
+    "extensions.ignoreRecommendations": false,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true,
+        "suppressUpdateNotice": false,
+        "suppressWelcomeNotice": true
+    },
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "gitlens.keymap": "chorded",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "bracketPairColorizer.highlightActiveScope": true,
+    "gitlens.historyExplorer.enabled": true
+}

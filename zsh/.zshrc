@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git themes sudo zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git themes sudo brew npm docker node zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,9 +84,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+export PATH="$HOME/scripties:$HOME/Library/Python/3.6/bin:$PATH"
+export EDITOR=/usr/bin/emacs
+export SRC_FOLDER_PATH="$HOME/git/"
+
 # Load aliases file:
 source $HOME/.zsh_aliases
 
-export EDITOR=/usr/bin/emacs
+export NVM_DIR="$HOME/.nvm"
+alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
+
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8

@@ -1,0 +1,69 @@
+#!/bin/bash
+set -e
+
+BWhite='\033[1;37m'
+NC='\033[0m' # No Color
+
+user="ddr"
+prefix="DEV"
+
+function __workGitMagic()
+{
+  if [[ "$(git rev-parse --abbrev-ref HEAD)" != "master" ]]; then
+    echo -e "${BWhite}Switching to master branch${NC}"
+    git checkout master
+  fi
+
+  echo -e "${BWhite}Pulling from origin${NC}"
+  git pull
+  echo -e "${BWhite}Creating new branch for repo: $repo${NC}";
+  git checkout -b $branch;
+  git push --set-upstream origin $branch
+}
+
+# Make sure we are standing in a repository
+if git rev-parse --git-dir > /dev/null 2>&1; then
+  repo="$(basename `git rev-parse --show-toplevel`)"
+else
+  echo -e "${BWhite}Nigga, you not even in a repo!"
+  exit
+fi
+
+#Get and parse parameters for branch ticket and description
+ticket=$1
+description="${@:2}"
+
+if [[ -z $ticket ]]; then
+  echo -e "${BWhite}What's the ticket number for this bad boy: ${NC}"
+  read -p "$prefix-" ticket
+fi
+# Validate that ticket is a number
+re='^[0-9]+$'
+if ! [[ $ticket =~ $re ]] ; then
+   echo -e "${BWhite}error: Ticket number is not a number${NC}" >&2; exit 1
+fi
+
+if [[ -z $description ]]; then
+  echo -e "\n${BWhite}Hit me up with some of that sweet discriptive text: ${NC}"
+  read description
+fi
+
+# Check if description was provided
+if [[ -n "$description" ]]; then
+  branch="$user/$prefix-$ticket-${description// /-}"
+else
+  branch="$user/$prefix-$ticket"
+fi
+
+# Make sure with user that branch is correct
+while true; do
+  echo -e "${BWhite}Create branch: $repo@$branch?${NC}"
+  read -p "(y/n)" yn
+  case $yn in
+      [Yy]* ) echo -e "${BWhite}Damn right!${NC}";
+      __workGitMagic
+      break;;
+      [Nn]* ) echo -e "${BWhite}No one likes a quitter..${NC}"; exit;;
+      * ) echo -e "${BWhite}Mate.. y or n${NC}";;
+  esac
+done

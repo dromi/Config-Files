@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while :
+do
+    rand=$((1 + RANDOM % 2))
+    if [ $rand == 1 ] 
+    then
+        printf "╱"
+    else 
+        printf "╲" 
+    fi
+done

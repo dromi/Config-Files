@@ -17,7 +17,8 @@ alias -g T=" | tail"
 
 alias glsr="git ls-remote | grep ddr"
 alias git_branch_clean="git branch --merged master | grep -v master | xargs git branch -d"
-
+alias gs="git stash"
+alias gsp="git stash pop"
 ################### APTITUDE ####################
 
 if [[ "$(uname)" == "Linux" ]]; then
@@ -29,11 +30,6 @@ if [[ "$(uname)" == "Linux" ]]; then
     alias aw='aptitude show'
 fi
 
-################### MAC ####################
-
-if [[ "$(uname)" == "Darwin" ]]; then
-    alias reset_mouse="defaults write .GlobalPreferences com.apple.mouse.scaling -1"
-fi
 ################# PYTHON ###################
 
 alias python="python3.6"
@@ -41,28 +37,14 @@ alias pip="pip3.6"
 
 ################### NPM  ###################
 
-if [[ "$(uname)" == "Darwin" ]]; then
-    alias ni="home_node npm install"
-    alias nig="home_node npm install -g"
-    alias nis="home_node npm install -s"
-    alias nt="home_node npm test"
-    alias np="home_node npm publish"
-    alias nri="home_node npm run init-env"
-    alias nrr="home_node npm run reinit-env"
-    alias na="home_node node app"
-
-    alias ns="home_node npm install && home_node npm run init-env && home_node node app"
-
-    # from bruno
-    alias testdbg='NODE_ENV=${NODE_ENV:-localTest} mocha --no-timeouts --inspect-brk=5858 test/bootstrap.test.js test/**/*.test.js'
-    alias testdbgall='NODE_ENV=${NODE_ENV:-localTest} mocha --recursive --no-timeouts --inspect-brk=5858 test/bootstrap.test.js ./test'
-fi
-
-################# COINIFY  ##################
-
-if [[ "$(uname)" == "Darwin" ]]; then
-    alias dp="coinify-deploy -p production"
-    alias ds="coinify-deploy -p sandbox"
-
-    alias kue-restart="ssh web1.coinify.com './kue-dashboard.sh'"
-fi
+alias ni="home_node npm install"
+alias nig="home_node npm install -g"
+alias nis="home_node npm install -s"
+alias nt="home_node npm test"
+alias np="home_node npm publish"
+alias nr="home_node npm run"
+alias nri="home_node npm run init-env"
+alias nrr="home_node npm run reinit-env"
+alias na="home_node node app"
+alias nl="home_node npm run lint"
+alias nlf="home_node npm run lint-fix"
