@@ -1,0 +1,54 @@
+#!/bin/bash
+set -e
+
+reddit_url="https://www.reddit.com/r/todayilearned.json"
+cache_dir="$HOME/.til_cache"
+cache_ttl=(60*60*6) # 6 hours
+
+# check for cache
+if [ ! -f $cache_dir ]; then
+    touch $cache_dir
+    response=`wget -qO- $reddit_url`
+    echo "$response" > "$cache_dir"
+elif (( (`date +%s` - `stat -L --format %Y $cache_dir`) > $cache_ttl ))
+then
+    response=`wget -qO- $reddit_url`
+    echo "$response" > "$cache_dir"
+else
+    response=`cat $cache_dir`
+fi
+
+# select data array
+children=`echo $response | jq ".data.children"`
+dist=`echo $response | jq ".data.dist"`
+
+# pick random object
+selected_idx=`shuf -i 0-$(($dist-1)) -n 1`
+selected=`echo $children | jq ".[$selected_idx].data.title"`
+
+# remove quotes
+selected=${selected:1:-1};
+
+# Remove 'TIL' from string
+if  [[ ${selected:0:4} == "TIL " ]] ; then
+  selected=${selected:4};
+fi
+if  [[ ${selected:0:5} == "TIL: " ]] ; then
+  selected=${selected:5};
+fi
+
+# Remove 'that' from string
+if  [[ ${selected:0:5} == "that " ]] ; then
+  selected=${selected:5};
+fi
+# Remove 'of' from string
+if  [[ ${selected:0:3} == "of " ]] ; then
+  selected=${selected:3};
+fi
+# Remove 'about' from string
+if  [[ ${selected:0:6} == "about " ]] ; then
+  selected=${selected:6};
+fi
+
+# Capitalize first letter and return
+echo ${selected^}

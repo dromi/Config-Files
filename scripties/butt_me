@@ -1,0 +1,22 @@
+#!/bin/bash
+set -e
+
+declare -A combi=(
+    ["api"]="scanner-api"
+    ["worker"]="scanner-worker"
+    ["hdr"]="scanner-hdr-worker"
+)
+
+current_branch=`git rev-parse --abbrev-ref HEAD`
+
+if [ -z "$1" ]
+    then
+        for item in ${combi[*]}
+        do
+            msg="butt deploy $item/$current_branch to dev"
+            echo "$msg"
+        done
+    else
+        msg="butt deploy ${combi[$1]}/$current_branch to dev"
+        echo -n "$msg" | xclip -selection c
+fi

@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+cow_string=`cowsay -l`
+stringarray=(${cow_string:30})
+selected_idx=`shuf -i 0-${#stringarray[@]} -n 1`
+cowsay -f ${stringarray[$selected_idx]}

@@ -1,0 +1,73 @@
+#!/usr/bin/python
+
+import pyperclip
+
+
+JSON_LINE = """{{
+      "page_number":{pageno},
+      "direct_link":"{link}",
+      "bucket_file_name":"vouchers/{voucherid}/{voucherid}-page-1-of-1",
+      "height":2333,
+      "width":1653
+}}"""
+
+JSON_FULL = """{{
+    "voucher_id": {voucherid},
+    "bucket_name":"invoice-original",
+    "file_name_original":"vouchers/{voucherid}/{voucherid}-original",
+    "file_name_jpg":"vouchers/{voucherid}/{voucherid}-thumbnail_full_size",
+    "file_mime_type":"application/pdf",
+    "callback_url":"https://httpbin.org/anything",
+    "receiver_vat_id":"DK19465845",
+    "receiver_country":"",
+    "header_fields":[
+        {{"name":"country","data_type":"country","hdr":true}},
+        {{"name":"company_name","data_type":"text","hdr":true}},
+        {{"name":"voucher_type","data_type":"text","hdr":true}},
+        {{"name":"joint_payment_id","data_type":"text","hdr":true}},
+        {{"name":"company_vat_reg_no","data_type":"text","hdr":true}},
+        {{"name":"danish_industry_code","data_type":"text","hdr":true}},
+        {{"name":"payment_id","data_type":"text","hdr":true}},
+        {{"name":"total_vat_amount_scanned","data_type":"amount","hdr":true}},
+        {{"name":"currency","data_type":"currency","hdr":true}},
+        {{"name":"voucher_number","data_type":"text","hdr":true}},
+        {{"name":"total_amount_incl_vat","data_type":"amount","hdr":true}},
+        {{"name":"payment_date","data_type":"date","hdr":true}},
+        {{"name":"payment_code_id","data_type":"text","hdr":true}},
+        {{"name":"invoice_date","data_type":"date","hdr":true}},
+        {{"name":"total_amount_excl_vat","data_type":"amount","hdr":true}},
+        {{"name":"catalog_creditor_id","data_type":"text","hdr":true}},
+        {{"name":"qpr_number","data_type":"text","hdr":true}},
+        {{"name":"qpr_name","data_type":"text","hdr":true}},
+        {{"name":"creditor_number","data_type":"text","hdr":true}}
+    ],
+    "line_fields":[{{"name":"description","data_type":"text","hdr":true}}, {{"name":"amount","data_type":"text","hdr":true}}],
+    "image_url": "{imageurl}",
+    "image_pages": {imagepages},
+    "organization_id":3579,
+    "products":["HDR"],
+    "priority":1
+}}
+"""
+
+
+voucher_id = input("Voucher ID: ")
+image_url = input("Image URL: ")
+image_pages = int(input("Image Pages: "))
+
+pages = "["
+
+for i in range(1, image_pages+1):
+    page_link = input("Image Page {} URL: ".format(i))
+    json_line = JSON_LINE.format(pageno=i, link=page_link, voucherid=voucher_id)
+    pages += json_line
+    if (i != image_pages):
+        pages += ",\n"
+
+pages += "]"
+
+full_json_blob = JSON_FULL.format(voucherid=voucher_id, imageurl=image_url, imagepages=pages)
+
+pyperclip.copy(full_json_blob)
+pyperclip.paste()
+print("Copied to Clipboard!")
