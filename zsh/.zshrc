@@ -51,7 +51,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git themes sudo brew npm docker node zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting pip archlinux tig)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -84,9 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export PATH="$HOME/scripties:$HOME/Library/Python/3.6/bin:$PATH"
-export EDITOR=/usr/bin/emacs
+export PATH="$HOME/git/Config-Files/scripties:$PATH"
+export EDITOR="/usr/bin/emacs -nw"
 export SRC_FOLDER_PATH="$HOME/git/"
+
+# variable for bilagscan cnn VM
+export cnn="danni-test-cnn-vm"
 
 # Load aliases file:
 source $HOME/.zsh_aliases
@@ -94,5 +97,16 @@ source $HOME/.zsh_aliases
 export NVM_DIR="$HOME/.nvm"
 alias loadnvm='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" && [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'
 
+# export TERM="xterm-256color"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/opt/google-cloud-sdk/path.zsh.inc' ]; then source '/opt/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/opt/google-cloud-sdk/completion.zsh.inc' ]; then source '/opt/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Start up message
+echo "`til_fetch | get_random_cow` \n`date` | `uptime -p`" | lolcat

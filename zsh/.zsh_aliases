@@ -1,6 +1,8 @@
 ################# GENERAL ##################
 
 alias zshrc="$EDITOR $HOME/.zshrc"
+alias zsha="$EDITOR $HOME/.zsh_aliases"
+
 alias reload="source $HOME/.zshrc"
 
 alias sl="ls"
@@ -13,27 +15,34 @@ alias -g G=" | grep"
 alias -g L=" | less"
 alias -g T=" | tail"
 
+alias toggle_caps="xdotool key Caps_Lock"
+
+xclip="xclip -selection c"
+
 ################### GIT ####################
 
 alias glsr="git ls-remote | grep ddr"
-alias git_branch_clean="git branch --merged master | grep -v master | xargs git branch -d"
-alias gs="git stash"
-alias gsp="git stash pop"
+alias git_branch_clean="git branch --merged develop | grep -v develop | xargs git branch -d"
+alias git_branch_clean_master="git branch --merged master | grep -v master | xargs git branch -d"
+
+# alias gs="git stash"
+# alias gsp="git stash pop"
+
 ################### APTITUDE ####################
-
-if [[ "$(uname)" == "Linux" ]]; then
-    # aliases for aptitude
-    alias ai='sudo aptitude install'
-    alias ar='sudo aptitude remove'
-    alias ap='sudo aptitude purge'
-    alias as='aptitude search'
-    alias aw='aptitude show'
-fi
-
+#
+#if [[ "$(uname)" == "Linux" ]]; then
+#    # aliases for aptitude
+#    alias ai='sudo aptitude install'
+#    alias ar='sudo aptitude remove'
+#    alias ap='sudo aptitude purge'
+#    alias as='aptitude search'
+#    alias aw='aptitude show'
+#fi
+#
 ################# PYTHON ###################
 
-alias python="python3.6"
-alias pip="pip3.6"
+# alias python="python3.6"
+# alias pip="pip3.6"
 
 ################### NPM  ###################
 
@@ -48,3 +57,12 @@ alias nrr="home_node npm run reinit-env"
 alias na="home_node node app"
 alias nl="home_node npm run lint"
 alias nlf="home_node npm run lint-fix"
+
+################ BILAGSCAN ####################
+
+alias run_scanner_db="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-prod=tcp:5491,plasma-range-128814:europe-west1:bilagscan-dev=tcp:5490,plasma-range-128814:europe-west1:bilagscan-qa=tcp:5492"
+alias hdr_start="$HOME/git/hdr/; npm start"
+
+alias cnn_start="gcloud compute instances start $cnn"
+alias cnn_stop="gcloud compute instances stop $cnn"
+alias cnn_ssh="gcloud compute ssh $cnn"
