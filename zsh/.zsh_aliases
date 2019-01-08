@@ -11,7 +11,7 @@ alias lsdir='ll -d */'
 alias ffs='sudo'
 alias tarz='tar zxvf'
 
-alias -g G=" | grep"
+alias -g G=" | grep -i"
 alias -g L=" | less"
 alias -g T=" | tail"
 
