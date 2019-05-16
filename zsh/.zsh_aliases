@@ -60,9 +60,14 @@ alias nlf="home_node npm run lint-fix"
 
 ################ BILAGSCAN ####################
 
-alias run_scanner_db="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-prod=tcp:5491,plasma-range-128814:europe-west1:bilagscan-dev=tcp:5490,plasma-range-128814:europe-west1:bilagscan-qa=tcp:5492"
+alias run_scanner_db_prod="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-prod=tcp:5491"
+alias run_scanner_db_dev="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-dev=tcp:5490"
+alias run_scanner_db_qa="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-qa=tcp:5492"
+alias run_scanner_db_all="cloud_sql_proxy -instances=plasma-range-128814:europe-west1:bilagscan-prod=tcp:5491,plasma-range-128814:europe-west1:bilagscan-dev=tcp:5490,plasma-range-128814:europe-west1:bilagscan-qa=tcp:5492"
 alias hdr_start="$HOME/git/hdr/; npm start"
 
 alias cnn_start="gcloud compute instances start $cnn"
 alias cnn_stop="gcloud compute instances stop $cnn"
 alias cnn_ssh="gcloud compute ssh $cnn"
+
+alias botcreds='less $HOME/git/botlag/env.json'
