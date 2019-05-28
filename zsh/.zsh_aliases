@@ -25,6 +25,8 @@ alias glsr="git ls-remote | grep ddr"
 alias git_branch_clean="git branch --merged develop | grep -v develop | xargs git branch -d"
 alias git_branch_clean_master="git branch --merged master | grep -v master | xargs git branch -d"
 
+alias amend="git commit --amend --no-edit; git push -f"
+
 # alias gs="git stash"
 # alias gsp="git stash pop"
 
