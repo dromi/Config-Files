@@ -1,0 +1,59 @@
+#!/usr/bin/python
+
+import datetime
+from random import randrange
+
+import requests
+
+clock_in_url = 'https://api.clockify.me/api/v1/workspaces/{}/time-entries'
+check_clock_url = 'https://api.clockify.me/api/v1/workspaces/{}/user/{}/time-entries'
+
+x_api_key = 'Xc5sNmr89RsBLPUg'
+workspace_id = '5d14a6481080ec1ff25e44aa'
+scanner_project_id = '5d14a71a1080ec1ff25e459f'
+user_id = '5d14aa1df15c9848015b660c'
+
+
+def check_if_clocked_in():
+    # Requires workspace_id and user_id
+    constructed_url = check_clock_url.format(workspace_id, user_id)
+    start_time = datetime.datetime.now().replace(hour=0, minute=0, second=0, microsecond=0).isoformat() + "Z"
+    result = requests.get(url=constructed_url,
+                          headers={'X-Api-Key': x_api_key},
+                          params={'start': start_time})
+
+    if result.status_code == 200:
+        data = result.json()
+        return len(data) > 0
+
+    print(f"Got bad request code {result.status_code} when checking if clocked in baby, aborting")
+    exit(1)
+
+
+def clock_it():
+    workday_diff = randrange(120)
+    # Subtract 1 hour because clockify is dumb
+    time_now = datetime.datetime.now() - datetime.timedelta(hours=1)
+    start_time = time_now.isoformat() + "Z"
+    end_time = time_now + datetime.timedelta(hours=7, minutes=workday_diff)
+    constructed_url = clock_in_url.format(workspace_id)
+    data = {
+        "start": start_time,
+        "billable": "true",
+        "projectId": scanner_project_id,
+        "end": end_time.isoformat() + "Z"
+    }
+    result = requests.post(url=constructed_url,
+                          headers={'X-Api-Key': x_api_key, 'Content-Type': 'application/json'},
+                          json=data)
+
+    if result.status_code == 201:
+        print("You are now clocked in baby, enjoy a lovely day free of clockify's shitty ui!")
+    else:
+        print(f"Got bad request code {result.status_code} when clocking in baby, aborting")
+
+if __name__ == '__main__':
+    if check_if_clocked_in():
+        print("There is already a clock in for today baby, check clockify yourself.")
+    else:
+        clock_it()
