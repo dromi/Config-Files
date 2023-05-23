@@ -1,0 +1,29 @@
+#!/usr/bin/python
+
+import requests
+from bs4 import BeautifulSoup
+
+LOANERS_OVERVIEW = 'https://www.mintos.com/en/loan-originators/#overview'
+LOANERS_DETAILS = 'https://www.mintos.com/en/loan-originators/#details'
+
+def main():
+  scanner_resp = requests.get(LOANERS_OVERVIEW)
+  # scanner_html = BeautifulSoup(scanner_resp.content, features="html.parser")
+  # john = scanner_html.body.find('table')
+  # # dude = _parse_html_table_to_dict(scanner_html.body.find('table'))
+  # print('lele')
+
+
+  bs = BeautifulSoup(scanner_resp.content)
+
+  results = {}
+  for row in bs.findAll('tr'):
+    aux = row.findAll('td')
+    results[aux[0].string] = aux[1].string
+  print(results)
+
+def _parse_html_table_to_dict(html):
+  return {row.find('th').string: row.find('td').string for row in html.findAll('tr')}
+
+if __name__== "__main__":
+  main()
