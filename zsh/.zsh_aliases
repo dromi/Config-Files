@@ -17,7 +17,9 @@ alias -g T=" | tail"
 
 alias toggle_caps="xdotool key Caps_Lock"
 
-xclip="xclip -selection c"
+alias xclip="xclip -selection c"
+
+alias update_packages="sudo pacman -Syu; sudo snap refresh"
 
 ################### GIT ####################
 

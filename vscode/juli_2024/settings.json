@@ -1,0 +1,26 @@
+{
+    "editor.fontSize": 12,
+    "editor.fontFamily": "Monaco",
+    "breadcrumbs.enabled": true,
+    "workbench.colorTheme": "Cobalt2",
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "workbench.startupEditor": "newUntitledFile",
+    "bracketPairColorizer.highlightActiveScope": true,
+    "cSpell.userWords": [
+        "Tradeshift",
+        "UCPH"
+    ],
+    "vsicons.dontShowNewVersionMessage": true,
+    "go.formatTool": "goimports",
+    "gitProjectManager.baseProjectsFolders": [
+        "/home/theneck/git/"
+    ],
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "latex-workshop.latex.recipe.default": "xelatex",
+    "explorer.confirmDragAndDrop": false,
+    "go.toolsManagement.autoUpdate": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "window.zoomLevel": 1
+}
