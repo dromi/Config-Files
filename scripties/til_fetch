@@ -3,7 +3,7 @@ set -e
 
 reddit_url="https://www.reddit.com/r/todayilearned.json"
 cache_dir="$HOME/.til_cache"
-cache_ttl=(60*60*6) # 6 hours
+cache_ttl=(60*60*6) # 24 hours
 
 # check for cache
 if [ ! -f $cache_dir ]; then

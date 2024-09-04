@@ -4,5 +4,5 @@ set -e
 cow_string=`cowsay -l`
 stringarray=(${cow_string:30})
 selected_idx=`shuf -i 0-$((${#stringarray[@]}-1)) -n 1`
-echo "SELECTED  COWFILE NO: $selected_idx -:- ${stringarray[$selected_idx]}" 
+# echo "SELECTED  COWFILE NO: $selected_idx -:- ${stringarray[$selected_idx]}" 
 cowsay -f ${stringarray[$selected_idx]}

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Check if input file is provided
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 <input_file.pdf>"
+    exit 1
+fi
+
+# Assign input parameter to a variable
+input_file="$1"
+
+# Check if input file exists
+if [ ! -f "$input_file" ]; then
+    echo "Error: Input file '$input_file' does not exist."
+    exit 1
+fi
+
+# Generate output filename
+filename=$(basename -- "$input_file")
+extension="${filename##*.}"
+filename="${filename%.*}"
+output_file="${filename}_compressed.${extension}"
+
+# Run the Ghostscript command
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+   -dNOPAUSE -dQUIET -dBATCH -sOutputFile="$output_file" "$input_file"
+
+# Check if the command was successful
+if [ $? -eq 0 ]; then
+    echo "PDF compression completed successfully."
+    echo "Output file: $output_file"
+else
+    echo "Error: PDF compression failed."
+    exit 1
+fi
